@@ -3,23 +3,14 @@ description: "A simple site powered by Minimal Mistakes."
 baseurl: "" # Leave this blank for user pages
 url: "https://freya1919.github.io" # Your GitHub Pages URL
 
-theme: minimal-mistakes-jekyll
+# Use the remote theme
 remote_theme: "mmistakes/minimal-mistakes@4.26.2"
 plugins:
   - jekyll-include-cache
 
-# Navigation configuration
+# Optional: Navigation defaults
 defaults:
   - scope:
       path: ""
     values:
       layout: "single"
-
-# Enable pagination
-paginate: 5
-paginate_path: "/page/:num/"
-
-# Author info
-author:
-  name: Freya
-  email: "your-email@example.com"
