@@ -8,10 +8,12 @@ remote_theme: "mmistakes/minimal-mistakes@4.26.2"
 plugins:
   - jekyll-include-cache
 
-
 # Optional: Navigation defaults
 defaults:
   - scope:
       path: ""
     values:
       layout: "single"
+
+# Under construction message
+under_construction_message: "This website is still under construction... Come back later!"
