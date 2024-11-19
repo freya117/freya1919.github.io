@@ -1,3 +1,3 @@
-# lauyihong.github.io
+# freya1919.github.io
 
-Here is Yifeng's personal website repository.
+Here is Freya's personal website repository.
