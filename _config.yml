@@ -239,8 +239,6 @@ whitelist:
   - jekyll-feed
   - jekyll-include-cache
 
-<<<<<<< HEAD
-
 # Archives
 #  Type
 #  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
@@ -268,7 +266,6 @@ tag_archive:
 #   permalinks:
 #     category: /categories/:name/
 #     tag: /tags/:name/
-
 
 # HTML Compression
 # - https://jch.penibelst.de/
