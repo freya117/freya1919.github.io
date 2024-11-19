@@ -105,8 +105,8 @@ analytics:
 # Site Author
 author:
   name             : "Freya Tan"
-  avatar           : "/assets/images/8bitpix-w.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "A city planning student."
+  avatar           : "/assets/images/8bitpix-w.png" # path of avatar image, e.g. "/assets/images/freya_2024.jpg"
+  bio              : "Master Student @ MIT EECS & DUSP"
   location         : "Cambridge, MA"
   email            : 
   links:
