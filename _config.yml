@@ -124,20 +124,20 @@ author:
       # url: "https://www.linkedin.com/in/freya-tan-888145258/"
     - label: "ResearchGate"
       icon: "fab fa-fw fa-researchgate"
-      url: "https://www.researchgate.net/profile/Yifeng-Liu-25"
+      url: "https://www.researchgate.net/profile/Freya-Tan"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://www.instagram.com/yifeeeeeeng/"
+      # url: "https://www.instagram.com/f_in_19/"
 
 # Site Footer
 footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/lauyihong"
+      url: "https://github.com/freya1919"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://cn.linkedin.com/in/yifeng-liu-359b82240"
+      url: "https://www.linkedin.com/in/freya-tan-888145258/"
     - label: "ResearchGate"
       icon: "fab fa-fw fa-researchgate"
       url: "https://www.researchgate.net/profile/Freya-Tan"
@@ -213,7 +213,8 @@ kramdown:
 # Sass/SCSS
 sass:
   sass_dir: _sass
-  style: compressed # https://sass
+  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+
 
 # Outputting
 permalink: /:categories/:title/
