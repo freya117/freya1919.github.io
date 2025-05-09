@@ -5,5 +5,140 @@ search: false
 
 @charset "utf-8";
 
+// Custom variables to override
+$primary-color: #0033A0; // Pantone Blue 072
+$link-color: #0033A0;
+$link-color-hover: lighten($link-color, 10%);
+$link-color-visited: darken($link-color, 5%);
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+// Custom styles
+// Make navigation menu text smaller
+.greedy-nav {
+  a {
+    font-size: 0.85em;
+  }
+  
+  .visible-links {
+    li {
+      margin-right: 1em;
+    }
+  }
+}
+
+// Make mobile navigation smaller too
+.hidden-links {
+  a {
+    font-size: 0.85em;
+  }
+}
+
+// Adjust navigation padding
+.masthead__inner-wrap {
+  padding: 0.5em;
+}
+
+// Make search icon smaller
+.search__toggle {
+  font-size: 0.85em;
+}
+
+// Update all highlight colors
+.nav-tab.active {
+  border-bottom-color: $primary-color !important;
+  color: $primary-color !important;
+}
+
+.tag-filter.active {
+  background-color: $primary-color !important;
+}
+
+.publication-links a, 
+.page__content a, 
+.bio-content a {
+  color: $link-color;
+  text-decoration: none !important;
+  
+  &:hover {
+    text-decoration: none !important;
+  }
+}
+
+.btn--primary {
+  background-color: $primary-color !important;
+  color: #fff !important;
+}
+
+// Content width constraints
+.page__content-wrapper, 
+.bio-section,
+.research-section,
+.feature__wrapper,
+.footer-section {
+  max-width: 1024px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 100% !important;
+}
+
+.greedy-nav {
+  background: transparent;
+}
+
+// Custom CSS overrides
+
+// Full width layout for pages without sidebar
+.wide {
+  .page {
+    float: none;
+    width: 100%;
+    
+    @include breakpoint($large) {
+      padding-right: 0;
+    }
+  }
+}
+
+// Center content in full-width layout
+.layout--single.wide {
+  .page__inner-wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  
+  #main {
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+// Fix feature row display in wide layout
+.wide .feature__wrapper {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Remove underlines from all links across the site
+a {
+  text-decoration: none !important;
+  
+  &:hover {
+    text-decoration: none !important;
+  }
+}
+
+// Add specific styling for links in the home page highlights section
+.page__content .highlights a {
+  text-decoration: none !important;
+  color: $primary-color;
+  
+  &:hover {
+    color: darken($primary-color, 10%);
+  }
+}

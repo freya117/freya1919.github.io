@@ -88,4 +88,10 @@ var store = [{
         "tags": ["business plan"],
         "url": "/entrepreneurship/bp/",
         "teaser": null
+      },{
+        "title": "Sample Blog Post Template",
+        "excerpt":"[PLACEHOLDER: Add Post Title] [PLACEHOLDER: Add a brief introduction to your blog post. Explain what the post is about and why it matters.] Background [PLACEHOLDER: Provide context for your topic. This could include: Research history Current trends Why this topic matters Your interest in the subject] Key Points [PLACEHOLDER: Main...","categories": [],
+        "tags": ["research","urban science","mobility"],
+        "url": "/posts/2024/06/sample-post/",
+        "teaser": null
       }]

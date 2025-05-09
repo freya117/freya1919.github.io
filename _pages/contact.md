@@ -1,0 +1,145 @@
+---
+title: "Contact"
+permalink: /contact/
+author_profile: true
+---
+
+<style>
+  /* Make all text smaller on the contact page */
+  .page__content {
+    font-size: 0.75em;
+    padding-top: 1em;
+  }
+  
+  /* Make headings slightly smaller too */
+  .page__content h2 {
+    font-size: 1.25em;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+  }
+  
+  .page__content h3 {
+    font-size: 1.05em;
+    margin-top: 1.2em;
+    margin-bottom: 0.5em;
+  }
+  
+  /* Adjust list items */
+  .page__content ul li {
+    font-size: 0.85em;
+    margin-bottom: 0.4em;
+  }
+  
+  /* Hide the page title */
+  .page__title {
+    display: none;
+  }
+
+  /* Style for contact links */
+  .contact-info {
+    margin-bottom: 1.5em;
+    font-size: 0.9em;
+  }
+  
+  .contact-info a {
+    color: #0033A0;
+    text-decoration: none;
+  }
+  
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+</style>
+
+## Get in Touch
+
+I'm always interested in research collaborations, speaking opportunities, or discussions about urban science and human mobility. Feel free to reach out through any of the following methods:
+
+### Email
+
+- [freya117@mit.edu](mailto:freya117@mit.edu)  
+- [freyatan117@gmail.com](mailto:freyatan117@gmail.com)
+
+### Social Media
+
+- **LinkedIn**: [https://www.linkedin.com/in/freya-tan-888145258/](https://www.linkedin.com/in/freya-tan-888145258/)
+- **GitHub**: [https://github.com/freya117](https://github.com/freya117)
+- **ResearchGate**: [https://www.researchgate.net/profile/Freya-Tan](https://www.researchgate.net/profile/Freya-Tan)
+
+### Professional Address
+
+Massachusetts Institute of Technology  
+77 Massachusetts Ave  
+Cambridge, MA 02139  
+United States
+
+### Contact Form
+
+You can fill out this form and I'll get back to you as soon as possible:
+
+<div class="form-container">
+  <form action="https://formspree.io/f/your-formspree-endpoint" method="POST">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="_replyto" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="subject">Subject:</label>
+      <input type="text" id="subject" name="subject" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+    </div>
+    
+    <button type="submit">Send Message</button>
+  </form>
+</div>
+
+<style>
+  .form-container {
+    max-width: 600px;
+    margin: 2em 0;
+  }
+  
+  .form-group {
+    margin-bottom: 0.8em;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.4em;
+    font-weight: bold;
+    font-size: 0.9em;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 0.9em;
+  }
+  
+  button {
+    background-color: #0033A0;
+    color: white;
+    border: none;
+    padding: 0.75em 1.5em;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 0.9em;
+  }
+  
+  button:hover {
+    background-color: #002680;
+  }
+</style> 

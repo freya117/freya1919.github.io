@@ -73,7 +73,7 @@ google:
   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
   instant_search         : # false (default), true
 # SEO Related
-google_site_verification : "Freya Tan‘s website. About Urban Science and Human Mobility"
+google_site_verification : "Freya Tan's website. About Urban Science and Human Mobility"
 bing_site_verification   :
 naver_site_verification  :
 yandex_site_verification :
@@ -105,26 +105,29 @@ analytics:
 # Site Author
 author:
   name             : "Freya Tan"
-  avatar           : "/assets/images/8bitpix-w.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "A city planning student."
+  avatar           : "assets/images/freya_2024.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "MIT EECS + DUSP Master Student"
   location         : "Cambridge, MA"
-  email            : 
+  email            : "freya117@mit.edu"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:freya117@mit.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/freya1919"
+      url: "https://github.com/freya117"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      # url: "https:/freya1919.github.io"
+      url: "https://freya1919.github.io"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      # url: "https://www.linkedin.com/in/freya-tan-888145258/"
+      url: "https://www.linkedin.com/in/freya-tan-888145258/"
     - label: "ResearchGate"
       icon: "fab fa-fw fa-researchgate"
-      url: "https://www.researchgate.net/profile/Yifeng-Liu-25"
+      url: "https://www.researchgate.net/profile/Freya-Tan"
+    - label: "DUSP Profile"
+      icon: "fas fa-fw fa-university"
+      url: "https://dusp.mit.edu/people/freya-tan"
+    - label: "City Form Lab"
+      icon: "fas fa-fw fa-flask"
+      url: "https://cityform.mit.edu/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://www.instagram.com/yifeeeeeeng/"
@@ -134,13 +137,13 @@ footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/lauyihong"
+      url: "https://github.com/freya117"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://cn.linkedin.com/in/yifeng-liu-359b82240"
+      url: "https://www.linkedin.com/in/freya-tan-888145258/"
     - label: "ResearchGate"
       icon: "fab fa-fw fa-researchgate"
-      url: "https://www.researchgate.net/profile/Yifeng-Liu-25"
+      url: "https://www.researchgate.net/profile/Freya-Tan"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
@@ -239,8 +242,6 @@ whitelist:
   - jekyll-feed
   - jekyll-include-cache
 
-<<<<<<< HEAD
-
 # Archives
 #  Type
 #  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
@@ -290,7 +291,7 @@ defaults:
       path: ""
       type: posts
     values:
-<<<<<<< HEAD
+
       layout: single
       author_profile: true
       read_time: true

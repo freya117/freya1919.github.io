@@ -1,178 +1,157 @@
 ---
-classes: wide
+title: "About"
 permalink: /about/
-feature_row:
-  - image_path: assets/images/portfolio/allocation-head.png
-    alt: "placeholder image 1"
-    title: <a href="portfolio/covid-allocation/">Allocating Covid Testing Stations in large-scale </a>
-    excerpt: "Covid testing stations allocating optimization and decomposition in 2022 Lockdown Shanghai."
-  - image_path: assets/images/portfolio/running-head.png
-    alt: "placeholder image 1"
-    title: <a href="portfolio/analysis-running/">Jogging Analysis</a>
-    excerpt: "Analyzing jogging activity patterns and adaptation to public health regulation."
-  - image_path: assets/images/portfolio/bjmap-head.png
-    alt: "placeholder image 2"
-    title: <a href="portfolio/cua-viz/">Beijing Infrastructure</a>
-    excerpt: "Analyzing local virbrancy, running activity, and real estate prices in Beijing."
-  - image_path: assets/images/portfolio/shanghai-head.png
-    alt: "placeholder image 1"
-    title: <a href="portfolio/quantify-street/">Streets and Real Estate</a>
-    excerpt: "Investigating the impact of perceived micro-level neighborhood characteristics on housing prices in Shanghai"
-  - image_path: assets/images/portfolio/map-head.png
-    alt: "placeholder image 1"
-    title: <a href="portfolio/perception-map/">Street Computer Vision</a>
-    excerpt: "Research on citizen streetscape evaluation based on crowd sourcing survey and the application of navigation optimization."
-  - image_path: assets/images/portfolio/informal-head.png
-    alt: "placeholder image 1"
-    title: <a href="portfolio/informal-map/">Informal-Mapping</a>
-    excerpt: "Computing places and human activity in data-absent informal urban settlements."
+author_profile: true
 ---
 
-<!-- - image_path: assets/images/portfolio/ar-head.png
-alt: "placeholder image 1"
-title: <a href="portfolio/metro-ar/">Underground Portal</a>
-excerpt: "An inclusive template to assis people in blocked subway feeling the surficial city in XR world" -->
-
-<!-- Set the font size to 80% of the original size -->
 <style>
-    body {
-        font-size: 90%; 
-    }
-    /* 窄屏幕（如手机）下的样式 */
-    @media screen and (max-width: 768px) {
-      /* 将左右布局变为上下布局 */
-      .content-wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
+  /* Make all text smaller on the about page */
+  .page__content {
+    font-size: 0.75em;
+    padding-top: 1em;
+  }
   
-      /* 图片居中并缩小 */
-      .content-wrapper img {
-        max-width: 100%; /* 图片占满宽度 */
-        height: auto; /* 保持图片宽高比 */
-      }
+  /* Make headings slightly smaller too */
+  .page__content h2 {
+    font-size: 1.25em;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+  }
   
-      /* 调整文字块的宽度以适应屏幕 */
-      .text-content {
-        width: 90%; /* 让文字块在窄屏幕下也有适应宽度 */
-        padding: 10px;
-      }
-    }
+  .page__content h3 {
+    font-size: 1.05em;
+    margin-top: 1.2em;
+    margin-bottom: 0.5em;
+  }
   
-    /* 宽屏幕（如桌面设备）下的样式 */
-    .content-wrapper {
-      display: flex;
-      align-items: center;
-      padding-top: 9vh;
-    }
+  /* Adjust list items */
+  .page__content ul li {
+    font-size: 0.85em;
+    margin-bottom: 0.4em;
+  }
   
-    .text-content {
-      flex: 1;
-      padding-right: 20px;
-    }
+  /* Make author image larger specifically on about page */
+  .about .author__avatar img {
+    max-width: 200px !important;
+    height: auto !important;
+    border-radius: 50%;
+    border: none !important;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
   
-    .content-wrapper img {
-      flex: 1;
-      max-width: 80%; /* 图片在宽屏下保持适中的大小 */
-      height: auto;
-      display: block;
-      margin: 0 auto;
-    }
-  </style>
+  /* Hide the page title */
+  .page__title {
+    display: none;
+  }
+
+  /* Style for education section */
+  .education-item {
+    margin-bottom: 1.8em;
+  }
   
-<div style="flex: 1; display: flex; justify-content: center; padding-top: 3vh;">
-  <br>
-    This website is still under construction... Come back later!
-  </div>
+  .degree {
+    font-weight: bold;
+    margin-bottom: 0.3em;
+    font-size: 0.95em;
+  }
   
-  <!-- 页面内容部分 -->
-  <div class="content-wrapper">
-    <!-- 左边的文本内容 -->
-    <div class="text-content">
-      <span style="font-weight: bold;font-size: 120%;">
-      This is Yifeng, a grad student at <a href="http://dusp.mit.edu">DUSP</a> and <a href="https://www.eecs.mit.edu/">EECS</a> at MIT. 
-      </span>
-      <br><br>
-      From DUSP, my research focuses on the application of urban operations research. In EECS, under the supervision of <a href="https://mraghavan.github.io/">Manish Raghavan</a>, I am researching how to implement fairness in AI within complex industrial recommendation systems.      
-      <br><br>
-      Prior to MIT, I earned my Bachelor's degree in Architecture from Tsinghua University, where I worked under the guidance of Professors Yuan Lai and Hui Wang, with a strong focus on urban economics and human mobility research.      
-      <br><br>
-      Scroll down to explore my <a href="#post-section">▽ rescent blogs ▽</a> and <a href="#articles-section">▽ previous work! ▽</a>
-      <br> 
-      <br>
-      <img src="https://visitor-badge.laobi.icu/badge?page_id=lauyihong/lauyihong.github.io" alt="Visitor Count" style="float: left; margin-right: 10px;">
-    </div>
-    <!-- 右边的图片内容 -->
-    <div style="flex: 1; display: flex; justify-content: center;">
-      <img src="/assets/images/yifeng_2024.jpg" alt="Yifeng's photo">
-    </div>
-  </div>
+  .university {
+    font-style: italic;
+    margin-bottom: 0.5em;
+    font-size: 0.9em;
+  }
   
+  .courses {
+    color: #555;
+    margin-top: 0.5em;
+    font-size: 0.85em;
+  }
+</style>
 
-<div style="padding-top: 3vh;">
+## Bio
 
-  <!-- posts -->
-  <span id="post-section" style="font-size: 1.2em; font-weight: bold;">Research and Projects</span><br><br>
+I am a Master's student at MIT in EECS + DUSP. My research focuses on urban science and human mobility.
 
-  {% if paginator %}
-    {% assign posts = paginator.posts %}
-  {% else %}
-    {% assign posts = site.posts %}
-  {% endif %}
+[PLACEHOLDER: Add more details about your research focus, approach, and key areas of interest.]
 
-  {% assign entries_layout = page.entries_layout | default: 'list' %}
-  <div class="entries-{{ entries_layout }}">
-    The world is changing because of the innovative methods of AI, and so am I. Much of my recent work is still in the peer review process or in draft form, but I will post as much as I can here.
-    {% for post in posts %}
-      {% include archive-single.html type=entries_layout %}
-    {% endfor %}
-    The further information about me can be found in my <a href="/about/">About</a> and <a href="/portfolio/">Portfolio</a> pages. If anyone is interested in my work, or our band's music, please feel free to connect me! <br><br>
-  </div>
+## Education
 
-  <span id="articles-section" style="font-size: 1.2em; font-weight: bold;">Previous Research & Design Experiences</span><br><br>
-  {% include feature_row %}
-    
-  {% include paginator.html %}
-
-
-</div>
-     
-
-
-<!-- Avatar Image -->
-<div style="text-align: center; padding-top: 5vh">
-  <p style="font-size: 1.2em;">Thanks for your reading~<br>| <a href="https://dusp.mit.edu/people/yifeng-liu">DUSP Page</a> | <a href="https://www.linkedin.com/in/lauyihong/">LinkedIn</a> | <a href="https://www.researchgate.net/profile/Yifeng-Liu-25">ResearchGate</a> | <a href="https://lauyihong.github.io/about/">AboutMe</a> |
-  </p>
-  <!-- <img id="avatarImage" src="/assets/images/portfolio/websiterealphoto.jpg" alt="Avatar" style="width: 68%; max-width: 480px; margin-bottom: 3vh "> -->
+<div class="education-item">
+  <div class="degree">Master in Electrical Engineering and Computer Science (EECS)</div>
+  <div class="degree">Master in City Planning</div>
+  <div class="university">Massachusetts Institute of Technology (MIT)</div>
 </div>
 
-<script>
-    function toggleImage() {
-        var avatar = document.getElementById("avatarImage");
-        if (avatar.src.match("avatar-head-square.png")) {
-            avatar.src = "/assets/images/avatar-head-square-2.png";
-        } else {
-            avatar.src = "/assets/images/avatar-head-square.png";
-        }
-    }
-</script>
+<div class="education-item">
+  <div class="degree">Master of Urban Design, Urban Science Concentration</div>
+  <div class="university">University of California, Berkeley</div>
+</div>
 
-<script>
-    const targetText = "I am an architect, graphic designer, data representations developer, and also an researcher focus on urban system and human mobility...";
-    let currentText = "";
-    let index = 0;
+* **Certificates**:
+  * Machine Learning: Machine Learning Specialization Certificate
+  * Software Engineering: Meta Full-Stack Engineer Certificate
+  * Data Science: UC Berkeley Graduate Certificate in Applied Data Science / Geographic Information Science and Tech
+  * Design: Google UI/UX Design Specialization Certificate
 
-    function typeText() {
-        if (index < targetText.length) {
-            currentText += targetText[index];
-            document.getElementById('typewriter').innerText = currentText;
-            index++;
-            setTimeout(typeText, 36);  // 等待0.1秒
-        }
-    }
+## Research Interests
 
-    window.onload = typeText;  // 当页面加载完成后开始打字动画
-</script>
+* [PLACEHOLDER: Research Interest 1]
+* [PLACEHOLDER: Research Interest 2]
+* [PLACEHOLDER: Research Interest 3]
+* [PLACEHOLDER: Research Interest 4]
+
+## Selected Awards
+
+* **Avalon Scholarship (Full Scholarship)**, Massachusetts Institute of Technology, 2024-2026
+* **[Freedom Summer Fellowship](https://freedomsummerfellowship.com/)**, 2025
+
+## Work Experience
+
+* **Machine Learning Engineer Intern**, Symmons Evolution (Sep 2024 - Present)
+  * Building Energy Management Solutions - ML and GenerativeAI Group
+  * Developing real-time anomaly detection and predictive ML models for multi-sensor building energy management time-series data, enhancing system reliability
+  * Developed a GenAI-driven diagnostic system integrating multi-sensor data, predictive ML outputs, and equipment metadata for automated issue detection and troubleshooting
+  * Optimized LLM-driven analytical workflows, enhanced LLM accuracy through prompt engineering, integrating structured domain-specific data
+  * Developed efficient tokenization strategies for LLMs using PELT for segmentation, Transformer-based encoding for compression, and LSTM-AE for anomaly preservation
+
+* **Teaching Assistant**, MIT (Jan 2025 - Current)
+  * Course: Modeling Pedestrian Activity in Cities | Supervisor: Andres Sevtsuk
+  * Supported student teams in spatial analysis, pedestrian modeling, and proposal development to enhance walkability and public realm design in Kendall Square, in collaboration with the Cambridge Redevelopment Authority and community partners.
+  * Guided hands-on training in GIS, network-based pedestrian analysis, and spatial modeling using Python, enabling students to assess pedestrian accessibility, simulate urban design impacts, and develop data-driven urban planning proposals.
+
+## Research Experience
+
+* **Research Assistant**, MIT City Form Lab, Prof. Andres Sevtsuk (Sep 2024 - Present)
+    * Applied Multimodal Model (LLaVA, Qwen2-VL) to detect and analyze social behavior and group from labeled 80k street view images with time stamps in NYC
+    * Building and developing scalable data pipelines to process and integrate 150k+ pedestrian trajectories with 169k road network segments, optimizing graph-based pedestrian route choice model
+  
+* **System Research Assistant**, UC Berkeley HuMNet Lab & eCAL Lab (Sep 2023 - Aug 2024)
+  * Built a large-scale mobility analytics pipeline using TimeGeo model to identify mobility 
+  patterns from 1.3 Million cell phone trajectories in the San Francisco Bay Area
+  * Designed optimization algorithms for Electric Vehicle (EV) infrastructure placement, 
+  balancing accessibility, energy demand and cost factors
+
+* **Quantitative Researcher**, DCRP, UC Berkeley (Jun 2023 - Dec 2023)
+    * Climate Equity for Residents of California's Mobile Home Parks, sponsored by Hellman Fellows Fund
+    * Led a detailed analysis of a vast dataset encompassing over 5,000 mobile home parks, establishing a structural network to analyze existing patterns, contributing to a deeper understanding of spatial and social dynamics.
+    * Employed the Secretary of State dataset to meticulously track ownership transitions across 20,000 instances, contributing to the classification and understanding of Mobile Home Park ownership patterns.
+    * Conducted advanced simulations to assess the impact of climate change factors, such as temperature variations.
+
+* **Graduate Student Researcher**, Soga Research Group, Systems Engineering Department, UC Berkeley (Sep 2023 - Feb 2024)
+    * Berkeley wildfire evacuation Simulation, collaboration with the City of Berkeley
+    * Conducted wildfire behavior simulations under various conditions, including day/night and wind patterns.
+    * Ran wildfire evacuation traffic simulations in Berkeley accounting for high-risk scenarios and time variations.
+    * Improved accuracy by incorporating driver behavior, contraflow operations, and rerouting in evacuation models.
+
+## Skills
+
+* **Programming Languages**: Python, JS, SQL, R, Julia, C, C++
+* **Frameworks and Tools**: PyTorch, Spark, DGL, AWS, LSTM, Hive, Node.js, BERT
+* **Data Analysis**: Machine Learning, Statistical Modeling, Causal Inference
+* **Visualization**: Graph Design Suite (from Adobe Ps/Ai/Pr/Id/Ar to Node.js, HTML)
+
+## Contact
+
+Feel free to [get in touch](/contact/) if you're interested in collaborating or have questions about my work.
 
 

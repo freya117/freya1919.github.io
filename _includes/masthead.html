@@ -1,5 +1,48 @@
 {% capture logo_path %}{{ site.logo }}{% endcapture %}
 
+<style>
+  /* Make navigation menu text smaller */
+  .greedy-nav a {
+    font-size: 0.75em !important;
+  }
+  
+  .greedy-nav .visible-links li {
+    margin-right: 1em;
+  }
+  
+  /* Set proper content container width and padding */
+  .masthead__inner-wrap {
+    padding: 0.5em 1em;
+    max-width: 100%;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Create container for navigation content only */
+  .masthead__menu {
+    max-width: 1024px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0;
+  }
+  
+  .search__toggle {
+    font-size: 0.75em;
+  }
+  
+  /* Make site title slightly larger than nav items */
+  .site-title {
+    font-size: 0.9em !important;
+  }
+  
+  /* Style for active page in navigation */
+  .greedy-nav .visible-links li a.active {
+    color: #0033A0 !important;
+    font-weight: bold;
+  }
+</style>
+
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
@@ -14,7 +57,7 @@
         <ul class="visible-links">
           {%- for link in site.data.navigation.main -%}
             <li class="masthead__menu-item">
-              <a href="{{ link.url | relative_url }}"{% if link.description %} title="{{ link.description }}"{% endif %}>{{ link.title }}</a>
+              <a href="{{ link.url | relative_url }}" {% if page.permalink == link.url or page.url == link.url %}class="active"{% endif %} {% if link.description %} title="{{ link.description }}"{% endif %}>{{ link.title }}</a>
             </li>
           {%- endfor -%}
         </ul>

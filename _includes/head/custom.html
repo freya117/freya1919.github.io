@@ -9,4 +9,142 @@
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
 
+<!-- Custom styles for smaller navigation -->
+<style>
+  /* Make navigation menu text smaller */
+  .greedy-nav a {
+    font-size: 0.75em !important;
+  }
+  
+  .greedy-nav .visible-links li {
+    margin-right: 1em;
+  }
+  
+  .masthead__inner-wrap {
+    padding: 0.5em 1em;
+  }
+  
+  .search__toggle {
+    font-size: 0.75em;
+  }
+  
+  /* Also make the site title smaller */
+  .site-title {
+    font-size: 0.9em !important;
+  }
+  
+  /* Make all page content smaller by default */
+  .page__content {
+    font-size: 0.9em;
+  }
+  
+  /* Make headings slightly smaller too */
+  .page__content h2 {
+    font-size: 1.5em;
+  }
+  
+  .page__content h3 {
+    font-size: 1.3em;
+  }
+  
+  /* Adjust list items */
+  .page__content ul li, .page__content ol li {
+    font-size: 0.95em;
+    margin-bottom: 0.5em;
+  }
+  
+  /* Adjust table text */
+  table {
+    font-size: 0.85em;
+  }
+  
+  /* Make author profile image larger */
+  .author__avatar img {
+    max-width: 150px !important;
+    border-radius: 50%;
+  }
+  
+  /* Specific styling for About page */
+  .about .author__avatar img {
+    max-width: 180px !important;
+    border-radius: 50%;
+    border: 2px solid #f2f3f3;
+  }
+</style>
+
 <!-- end custom head snippets -->
+
+<style>
+  /* Pantone Blue 072 color theme */
+  :root {
+    --primary-color: #0033A0;
+    --primary-color-light: #1a48a8;
+    --primary-color-dark: #002680;
+  }
+  
+  /* Apply to in-page elements not covered by SCSS */
+  .project-tag:hover {
+    background-color: var(--primary-color-light) !important;
+    color: white !important;
+  }
+  
+  .project-tag.active {
+    background-color: var(--primary-color) !important;
+    color: white !important;
+  }
+  
+  .author__urls a:hover {
+    color: var(--primary-color) !important;
+  }
+  
+  a:hover {
+    color: var(--primary-color-light) !important;
+  }
+  
+  .nav-tab.active {
+    border-bottom-color: var(--primary-color) !important;
+    color: var(--primary-color) !important;
+  }
+  
+  .tag-filter:hover {
+    background-color: var(--primary-color-light) !important;
+    color: white !important;
+  }
+  
+  .tag-filter.active {
+    background-color: var(--primary-color) !important;
+  }
+  
+  .clear-filters {
+    color: var(--primary-color) !important;
+  }
+  
+  .news-title {
+    color: var(--primary-color-dark);
+  }
+  
+  .publication-links a, .bio-content a, .news-section a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  
+  .publication-links a:hover, .bio-content a:hover, .news-section a:hover {
+    text-decoration: underline;
+  }
+</style>
+
+<style>
+  /* Global style overrides for links */
+  a {
+    text-decoration: none !important;
+  }
+  
+  a:hover {
+    text-decoration: none !important;
+  }
+  
+  /* Home page highlights section links */
+  .page__content .highlights a {
+    color: #0033A0;
+  }
+</style>

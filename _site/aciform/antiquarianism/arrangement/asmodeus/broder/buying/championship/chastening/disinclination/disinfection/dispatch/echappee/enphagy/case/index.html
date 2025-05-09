@@ -9,19 +9,19 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Post example | Yifeng Liu</title>
+<!-- begin _includes/seo.html --><title>Post example | Freya Tan</title>
 <meta name="description" content="This post has many categories.">
 
 
-  <meta name="author" content="Yifeng Liu">
+  <meta name="author" content="Freya Tan">
   
-  <meta property="article:author" content="Yifeng Liu">
+  <meta property="article:author" content="Freya Tan">
   
 
 
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
-<meta property="og:site_name" content="Yifeng Liu">
+<meta property="og:site_name" content="Freya Tan">
 <meta property="og:title" content="Post example">
 <meta property="og:url" content="http://localhost:4000/aciform/antiquarianism/arrangement/asmodeus/broder/buying/championship/chastening/disinclination/disinfection/dispatch/echappee/enphagy/case/">
 
@@ -55,14 +55,14 @@
     "@context": "https://schema.org",
     
       "@type": "Person",
-      "name": "Yifeng Liu",
+      "name": "Freya Tan",
       "url": "http://localhost:4000/"
     
   }
 </script>
 
 
-  <meta name="google-site-verification" content="Yifeng Liu‘s website. About Design, Urban and Informatics" />
+  <meta name="google-site-verification" content="Freya Tan's website. About Urban Science and Human Mobility" />
 
 
 
@@ -73,7 +73,7 @@
 
 
 
-  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Yifeng Liu Feed">
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Freya Tan Feed">
 
 
 <!-- https://t.co/dKP3o1e -->
@@ -101,7 +101,145 @@
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
 
+<!-- Custom styles for smaller navigation -->
+<style>
+  /* Make navigation menu text smaller */
+  .greedy-nav a {
+    font-size: 0.75em !important;
+  }
+  
+  .greedy-nav .visible-links li {
+    margin-right: 1em;
+  }
+  
+  .masthead__inner-wrap {
+    padding: 0.5em 1em;
+  }
+  
+  .search__toggle {
+    font-size: 0.75em;
+  }
+  
+  /* Also make the site title smaller */
+  .site-title {
+    font-size: 0.9em !important;
+  }
+  
+  /* Make all page content smaller by default */
+  .page__content {
+    font-size: 0.9em;
+  }
+  
+  /* Make headings slightly smaller too */
+  .page__content h2 {
+    font-size: 1.5em;
+  }
+  
+  .page__content h3 {
+    font-size: 1.3em;
+  }
+  
+  /* Adjust list items */
+  .page__content ul li, .page__content ol li {
+    font-size: 0.95em;
+    margin-bottom: 0.5em;
+  }
+  
+  /* Adjust table text */
+  table {
+    font-size: 0.85em;
+  }
+  
+  /* Make author profile image larger */
+  .author__avatar img {
+    max-width: 150px !important;
+    border-radius: 50%;
+  }
+  
+  /* Specific styling for About page */
+  .about .author__avatar img {
+    max-width: 180px !important;
+    border-radius: 50%;
+    border: 2px solid #f2f3f3;
+  }
+</style>
+
 <!-- end custom head snippets -->
+
+<style>
+  /* Pantone Blue 072 color theme */
+  :root {
+    --primary-color: #0033A0;
+    --primary-color-light: #1a48a8;
+    --primary-color-dark: #002680;
+  }
+  
+  /* Apply to in-page elements not covered by SCSS */
+  .project-tag:hover {
+    background-color: var(--primary-color-light) !important;
+    color: white !important;
+  }
+  
+  .project-tag.active {
+    background-color: var(--primary-color) !important;
+    color: white !important;
+  }
+  
+  .author__urls a:hover {
+    color: var(--primary-color) !important;
+  }
+  
+  a:hover {
+    color: var(--primary-color-light) !important;
+  }
+  
+  .nav-tab.active {
+    border-bottom-color: var(--primary-color) !important;
+    color: var(--primary-color) !important;
+  }
+  
+  .tag-filter:hover {
+    background-color: var(--primary-color-light) !important;
+    color: white !important;
+  }
+  
+  .tag-filter.active {
+    background-color: var(--primary-color) !important;
+  }
+  
+  .clear-filters {
+    color: var(--primary-color) !important;
+  }
+  
+  .news-title {
+    color: var(--primary-color-dark);
+  }
+  
+  .publication-links a, .bio-content a, .news-section a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  
+  .publication-links a:hover, .bio-content a:hover, .news-section a:hover {
+    text-decoration: underline;
+  }
+</style>
+
+<style>
+  /* Global style overrides for links */
+  a {
+    text-decoration: none !important;
+  }
+  
+  a:hover {
+    text-decoration: none !important;
+  }
+  
+  /* Home page highlights section links */
+  .page__content .highlights a {
+    color: #0033A0;
+  }
+</style>
 
   </head>
 
@@ -116,16 +254,67 @@
 
     
 
+<style>
+  /* Make navigation menu text smaller */
+  .greedy-nav a {
+    font-size: 0.75em !important;
+  }
+  
+  .greedy-nav .visible-links li {
+    margin-right: 1em;
+  }
+  
+  /* Set proper content container width and padding */
+  .masthead__inner-wrap {
+    padding: 0.5em 1em;
+    max-width: 100%;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Create container for navigation content only */
+  .masthead__menu {
+    max-width: 1024px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0;
+  }
+  
+  .search__toggle {
+    font-size: 0.75em;
+  }
+  
+  /* Make site title slightly larger than nav items */
+  .site-title {
+    font-size: 0.9em !important;
+  }
+  
+  /* Style for active page in navigation */
+  .greedy-nav .visible-links li a.active {
+    color: #0033A0 !important;
+    font-weight: bold;
+  }
+</style>
+
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
         
         <a class="site-title" href="/">
-          Yifeng Liu - 伊丰
-          <span class="site-subtitle">Design. Urban. Informatics.</span>
+          Freya Tan
+          <span class="site-subtitle">Urban Science. Human Mobility.</span>
         </a>
-        <ul class="visible-links"></ul>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/about/"  >About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/research/"  >Research & Projects</a>
+            </li><li class="masthead__menu-item">
+              <a href="/publications/"  >Publications</a>
+            </li><li class="masthead__menu-item">
+              <a href="/contact/"  >Contact</a>
+            </li></ul>
         
         <button class="search__toggle" type="button">
           <span class="visually-hidden">Toggle search</span>
@@ -156,23 +345,25 @@
   
 
 
-<div itemscope itemtype="https://schema.org/Person" class="h-card">
+<div itemscope itemtype="https://schema.org/Person" class="h-card ">
 
   
     <div class="author__avatar">
-      <a href="http://localhost:4000/about/">
-        <img src="/assets/images/8bitpix-w.png" alt="Yifeng Liu" itemprop="image" class="u-photo">
-      </a>
+      
+        <a href="http://localhost:4000/">
+          <img src="/assets/images/freya_2024.png" alt="Freya Tan" itemprop="image">
+        </a>
+      
     </div>
   
 
   <div class="author__content">
     <h3 class="author__name p-name" itemprop="name">
-      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">Yifeng Liu</a>
+      Freya Tan
     </h3>
     
       <div class="author__bio p-note" itemprop="description">
-        <p>A city planning student.</p>
+        <p>MIT EECS + DUSP Master Student</p>
 
       </div>
     
@@ -190,19 +381,27 @@
       
         
           
-            <li><a href="mailto:liuyf23@mit.com" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+            <li><a href="https://github.com/freya117" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
           
         
           
-            <li><a href="https://github.com/lauyihong" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+            <li><a href="https://freya1919.github.io" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fas fa-fw fa-link" aria-hidden="true"></i><span class="label">Website</span></a></li>
           
         
           
-        
+            <li><a href="https://www.linkedin.com/in/freya-tan-888145258/" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
           
         
           
-            <li><a href="https://www.researchgate.net/profile/Yifeng-Liu-25" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-researchgate" aria-hidden="true"></i><span class="label">ResearchGate</span></a></li>
+            <li><a href="https://www.researchgate.net/profile/Freya-Tan" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-researchgate" aria-hidden="true"></i><span class="label">ResearchGate</span></a></li>
+          
+        
+          
+            <li><a href="https://dusp.mit.edu/people/freya-tan" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fas fa-fw fa-university" aria-hidden="true"></i><span class="label">DUSP Profile</span></a></li>
+          
+        
+          
+            <li><a href="https://cityform.mit.edu/" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fas fa-fw fa-flask" aria-hidden="true"></i><span class="label">City Form Lab</span></a></li>
           
         
           
@@ -211,6 +410,13 @@
 
       
 
+      
+        <li>
+          <a href="mailto:freya117@mit.edu" rel="me" class="u-email">
+            <meta itemprop="email" content="freya117@mit.edu" />
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span>
+          </a>
+        </li>
       
 
       
@@ -428,6 +634,47 @@
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
+        <a href="/posts/2024/06/sample-post/" rel="permalink">Sample Blog Post Template
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">[PLACEHOLDER: Add Post Title]
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
         <a href="/entrepreneurship/bp/" rel="permalink">PathBy BP 1.0
 </a>
       
@@ -579,15 +826,15 @@ Collect relevant journals and related articles
     
       
         
-          <li><a href="https://github.com/lauyihong" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+          <li><a href="https://github.com/freya117" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
         
       
         
-          <li><a href="https://cn.linkedin.com/in/yifeng-liu-359b82240" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+          <li><a href="https://www.linkedin.com/in/freya-tan-888145258/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
         
       
         
-          <li><a href="https://www.researchgate.net/profile/Yifeng-Liu-25" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-researchgate" aria-hidden="true"></i> ResearchGate</a></li>
+          <li><a href="https://www.researchgate.net/profile/Freya-Tan" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-researchgate" aria-hidden="true"></i> ResearchGate</a></li>
         
       
         
@@ -604,7 +851,7 @@ Collect relevant journals and related articles
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2024 Yifeng Liu. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2025 Freya Tan. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>

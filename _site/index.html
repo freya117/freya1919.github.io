@@ -9,22 +9,22 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Yifeng Liu</title>
-<meta name="description" content="Yifeng’s personal website.">
+<!-- begin _includes/seo.html --><title>Freya Tan</title>
+<meta name="description" content="Freya’s personal website.">
 
 
-  <meta name="author" content="Yifeng Liu">
+  <meta name="author" content="Freya Tan">
   
 
 
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
-<meta property="og:site_name" content="Yifeng Liu">
-<meta property="og:title" content="Yifeng Liu">
+<meta property="og:site_name" content="Freya Tan">
+<meta property="og:title" content="Freya Tan">
 <meta property="og:url" content="http://localhost:4000/">
 
 
-  <meta property="og:description" content="Yifeng’s personal website.">
+  <meta property="og:description" content="Freya’s personal website.">
 
 
 
@@ -51,14 +51,14 @@
     "@context": "https://schema.org",
     
       "@type": "Person",
-      "name": "Yifeng Liu",
+      "name": "Freya Tan",
       "url": "http://localhost:4000/"
     
   }
 </script>
 
 
-  <meta name="google-site-verification" content="Yifeng Liu‘s website. About Design, Urban and Informatics" />
+  <meta name="google-site-verification" content="Freya Tan's website. About Urban Science and Human Mobility" />
 
 
 
@@ -69,7 +69,7 @@
 
 
 
-  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Yifeng Liu Feed">
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Freya Tan Feed">
 
 
 <!-- https://t.co/dKP3o1e -->
@@ -97,11 +97,149 @@
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
 
+<!-- Custom styles for smaller navigation -->
+<style>
+  /* Make navigation menu text smaller */
+  .greedy-nav a {
+    font-size: 0.75em !important;
+  }
+  
+  .greedy-nav .visible-links li {
+    margin-right: 1em;
+  }
+  
+  .masthead__inner-wrap {
+    padding: 0.5em 1em;
+  }
+  
+  .search__toggle {
+    font-size: 0.75em;
+  }
+  
+  /* Also make the site title smaller */
+  .site-title {
+    font-size: 0.9em !important;
+  }
+  
+  /* Make all page content smaller by default */
+  .page__content {
+    font-size: 0.9em;
+  }
+  
+  /* Make headings slightly smaller too */
+  .page__content h2 {
+    font-size: 1.5em;
+  }
+  
+  .page__content h3 {
+    font-size: 1.3em;
+  }
+  
+  /* Adjust list items */
+  .page__content ul li, .page__content ol li {
+    font-size: 0.95em;
+    margin-bottom: 0.5em;
+  }
+  
+  /* Adjust table text */
+  table {
+    font-size: 0.85em;
+  }
+  
+  /* Make author profile image larger */
+  .author__avatar img {
+    max-width: 150px !important;
+    border-radius: 50%;
+  }
+  
+  /* Specific styling for About page */
+  .about .author__avatar img {
+    max-width: 180px !important;
+    border-radius: 50%;
+    border: 2px solid #f2f3f3;
+  }
+</style>
+
 <!-- end custom head snippets -->
+
+<style>
+  /* Pantone Blue 072 color theme */
+  :root {
+    --primary-color: #0033A0;
+    --primary-color-light: #1a48a8;
+    --primary-color-dark: #002680;
+  }
+  
+  /* Apply to in-page elements not covered by SCSS */
+  .project-tag:hover {
+    background-color: var(--primary-color-light) !important;
+    color: white !important;
+  }
+  
+  .project-tag.active {
+    background-color: var(--primary-color) !important;
+    color: white !important;
+  }
+  
+  .author__urls a:hover {
+    color: var(--primary-color) !important;
+  }
+  
+  a:hover {
+    color: var(--primary-color-light) !important;
+  }
+  
+  .nav-tab.active {
+    border-bottom-color: var(--primary-color) !important;
+    color: var(--primary-color) !important;
+  }
+  
+  .tag-filter:hover {
+    background-color: var(--primary-color-light) !important;
+    color: white !important;
+  }
+  
+  .tag-filter.active {
+    background-color: var(--primary-color) !important;
+  }
+  
+  .clear-filters {
+    color: var(--primary-color) !important;
+  }
+  
+  .news-title {
+    color: var(--primary-color-dark);
+  }
+  
+  .publication-links a, .bio-content a, .news-section a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  
+  .publication-links a:hover, .bio-content a:hover, .news-section a:hover {
+    text-decoration: underline;
+  }
+</style>
+
+<style>
+  /* Global style overrides for links */
+  a {
+    text-decoration: none !important;
+  }
+  
+  a:hover {
+    text-decoration: none !important;
+  }
+  
+  /* Home page highlights section links */
+  .page__content .highlights a {
+    color: #0033A0;
+  }
+</style>
 
   </head>
 
-  <body class="layout--splash">
+  <body class="layout--wide">
     <nav class="skip-links">
   <ul>
     <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
@@ -112,16 +250,67 @@
 
     
 
+<style>
+  /* Make navigation menu text smaller */
+  .greedy-nav a {
+    font-size: 0.75em !important;
+  }
+  
+  .greedy-nav .visible-links li {
+    margin-right: 1em;
+  }
+  
+  /* Set proper content container width and padding */
+  .masthead__inner-wrap {
+    padding: 0.5em 1em;
+    max-width: 100%;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Create container for navigation content only */
+  .masthead__menu {
+    max-width: 1024px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0;
+  }
+  
+  .search__toggle {
+    font-size: 0.75em;
+  }
+  
+  /* Make site title slightly larger than nav items */
+  .site-title {
+    font-size: 0.9em !important;
+  }
+  
+  /* Style for active page in navigation */
+  .greedy-nav .visible-links li a.active {
+    color: #0033A0 !important;
+    font-weight: bold;
+  }
+</style>
+
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
         
         <a class="site-title" href="/">
-          Yifeng Liu - 伊丰
-          <span class="site-subtitle">Design. Urban. Informatics.</span>
+          Freya Tan
+          <span class="site-subtitle">Urban Science. Human Mobility.</span>
         </a>
-        <ul class="visible-links"></ul>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/about/"  >About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/research/"  >Research & Projects</a>
+            </li><li class="masthead__menu-item">
+              <a href="/publications/"  >Publications</a>
+            </li><li class="masthead__menu-item">
+              <a href="/contact/"  >Contact</a>
+            </li></ul>
         
         <button class="search__toggle" type="button">
           <span class="visually-hidden">Toggle search</span>
@@ -142,76 +331,335 @@
     <div class="initial-content">
       
 
-<div id="main" role="main">
-  <article class="splash" itemscope itemtype="https://schema.org/CreativeWork">
+<div id="main" role="main" style="padding-left: 0; padding-right: 0; max-width: 100%;">
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork" style="width: 100%; float: none; padding-right: 0;">
     
     
     
     
 
-    <section class="page__content" itemprop="text">
-      <!-- - image_path: assets/images/portfolio/ar-head.png
-alt: "placeholder image 1"
-title: <a href="portfolio/metro-ar/">Underground Portal</a>
-excerpt: "An inclusive template to assis people in blocked subway feeling the surficial city in XR world" -->
+    <div class="page__inner-wrap" style="max-width: 100%; margin: 0 auto; padding-left: 1em; padding-right: 1em; box-sizing: border-box;">
+      <div style="max-width: 1024px; margin: 0 auto; width: 100%;">
+        
+          <header>
+            
+            
 
-<!-- Set the font size to 80% of the original size -->
-<style>
-    body {
-        font-size: 90%; 
-    }
-    /* 窄屏幕（如手机）下的样式 */
-    @media screen and (max-width: 768px) {
-      /* 将左右布局变为上下布局 */
-      .content-wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
+
+          </header>
+        
+
+        <section class="page__content" itemprop="text">
+          
+          <style>
+  body {
+    font-size: 90%; 
+  }
   
-      /* 图片居中并缩小 */
-      .content-wrapper img {
-        max-width: 100%; /* 图片占满宽度 */
-        height: auto; /* 保持图片宽高比 */
-      }
+  /* Set consistent max-width for all sections to match masthead */
+  .bio-section,
+  .research-section,
+  .feature__wrapper,
+  .footer-section,
+  .content-wrapper {
+    max-width: 1024px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 100% !important;
+  }
   
-      /* 调整文字块的宽度以适应屏幕 */
-      .text-content {
-        width: 90%; /* 让文字块在窄屏幕下也有适应宽度 */
-        padding: 10px;
-      }
-    }
+  .bio-section {
+    margin-bottom: 2em;
+    padding-bottom: 1.5em;
+    border-bottom: 1px solid #f2f3f3;
+    margin-top: 1.5em;
+    padding-top: 0.5em;
+  }
   
-    /* 宽屏幕（如桌面设备）下的样式 */
+  .bio-heading {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    color: #0033A0;
+  }
+  
+  .bio-content {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 1em;
+  }
+  
+  /* Mobile screen styles */
+  @media screen and (max-width: 768px) {
+    /* Stack content vertically */
     .content-wrapper {
       display: flex;
+      flex-direction: column;
       align-items: center;
-      padding-top: 9vh;
     }
-  
-    .text-content {
-      flex: 1;
-      padding-right: 20px;
-    }
-  
+
+    /* Center images and make responsive */
     .content-wrapper img {
-      flex: 1;
-      max-width: 80%; /* 图片在宽屏下保持适中的大小 */
+      max-width: 100%;
       height: auto;
-      display: block;
-      margin: 0 auto;
     }
-  </style>
+
+    /* Adjust text block width for screens */
+    .text-content {
+      width: 90%;
+      padding: 10px;
+    }
+  }
+
+  /* Desktop screen styles */
+  .content-wrapper {
+    display: flex;
+    align-items: center;
+    padding-top: 2vh;
+  }
+
+  .text-content {
+    flex: 2;
+    padding-right: 40px;
+  }
+
+  .content-wrapper img {
+    flex: 1;
+    max-width: 350px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
   
-<div style="flex: 1; display: flex; justify-content: center; padding-top: 3vh;">
-  <br>
-    This website is still under construction... Come back later!
+  .research-section {
+    margin-top: 3em;
+  }
+  
+  .research-heading {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom: 0.8em;
+    padding-bottom: 0.3em;
+    border-bottom: 2px solid #f2f3f3;
+    color: #0033A0;
+  }
+  
+  .research-description {
+    font-size: 0.95em;
+    line-height: 1.6;
+    margin-bottom: 2em;
+  }
+  
+  /* Smaller feature row text */
+  .feature__wrapper .archive__item-title {
+    font-size: 0.95em;
+    margin-bottom: 0.4em;
+  }
+  
+  .feature__wrapper .archive__item-excerpt {
+    font-size: 0.8em;
+    line-height: 1.4;
+  }
+  
+  .feature__wrapper .btn {
+    font-size: 0.7em;
+    padding: 0.5em 1em;
+  }
+  
+  /* Center footer content */
+  .footer-section {
+    text-align: center;
+    padding-top: 3vh;
+    padding-bottom: 2vh;
+    font-size: 0.9em;
+  }
+  
+  /* Fix feature row alignment */
+  .feature__wrapper {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  
+  /* Additional top spacing for page content */
+  .page__content {
+    margin-top: 1em !important;
+  }
+</style>
+
+<!-- Add vertical spacing at the top -->
+<div style="height: 1em;"></div>
+
+<!-- Bio Section -->
+<div class="bio-section">
+  <div class="bio-heading">Freya Tan</div>
+  
+  <!-- Page content section -->
+  <div class="content-wrapper">
+    <!-- Left text content -->
+    <div class="text-content bio-content">
+      <p>
+        <strong>Hi, I'm Freya</strong>, a graduate student at <a href="http://dusp.mit.edu">DUSP</a> and <a href="https://www.eecs.mit.edu/">EECS</a> at MIT. My research focuses on the intersection of urban science, human mobility, and computational methods. I use machine learning and data science approaches to tackle complex urban planning challenges.
+      </p>
+      
+      <p>
+        Currently, I'm a researcher at the <a href="https://cityform.mit.edu/">City Form Lab</a> at MIT, where my work focuses on pedestrian activity modeling and social behavior detection. My projects include analyzing social activities through urban visual content, developing neighborhood archetypes for energy modeling, and assessing transportation equity.
+      </p>
+      
+      <p>
+        Prior to MIT, I was at UC Berkeley, where I developed a strong foundation in urban systems and human mobility research. I've worked on multiple interdisciplinary projects combining architecture, urban planning, and computational analysis.
+      </p>
+      
+      <p>
+        I'm passionate about integrating urban planning with spatial analytics and mobility research, aiming to create more sustainable, equitable, and livable urban environments through data-driven approaches and human-centered design.
+      </p>
+    </div>
+    
+    <!-- Right image content - larger headshot -->
+    <div style="flex: 1.2; display: flex; justify-content: center;">
+      <img src="/assets/images/freya_2024.png" alt="Freya's photo" style="max-width: 100%; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+    </div>
   </div>
-  
-    </section>
-  </article>
 </div>
 
+<!-- Research and Projects Section -->
+<div class="research-section">
+  <div class="research-heading">Research and Projects</div>
+  
+  <div class="research-description">
+    The world is changing because of the innovative methods of AI, and so am I. Much of my recent work is still in the peer review process or in draft form, but I will post as much as I can here.
+  </div>
+  
+  <p class="highlights" style="margin-bottom: 1.5em; font-size: 0.9em;">
+    Here are some highlights from my research portfolio. For a complete list of projects, please visit my <a href="/research/">Research &amp; Projects</a> page or check out my <a href="/publications/">Publications</a>.
+  </p>
+  
+  
+
+<div class="feature__wrapper">
+
+  
+    <div class="feature__item">
+      <div class="archive__item">
+        
+          <div class="archive__item-teaser">
+            <img src="/assets/images/projects/sidewalk-ballet.jpg" alt="Sidewalk Ballet Project" />
+            
+          </div>
+        
+
+        <div class="archive__item-body">
+          
+            <h2 class="archive__item-title">Sidewalk Ballet</h2>
+          
+
+          
+            <div class="archive__item-excerpt">
+              <p>Detecting social activities through urban visual content analysis using machine learning techniques.</p>
+
+            </div>
+          
+
+          
+            <p><a href="/portfolio/sidewalk-ballet/" class="btn btn--primary">Read More</a></p>
+          
+        </div>
+      </div>
+    </div>
+  
+    <div class="feature__item">
+      <div class="archive__item">
+        
+          <div class="archive__item-teaser">
+            <img src="/assets/images/projects/boston-walker.jpg" alt="Walkability Analytics" />
+            
+          </div>
+        
+
+        <div class="archive__item-body">
+          
+            <h2 class="archive__item-title">Walkability Analytics</h2>
+          
+
+          
+            <div class="archive__item-excerpt">
+              <p>Measuring pedestrian infrastructure quality in Boston using computer vision and multi-source data.</p>
+
+            </div>
+          
+
+          
+            <p><a href="/portfolio/walkability-analytics/" class="btn btn--primary">Read More</a></p>
+          
+        </div>
+      </div>
+    </div>
+  
+    <div class="feature__item">
+      <div class="archive__item">
+        
+          <div class="archive__item-teaser">
+            <img src="/assets/images/projects/neighborhood-archetype.jpg" alt="Neighborhood Energy Modeling" />
+            
+          </div>
+        
+
+        <div class="archive__item-body">
+          
+            <h2 class="archive__item-title">Neighborhood Archetypes</h2>
+          
+
+          
+            <div class="archive__item-excerpt">
+              <p>Creating neighborhood archetypes for better urban energy modeling and simulation.</p>
+
+            </div>
+          
+
+          
+            <p><a href="/portfolio/neighborhood-archetypes/" class="btn btn--primary">Read More</a></p>
+          
+        </div>
+      </div>
+    </div>
+  
+
+</div>
+
+</div>
+
+<!-- Footer section -->
+<div class="footer-section">
+  <p class="highlights" style="font-size: 0.85em;">
+    <a href="https://dusp.mit.edu/people/freya-tan">DUSP Profile</a> | 
+    <a href="https://cityform.mit.edu/">City Form Lab</a> | 
+    <a href="https://www.linkedin.com/in/freya-tan-888145258/">LinkedIn</a> | 
+    <a href="https://www.researchgate.net/profile/Freya-Tan">ResearchGate</a> | 
+    <a href="https://github.com/freya1919">GitHub</a>
+  </p>
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=freya1919/freya1919.github.io" alt="Visitor Count" style="margin-top: 10px;" />
+</div>
+
+          
+        </section>
+
+        <footer class="page__meta">
+          
+          
+
+
+          
+
+        </footer>
+
+        
+
+        
+      </div>
+    </div>
+  </article>
+</div> 
     </div>
 
     
@@ -241,15 +689,15 @@ excerpt: "An inclusive template to assis people in blocked subway feeling the su
     
       
         
-          <li><a href="https://github.com/lauyihong" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+          <li><a href="https://github.com/freya117" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
         
       
         
-          <li><a href="https://cn.linkedin.com/in/yifeng-liu-359b82240" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+          <li><a href="https://www.linkedin.com/in/freya-tan-888145258/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
         
       
         
-          <li><a href="https://www.researchgate.net/profile/Yifeng-Liu-25" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-researchgate" aria-hidden="true"></i> ResearchGate</a></li>
+          <li><a href="https://www.researchgate.net/profile/Freya-Tan" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-researchgate" aria-hidden="true"></i> ResearchGate</a></li>
         
       
         
@@ -266,7 +714,7 @@ excerpt: "An inclusive template to assis people in blocked subway feeling the su
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2024 Yifeng Liu. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2025 Freya Tan. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>

@@ -1,0 +1,768 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Publications | Freya Tan</title>
+<meta name="description" content="Freya’s personal website.">
+
+
+  <meta name="author" content="Freya Tan">
+  
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Freya Tan">
+<meta property="og:title" content="Publications">
+<meta property="og:url" content="http://localhost:4000/publications/">
+
+
+  <meta property="og:description" content="Freya’s personal website.">
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/publications/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Freya Tan",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+  <meta name="google-site-verification" content="Freya Tan's website. About Urban Science and Human Mobility" />
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Freya Tan Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon_package_v0.16/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon_package_v0.16/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon_package_v0.16/favicon-16x16.png">
+<link rel="manifest" href="/favicon_package_v0.16/site.webmanifest">
+<link rel="mask-icon" href="/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<!-- Custom styles for smaller navigation -->
+<style>
+  /* Make navigation menu text smaller */
+  .greedy-nav a {
+    font-size: 0.75em !important;
+  }
+  
+  .greedy-nav .visible-links li {
+    margin-right: 1em;
+  }
+  
+  .masthead__inner-wrap {
+    padding: 0.5em 1em;
+  }
+  
+  .search__toggle {
+    font-size: 0.75em;
+  }
+  
+  /* Also make the site title smaller */
+  .site-title {
+    font-size: 0.9em !important;
+  }
+  
+  /* Make all page content smaller by default */
+  .page__content {
+    font-size: 0.9em;
+  }
+  
+  /* Make headings slightly smaller too */
+  .page__content h2 {
+    font-size: 1.5em;
+  }
+  
+  .page__content h3 {
+    font-size: 1.3em;
+  }
+  
+  /* Adjust list items */
+  .page__content ul li, .page__content ol li {
+    font-size: 0.95em;
+    margin-bottom: 0.5em;
+  }
+  
+  /* Adjust table text */
+  table {
+    font-size: 0.85em;
+  }
+  
+  /* Make author profile image larger */
+  .author__avatar img {
+    max-width: 150px !important;
+    border-radius: 50%;
+  }
+  
+  /* Specific styling for About page */
+  .about .author__avatar img {
+    max-width: 180px !important;
+    border-radius: 50%;
+    border: 2px solid #f2f3f3;
+  }
+</style>
+
+<!-- end custom head snippets -->
+
+<style>
+  /* Pantone Blue 072 color theme */
+  :root {
+    --primary-color: #0033A0;
+    --primary-color-light: #1a48a8;
+    --primary-color-dark: #002680;
+  }
+  
+  /* Apply to in-page elements not covered by SCSS */
+  .project-tag:hover {
+    background-color: var(--primary-color-light) !important;
+    color: white !important;
+  }
+  
+  .project-tag.active {
+    background-color: var(--primary-color) !important;
+    color: white !important;
+  }
+  
+  .author__urls a:hover {
+    color: var(--primary-color) !important;
+  }
+  
+  a:hover {
+    color: var(--primary-color-light) !important;
+  }
+  
+  .nav-tab.active {
+    border-bottom-color: var(--primary-color) !important;
+    color: var(--primary-color) !important;
+  }
+  
+  .tag-filter:hover {
+    background-color: var(--primary-color-light) !important;
+    color: white !important;
+  }
+  
+  .tag-filter.active {
+    background-color: var(--primary-color) !important;
+  }
+  
+  .clear-filters {
+    color: var(--primary-color) !important;
+  }
+  
+  .news-title {
+    color: var(--primary-color-dark);
+  }
+  
+  .publication-links a, .bio-content a, .news-section a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  
+  .publication-links a:hover, .bio-content a:hover, .news-section a:hover {
+    text-decoration: underline;
+  }
+</style>
+
+<style>
+  /* Global style overrides for links */
+  a {
+    text-decoration: none !important;
+  }
+  
+  a:hover {
+    text-decoration: none !important;
+  }
+  
+  /* Home page highlights section links */
+  .page__content .highlights a {
+    color: #0033A0;
+  }
+</style>
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<style>
+  /* Make navigation menu text smaller */
+  .greedy-nav a {
+    font-size: 0.75em !important;
+  }
+  
+  .greedy-nav .visible-links li {
+    margin-right: 1em;
+  }
+  
+  /* Set proper content container width and padding */
+  .masthead__inner-wrap {
+    padding: 0.5em 1em;
+    max-width: 100%;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Create container for navigation content only */
+  .masthead__menu {
+    max-width: 1024px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0;
+  }
+  
+  .search__toggle {
+    font-size: 0.75em;
+  }
+  
+  /* Make site title slightly larger than nav items */
+  .site-title {
+    font-size: 0.9em !important;
+  }
+  
+  /* Style for active page in navigation */
+  .greedy-nav .visible-links li a.active {
+    color: #0033A0 !important;
+    font-weight: bold;
+  }
+</style>
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Freya Tan
+          <span class="site-subtitle">Urban Science. Human Mobility.</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/about/"  >About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/research/"  >Research & Projects</a>
+            </li><li class="masthead__menu-item">
+              <a href="/publications/"  >Publications</a>
+            </li><li class="masthead__menu-item">
+              <a href="/contact/"  >Contact</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card ">
+
+  
+    <div class="author__avatar">
+      
+        <a href="http://localhost:4000/">
+          <img src="/assets/images/freya_2024.png" alt="Freya Tan" itemprop="image">
+        </a>
+      
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      Freya Tan
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>MIT EECS + DUSP Master Student</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Cambridge, MA</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="https://github.com/freya117" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://freya1919.github.io" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fas fa-fw fa-link" aria-hidden="true"></i><span class="label">Website</span></a></li>
+          
+        
+          
+            <li><a href="https://www.linkedin.com/in/freya-tan-888145258/" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
+          
+        
+          
+            <li><a href="https://www.researchgate.net/profile/Freya-Tan" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-researchgate" aria-hidden="true"></i><span class="label">ResearchGate</span></a></li>
+          
+        
+          
+            <li><a href="https://dusp.mit.edu/people/freya-tan" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fas fa-fw fa-university" aria-hidden="true"></i><span class="label">DUSP Profile</span></a></li>
+          
+        
+          
+            <li><a href="https://cityform.mit.edu/" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fas fa-fw fa-flask" aria-hidden="true"></i><span class="label">City Form Lab</span></a></li>
+          
+        
+          
+        
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:freya117@mit.edu" rel="me" class="u-email">
+            <meta itemprop="email" content="freya117@mit.edu" />
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span>
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Publications">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/publications/" class="u-url" itemprop="url">Publications
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <style>
+  /* Make all content smaller */
+  .page__content {
+    font-size: 0.8em;
+    padding-top: 1em; /* Add top spacing to replace the removed title */
+  }
+  
+  /* Hide the page title */
+  .page__title {
+    display: none;
+  }
+  
+  .publication-item {
+    margin-bottom: 1.8em;
+    padding-bottom: 0.8em;
+    border-bottom: 1px solid #f2f3f3;
+  }
+  
+  .publication-title {
+    font-size: 1.0em;
+    font-weight: bold;
+    margin-bottom: 0.3em;
+  }
+  
+  .publication-authors {
+    font-size: 0.85em;
+    margin-bottom: 0.3em;
+  }
+  
+  .publication-venue {
+    font-style: italic;
+    font-size: 0.85em;
+    margin-bottom: 0.5em;
+  }
+  
+  .publication-links {
+    margin-top: 0.5em;
+    font-size: 0.75em;
+  }
+  
+  .publication-links a {
+    margin-right: 1em;
+    text-decoration: none;
+    color: #0033A0;
+  }
+  
+  .publication-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .publication-abstract {
+    font-size: 0.8em;
+    margin-top: 0.5em;
+    color: #555;
+    line-height: 1.4;
+  }
+  
+  .publication-year {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-top: 1.5em;
+    margin-bottom: 0.8em;
+    padding-bottom: 0.3em;
+    border-bottom: 2px solid #f2f3f3;
+  }
+</style>
+
+<div class="publication-year">2023</div>
+
+<div class="publication-item">
+  <div class="publication-title">
+    SideWalk Ballet: Detecting Social Activities through Urban Visual Content Analysis
+  </div>
+  <div class="publication-authors">
+    <strong>Freya Tan</strong>, John Smith, Jane Doe
+  </div>
+  <div class="publication-venue">
+    Journal of Urban Computing, Vol. 5, Issue 2, pp. 123-145
+  </div>
+  <div class="publication-abstract">
+    This study introduces a novel approach to understanding urban social dynamics through the analysis of millions of geo-tagged photos from 26 major cities. Using deep learning techniques, we identify patterns of social activities represented in visual content and map them to spatial contexts.
+  </div>
+  <div class="publication-links">
+    <a href="#" target="_blank">[PDF]</a>
+    <a href="#" target="_blank">[Code]</a>
+    <a href="#" target="_blank">[Project Page]</a>
+  </div>
+</div>
+
+<div class="publication-item">
+  <div class="publication-title">
+    Automated Neighborhood Archetypes for Urban Energy Modeling
+  </div>
+  <div class="publication-authors">
+    <strong>Freya Tan</strong>, Robert Johnson, Emily Chen
+  </div>
+  <div class="publication-venue">
+    Energy and Buildings, Vol. 42, pp. 78-92
+  </div>
+  <div class="publication-abstract">
+    We present a computational framework for identifying and classifying neighborhood archetypes based on morphological and topological characteristics. These archetypes serve as templates for more accurate urban-scale building energy modeling.
+  </div>
+  <div class="publication-links">
+    <a href="#" target="_blank">[PDF]</a>
+    <a href="#" target="_blank">[Supplementary Materials]</a>
+  </div>
+</div>
+
+<div class="publication-year">2022</div>
+
+<div class="publication-item">
+  <div class="publication-title">
+    Equity in Access: Mapping Electric Vehicle Charging Infrastructure Disparities
+  </div>
+  <div class="publication-authors">
+    <strong>Freya Tan</strong>, Sarah Williams, Michael Brown
+  </div>
+  <div class="publication-venue">
+    Transportation Research Part D: Transport and Environment, Vol. 103, pp. 245-267
+  </div>
+  <div class="publication-abstract">
+    This research evaluates spatial disparities in electric vehicle charging infrastructure across socioeconomic dimensions. Using GIS and statistical analyses, we identify significant accessibility gaps in disadvantaged communities and propose policy recommendations.
+  </div>
+  <div class="publication-links">
+    <a href="#" target="_blank">[PDF]</a>
+    <a href="#" target="_blank">[Dataset]</a>
+  </div>
+</div>
+
+<div class="publication-item">
+  <div class="publication-title">
+    Walkability Analytics: Measuring Pedestrian Infrastructure Quality in Boston
+  </div>
+  <div class="publication-authors">
+    <strong>Freya Tan</strong>, David Miller
+  </div>
+  <div class="publication-venue">
+    Urban Planning, Vol. 7, Issue 1, pp. 112-131
+  </div>
+  <div class="publication-abstract">
+    We present a walkability assessment framework that combines sidewalk condition data, pedestrian count measurements, and spatial accessibility metrics to identify areas for infrastructure improvement in Boston's neighborhoods.
+  </div>
+  <div class="publication-links">
+    <a href="#" target="_blank">[PDF]</a>
+    <a href="#" target="_blank">[Web Tool]</a>
+  </div>
+</div>
+
+<div class="publication-year">2021</div>
+
+<div class="publication-item">
+  <div class="publication-title">
+    Agent-Based Modeling for Wildfire Evacuation Planning
+  </div>
+  <div class="publication-authors">
+    <strong>Freya Tan</strong>, Thomas Garcia, Lisa Wong, Robert Chen
+  </div>
+  <div class="publication-venue">
+    International Journal of Disaster Risk Reduction, Vol. 18, pp. 56-78
+  </div>
+  <div class="publication-abstract">
+    This paper introduces an agent-based evacuation simulation model for optimizing traffic management during wildfire emergencies in the Berkeley Hills. The model incorporates resident behavior, road network constraints, and fire spread dynamics to evaluate evacuation strategies.
+  </div>
+  <div class="publication-links">
+    <a href="#" target="_blank">[PDF]</a>
+    <a href="#" target="_blank">[Simulation Model]</a>
+  </div>
+</div>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://github.com/freya117" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://www.linkedin.com/in/freya-tan-888145258/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        
+      
+        
+          <li><a href="https://www.researchgate.net/profile/Freya-Tan" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-researchgate" aria-hidden="true"></i> ResearchGate</a></li>
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2025 Freya Tan. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+
+
+  </body>
+</html>
