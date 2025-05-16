@@ -150,17 +150,28 @@
     font-size: 0.85em;
   }
   
-  /* Make author profile image larger */
+  /* Make author profile image consistent across all pages */
   .author__avatar img {
     max-width: 150px !important;
     border-radius: 50%;
   }
   
-  /* Specific styling for About page */
-  .about .author__avatar img {
-    max-width: 180px !important;
-    border-radius: 50%;
-    border: 2px solid #f2f3f3;
+  /* Make sidebar text smaller */
+  .sidebar .author__name {
+    font-size: 0.9em !important;
+  }
+  
+  .sidebar .author__bio {
+    font-size: 0.8em !important;
+  }
+  
+  .sidebar p, 
+  .sidebar li {
+    font-size: 0.8em !important;
+  }
+  
+  .sidebar .author__urls-wrapper .author__urls a {
+    font-size: 0.75em !important;
   }
 </style>
 
@@ -240,6 +251,12 @@
     color: #0033A0;
   }
 </style>
+
+<!-- Load custom JavaScript -->
+<script src="/assets/js/custom.js"></script>
+
+<!-- Load project styles -->
+<link rel="stylesheet" href="/assets/css/project-style.css">
 
   </head>
 
@@ -352,7 +369,7 @@
       
         <a href="http://localhost:4000/">
           <img src="/assets/images/freya_2024.png" alt="Freya Tan" itemprop="image">
-        </a>
+      </a>
       
     </div>
   
@@ -518,7 +535,9 @@
 
       <section class="page__content e-content" itemprop="text">
         
-        <h1 id="placeholder-add-post-title">[PLACEHOLDER: Add Post Title]</h1>
+        
+        
+          <h1 id="placeholder-add-post-title">[PLACEHOLDER: Add Post Title]</h1>
 
 <p>[PLACEHOLDER: Add a brief introduction to your blog post. Explain what the post is about and why it matters.]</p>
 
@@ -583,6 +602,8 @@
 <p>[PLACEHOLDER: Link to related posts or external resources]</p>
 
         
+        
+        
       </section>
 
       <footer class="page__meta">
@@ -631,7 +652,7 @@
       
   <nav class="pagination">
     
-      <a href="/entrepreneurship/bp/" class="pagination--pager" title="PathBy BP 1.0
+      <a href="/aciform/bp/" class="pagination--pager" title="Spatial Data Fusion
 ">Previous</a>
     
     
@@ -659,49 +680,7 @@
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/entrepreneurship/bp/" rel="permalink">PathBy BP 1.0
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          3 minute read
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">
-
-
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/operation/reading%20list/spatial%20analysis/note/" rel="permalink">location operation reading list
+        <a href="/aciform/bp/" rel="permalink">Spatial Data Fusion
 </a>
       
     </h2>
@@ -726,8 +705,7 @@
   </p>
 
 
-    <p class="archive__item-excerpt" itemprop="description">Related field reading list
-Collect relevant journals and related articles
+    <p class="archive__item-excerpt" itemprop="description">#
 
 </p>
   </article>
@@ -743,7 +721,49 @@ Collect relevant journals and related articles
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/aciform/antiquarianism/arrangement/asmodeus/broder/buying/championship/chastening/disinclination/disinfection/dispatch/echappee/enphagy/note/" rel="permalink">fast pitch note
+        <a href="/operation/reading%20list/spatial%20analysis/note/" rel="permalink">Sidewalk Ballet
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Keywords
+computer vision
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/aciform/note/" rel="permalink">Boston Walker
 </a>
       
     </h2>
@@ -784,7 +804,7 @@ Collect relevant journals and related articles
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/aciform/antiquarianism/arrangement/asmodeus/broder/buying/championship/chastening/disinclination/disinfection/dispatch/echappee/enphagy/case/" rel="permalink">Post example
+        <a href="/aciform/case/" rel="permalink">Bridging The Charging Gap
 </a>
       
     </h2>

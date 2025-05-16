@@ -30,14 +30,7 @@ author_profile: true
     margin-bottom: 0.4em;
   }
   
-  /* Make author image larger specifically on about page */
-  .about .author__avatar img {
-    max-width: 200px !important;
-    height: auto !important;
-    border-radius: 50%;
-    border: none !important;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-  }
+  /* Remove the custom author avatar size for About page */
   
   /* Hide the page title */
   .page__title {

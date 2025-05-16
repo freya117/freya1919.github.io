@@ -146,17 +146,28 @@
     font-size: 0.85em;
   }
   
-  /* Make author profile image larger */
+  /* Make author profile image consistent across all pages */
   .author__avatar img {
     max-width: 150px !important;
     border-radius: 50%;
   }
   
-  /* Specific styling for About page */
-  .about .author__avatar img {
-    max-width: 180px !important;
-    border-radius: 50%;
-    border: 2px solid #f2f3f3;
+  /* Make sidebar text smaller */
+  .sidebar .author__name {
+    font-size: 0.9em !important;
+  }
+  
+  .sidebar .author__bio {
+    font-size: 0.8em !important;
+  }
+  
+  .sidebar p, 
+  .sidebar li {
+    font-size: 0.8em !important;
+  }
+  
+  .sidebar .author__urls-wrapper .author__urls a {
+    font-size: 0.75em !important;
   }
 </style>
 
@@ -236,6 +247,12 @@
     color: #0033A0;
   }
 </style>
+
+<!-- Load custom JavaScript -->
+<script src="/assets/js/custom.js"></script>
+
+<!-- Load project styles -->
+<link rel="stylesheet" href="/assets/css/project-style.css">
 
   </head>
 
@@ -348,7 +365,7 @@
       
         <a href="http://localhost:4000/">
           <img src="/assets/images/freya_2024.png" alt="Freya Tan" itemprop="image">
-        </a>
+      </a>
       
     </div>
   
@@ -496,7 +513,9 @@
 
       <section class="page__content e-content" itemprop="text">
         
-        <style>
+        
+        
+          <style>
   /* Make all text smaller on the contact page */
   .page__content {
     font-size: 0.75em;
@@ -641,6 +660,8 @@ United States</p>
 </style>
 
 
+        
+        
         
       </section>
 

@@ -146,17 +146,28 @@
     font-size: 0.85em;
   }
   
-  /* Make author profile image larger */
+  /* Make author profile image consistent across all pages */
   .author__avatar img {
     max-width: 150px !important;
     border-radius: 50%;
   }
   
-  /* Specific styling for About page */
-  .about .author__avatar img {
-    max-width: 180px !important;
-    border-radius: 50%;
-    border: 2px solid #f2f3f3;
+  /* Make sidebar text smaller */
+  .sidebar .author__name {
+    font-size: 0.9em !important;
+  }
+  
+  .sidebar .author__bio {
+    font-size: 0.8em !important;
+  }
+  
+  .sidebar p, 
+  .sidebar li {
+    font-size: 0.8em !important;
+  }
+  
+  .sidebar .author__urls-wrapper .author__urls a {
+    font-size: 0.75em !important;
   }
 </style>
 
@@ -236,6 +247,12 @@
     color: #0033A0;
   }
 </style>
+
+<!-- Load custom JavaScript -->
+<script src="/assets/js/custom.js"></script>
+
+<!-- Load project styles -->
+<link rel="stylesheet" href="/assets/css/project-style.css">
 
   </head>
 
@@ -494,7 +511,9 @@
 
       <section class="page__content e-content" itemprop="text">
         
-        <style>
+        
+        
+          <style>
   /* Make all text smaller on the about page */
   .page__content {
     font-size: 0.75em;
@@ -520,14 +539,7 @@
     margin-bottom: 0.4em;
   }
   
-  /* Make author image larger specifically on about page */
-  .about .author__avatar img {
-    max-width: 200px !important;
-    height: auto !important;
-    border-radius: 50%;
-    border: none !important;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-  }
+  /* Remove the custom author avatar size for About page */
   
   /* Hide the page title */
   .page__title {
@@ -683,6 +695,8 @@ balancing accessibility, energy demand and cost factors</li>
 <p>Feel free to <a href="/contact/">get in touch</a> if you’re interested in collaborating or have questions about my work.</p>
 
 
+        
+        
         
       </section>
 

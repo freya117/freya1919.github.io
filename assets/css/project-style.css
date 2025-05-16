@@ -1,0 +1,136 @@
+/* 
+ * PROJECT PAGES STYLES ONLY
+ * WARNING: Changes to this file will only affect project pages
+ * Do not modify this file for other page types (about, publications, contact, etc.)
+ */
+
+/* Project page styles to constrain width similar to Research & Projects page */
+.layout--project .page__content, 
+.layout--project .project-content {
+  max-width: 1024px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 100% !important;
+}
+
+/* Fix for project layout to make it more like the wide layout */
+.layout--project #main {
+  max-width: 100% !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.layout--project .page {
+  width: 100% !important;
+  float: none !important;
+  padding-right: 0 !important;
+}
+
+/* Center the page inner wrap for projects */
+.layout--project .page__inner-wrap {
+  max-width: 100% !important;
+  margin: 0 auto !important;
+  padding-left: 1em !important; 
+  padding-right: 1em !important;
+  box-sizing: border-box !important;
+}
+
+/* Add more space above project title */
+.layout--project header {
+  margin-top: 2em !important;
+  padding-top: 2em !important;
+}
+
+.layout--project .page__title {
+  margin-top: 1em !important;
+}
+
+/* Make project title blue */
+.layout--project .page__title a {
+  color: #0033A0 !important;
+}
+
+/* Center all content in projects */
+.layout--project .portfolio-item {
+  max-width: 1024px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 100% !important;
+}
+
+/* Ensure images maintain aspect ratio and don't overflow */
+.layout--project .page__content img,
+.layout--project .project-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Project heading styles to match main site */
+.layout--project .page__content h2,
+.layout--project .project-content h2 {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-top: 1.5em;
+  margin-bottom: 0.8em;
+  padding-bottom: 0.3em;
+  border-bottom: 2px solid #f2f3f3;
+  color: #0033A0;
+}
+
+.layout--project .page__content h3,
+.layout--project .project-content h3 {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 1.2em;
+  margin-bottom: 0.6em;
+  color: #0033A0;
+}
+
+/* List styles */
+.layout--project .page__content ul,
+.layout--project .project-content ul {
+  margin-left: 1.2em;
+  margin-bottom: 1.2em;
+}
+
+.layout--project .page__content li,
+.layout--project .project-content li {
+  margin-bottom: 0.4em;
+  font-size: 0.9em;
+}
+
+/* Gallery styles */
+.layout--project .page__content .gallery,
+.layout--project .project-content .gallery {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+/* Add top spacing to replace the removed title if needed */
+.layout--project .page__content {
+  padding-top: 1em;
+}
+
+/* Make content more readable with proper line-height and narrower text blocks */
+.layout--project .page__content p,
+.layout--project .project-content p {
+  font-size: 0.9em;
+  line-height: 1.6;
+  margin-bottom: 1.2em;
+}
+
+/* Center article metadata */
+.layout--project .page__meta {
+  max-width: 1024px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Center pagination */
+.layout--project .pagination {
+  max-width: 1024px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+} 

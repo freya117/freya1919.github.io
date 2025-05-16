@@ -1,28 +1,6 @@
 ---
 layout: wide
 author_profile: false
-feature_row:
-  - image_path: /assets/images/projects/sidewalk-ballet.jpg
-    alt: "Sidewalk Ballet Project"
-    title: "Sidewalk Ballet"
-    excerpt: "Detecting social activities through urban visual content analysis using machine learning techniques."
-    url: "/portfolio/sidewalk-ballet/"
-    btn_label: "Read More"
-    btn_class: "btn--primary"
-  - image_path: /assets/images/projects/boston-walker.jpg
-    alt: "Walkability Analytics"
-    title: "Walkability Analytics"
-    excerpt: "Measuring pedestrian infrastructure quality in Boston using computer vision and multi-source data."
-    url: "/portfolio/walkability-analytics/"
-    btn_label: "Read More"
-    btn_class: "btn--primary"
-  - image_path: /assets/images/projects/neighborhood-archetype.jpg
-    alt: "Neighborhood Energy Modeling"
-    title: "Neighborhood Archetypes"
-    excerpt: "Creating neighborhood archetypes for better urban energy modeling and simulation."
-    url: "/portfolio/neighborhood-archetypes/"
-    btn_label: "Read More"
-    btn_class: "btn--primary"
 ---
 
 <style>
@@ -51,7 +29,7 @@ feature_row:
   }
   
   .bio-heading {
-    font-size: 1.8em;
+    font-size: 2em;
     font-weight: bold;
     margin-bottom: 0.5em;
     color: #0033A0;
@@ -126,20 +104,94 @@ feature_row:
     margin-bottom: 2em;
   }
   
-  /* Smaller feature row text */
-  .feature__wrapper .archive__item-title {
-    font-size: 0.95em;
-    margin-bottom: 0.4em;
+  /* Project grid layout - inherit styles from research page */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
   }
   
-  .feature__wrapper .archive__item-excerpt {
+  .project-box {
+    position: relative;
+    border: none;
+    border-radius: 8px;
+    padding: 15px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fafafa;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .project-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  }
+  
+  .project-image {
+    margin-bottom: 12px;
+    order: -1;
+  }
+  
+  .project-image img {
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+    height: 160px;
+  }
+  
+  .project-title {
+    font-size: 0.95em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    color: #0033A0;
+  }
+  
+  .project-subtitle {
     font-size: 0.8em;
+    font-style: italic;
+    margin-bottom: 8px;
+    color: #666;
+  }
+  
+  .project-excerpt {
+    font-size: 0.8em;
+    color: #555;
+    flex-grow: 1;
     line-height: 1.4;
   }
   
-  .feature__wrapper .btn {
-    font-size: 0.7em;
-    padding: 0.5em 1em;
+  .project-tags {
+    font-size: 0.75em;
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  .project-tag {
+    background: #eef2f7;
+    color: #4a6785;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 0.65em;
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .project-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+    cursor: pointer;
+    pointer-events: all;
+    text-decoration: none;
   }
   
   /* Center footer content */
@@ -148,12 +200,6 @@ feature_row:
     padding-top: 3vh;
     padding-bottom: 2vh;
     font-size: 0.9em;
-  }
-  
-  /* Fix feature row alignment */
-  .feature__wrapper {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
   }
   
   /* Additional top spacing for page content */
@@ -209,7 +255,7 @@ feature_row:
     Here are some highlights from my research portfolio. For a complete list of projects, please visit my <a href="/research/">Research & Projects</a> page or check out my <a href="/publications/">Publications</a>.
   </p>
   
-  {% include feature_row %}
+  {% include projects-section.html limit=3 %}
 </div>
 
 <!-- Footer section -->

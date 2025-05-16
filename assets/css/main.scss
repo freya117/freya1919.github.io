@@ -142,3 +142,44 @@ a {
     color: darken($primary-color, 10%);
   }
 }
+
+// Project styling for consistency across all pages
+.project-box,
+.archive__item {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1) !important;
+  transition: transform 0.2s, box-shadow 0.2s !important;
+  
+  &:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08) !important;
+  }
+  
+  .archive__item-title,
+  .project-title {
+    font-size: 0.95em !important;
+    font-weight: bold !important;
+    color: $primary-color !important;
+    margin-bottom: 0.5em !important;
+  }
+  
+  .archive__item-excerpt,
+  .project-excerpt {
+    font-size: 0.8em !important;
+    line-height: 1.4 !important;
+    margin-bottom: 0.5em !important;
+  }
+  
+  .btn {
+    font-size: 0.7em !important;
+    padding: 0.5em 1em !important;
+  }
+}
+
+// Portfolio items styling
+.portfolio-item {
+  font-size: 90%;
+  
+  h1, h2, h3 {
+    color: $primary-color;
+  }
+}

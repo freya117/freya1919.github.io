@@ -1,0 +1,49 @@
+<!-- Projects Grid Section -->
+<div class="projects-grid">
+  {% assign sorted_projects = site.projects | sort: 'date' | reverse %}
+  {% assign project_count = 0 %}
+  {% for project in sorted_projects %}
+    {% if project_count < include.limit %}
+      <div class="project-box" data-tags="{{ project.tags | join: ',' }}">
+        <a href="{{ project.url | relative_url }}" class="project-link" aria-label="View {{ project.title }} project details"></a>
+        <div class="project-image">
+          <img src="{{ project.header.teaser | relative_url }}" alt="{{ project.title }}">
+        </div>
+        <div class="project-title">{{ project.title }}</div>
+        <div class="project-subtitle">{{ project.excerpt }}</div>
+        <div class="project-excerpt">
+          {% case project.title %}
+            {% when "Maine DOT Pedestrian Volume Estimation" %}
+              This project addresses the lack of pedestrian volume data in Maine by developing a comprehensive model to estimate pedestrian activity, enabling better decision-making around non-motorized street user needs...
+            {% when "Advancing Extreme Heat Resilience in Newark" %}
+              This project addresses the growing challenge of extreme heat events in Newark, focusing on developing targeted interventions for vulnerable communities through data-driven planning and community engagement...
+            {% when "SideWalk Ballet" %}
+              This project originated from my thesis, which involved the collection of millions of photos from 26 cities. The objective was to utilize deep learning to analyze urban social activities through visual content...
+            {% when "Automated Neighborhood Archetype" %}
+              This research focuses on creating automated neighborhood archetypes by integrating urban morphology and topology to improve building energy modeling performance...
+            {% when "Electric Vehicle Charging Gap" %}
+              This project evaluates the accessibility of electric vehicle charging infrastructure in disadvantaged communities to identify gaps and propose equitable solutions...
+            {% when "Boston Walker" %}
+              The Boston Walker project examines pedestrian movement patterns and infrastructure quality throughout Boston to identify areas for improvement and enhance walkability...
+            {% when "Berkeley Wildfire Evacuation Simulation" %}
+              This simulation project models wildfire evacuation scenarios in Berkeley, integrating traffic simulation strategies to optimize emergency evacuation procedures...
+            {% when "Gist, Blur, and Attention" %}
+              This project investigates the alignment between machine vision models and human perception by contrasting standard VLM analysis with temporally averaged image representations that better match human visual processing...
+            {% when "Sparse Matrix Imputation Using Multi-Objective Loss Function Balancing" %}
+              This project develops a novel method for processing sparse matrices directly without low-rank approximations, using a multi-objective loss function that balances learning from both data-dense and sparse regions...
+            {% when "Write Out Loud" %}
+              An iPadOS application leveraging multimodal learning through synchronized kinesthetic and auditory inputs to enhance Chinese character learning, using Apple Pencil and speech recognition...
+            {% else %}
+              {{ project.content | strip_html | truncatewords: 30 }}
+          {% endcase %}
+        </div>
+        <div class="project-tags">
+          {% for tag in project.tags limit:4 %}
+            <span class="project-tag">{{ tag | replace: '-', ' ' | capitalize }}</span>
+          {% endfor %}
+        </div>
+      </div>
+      {% assign project_count = project_count | plus: 1 %}
+    {% endif %}
+  {% endfor %}
+</div> 

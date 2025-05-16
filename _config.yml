@@ -105,13 +105,8 @@ analytics:
 # Site Author
 author:
   name             : "Freya Tan"
-<<<<<<< HEAD
   avatar           : "assets/images/freya_2024.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "MIT EECS + DUSP Master Student"
-=======
-  avatar           : "/assets/images/8bitpix-w.png" # path of avatar image, e.g. "/assets/images/freya_2024.jpg"
-  bio              : "Master Student @ MIT EECS & DUSP"
->>>>>>> d0ed60771436b4ac28ed9afb0fdfa8206271141f
   location         : "Cambridge, MA"
   email            : "freya117@mit.edu"
   links:
@@ -127,15 +122,12 @@ author:
     - label: "ResearchGate"
       icon: "fab fa-fw fa-researchgate"
       url: "https://www.researchgate.net/profile/Freya-Tan"
-<<<<<<< HEAD
     - label: "DUSP Profile"
       icon: "fas fa-fw fa-university"
       url: "https://dusp.mit.edu/people/freya-tan"
     - label: "City Form Lab"
       icon: "fas fa-fw fa-flask"
       url: "https://cityform.mit.edu/"
-=======
->>>>>>> d0ed60771436b4ac28ed9afb0fdfa8206271141f
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://www.instagram.com/f_in_19/"
@@ -145,11 +137,7 @@ footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-<<<<<<< HEAD
       url: "https://github.com/freya117"
-=======
-      url: "https://github.com/freya1919"
->>>>>>> d0ed60771436b4ac28ed9afb0fdfa8206271141f
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/freya-tan-888145258/"
@@ -291,7 +279,7 @@ compress_html:
 
 # Collections
 collections:
-  portfolio:
+  projects:
     output: true
     permalink: /:collection/:path/
     
@@ -316,12 +304,12 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _portfolio
+  # _projects
   - scope:
       path: ""
-      type: portfolio
+      type: projects
     values:
-      layout: single
+      layout: project
       author_profile: false
       show_date: true
       read_time: true

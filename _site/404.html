@@ -146,17 +146,28 @@
     font-size: 0.85em;
   }
   
-  /* Make author profile image larger */
+  /* Make author profile image consistent across all pages */
   .author__avatar img {
     max-width: 150px !important;
     border-radius: 50%;
   }
   
-  /* Specific styling for About page */
-  .about .author__avatar img {
-    max-width: 180px !important;
-    border-radius: 50%;
-    border: 2px solid #f2f3f3;
+  /* Make sidebar text smaller */
+  .sidebar .author__name {
+    font-size: 0.9em !important;
+  }
+  
+  .sidebar .author__bio {
+    font-size: 0.8em !important;
+  }
+  
+  .sidebar p, 
+  .sidebar li {
+    font-size: 0.8em !important;
+  }
+  
+  .sidebar .author__urls-wrapper .author__urls a {
+    font-size: 0.75em !important;
   }
 </style>
 
@@ -236,6 +247,12 @@
     color: #0033A0;
   }
 </style>
+
+<!-- Load custom JavaScript -->
+<script src="/assets/js/custom.js"></script>
+
+<!-- Load project styles -->
+<link rel="stylesheet" href="/assets/css/project-style.css">
 
   </head>
 
@@ -337,142 +354,6 @@
 
 <div id="main" role="main">
   
-  <div class="sidebar sticky">
-  
-
-
-<div itemscope itemtype="https://schema.org/Person" class="h-card ">
-
-  
-    <div class="author__avatar">
-      
-        <a href="http://localhost:4000/">
-          <img src="/assets/images/freya_2024.png" alt="Freya Tan" itemprop="image">
-        </a>
-      
-    </div>
-  
-
-  <div class="author__content">
-    <h3 class="author__name p-name" itemprop="name">
-      Freya Tan
-    </h3>
-    
-      <div class="author__bio p-note" itemprop="description">
-        <p>MIT EECS + DUSP Master Student</p>
-
-      </div>
-    
-  </div>
-
-  <div class="author__urls-wrapper">
-    <button class="btn btn--inverse">Follow</button>
-    <ul class="author__urls social-icons">
-      
-        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
-          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Cambridge, MA</span>
-        </li>
-      
-
-      
-        
-          
-            <li><a href="https://github.com/freya117" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
-          
-        
-          
-            <li><a href="https://freya1919.github.io" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fas fa-fw fa-link" aria-hidden="true"></i><span class="label">Website</span></a></li>
-          
-        
-          
-            <li><a href="https://www.linkedin.com/in/freya-tan-888145258/" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
-          
-        
-          
-            <li><a href="https://www.researchgate.net/profile/Freya-Tan" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-researchgate" aria-hidden="true"></i><span class="label">ResearchGate</span></a></li>
-          
-        
-          
-            <li><a href="https://dusp.mit.edu/people/freya-tan" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fas fa-fw fa-university" aria-hidden="true"></i><span class="label">DUSP Profile</span></a></li>
-          
-        
-          
-            <li><a href="https://cityform.mit.edu/" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fas fa-fw fa-flask" aria-hidden="true"></i><span class="label">City Form Lab</span></a></li>
-          
-        
-          
-        
-      
-
-      
-
-      
-        <li>
-          <a href="mailto:freya117@mit.edu" rel="me" class="u-email">
-            <meta itemprop="email" content="freya117@mit.edu" />
-            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span>
-          </a>
-        </li>
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      <!--
-  <li>
-    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
-      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
-    </a>
-  </li>
--->
-    </ul>
-  </div>
-</div>
-
-  
-  </div>
-
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
@@ -496,8 +377,12 @@
 
       <section class="page__content e-content" itemprop="text">
         
-        <p>Oh dman, the page you were trying to view does not exist.</p>
+        
+        
+          <p>Oh dman, the page you were trying to view does not exist.</p>
 
+        
+        
         
       </section>
 

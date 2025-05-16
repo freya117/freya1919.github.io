@@ -37,15 +37,18 @@ layout: wide
   }
   
   .project-box {
+    position: relative;
     border: none;
     border-radius: 8px;
     padding: 15px;
     transition: transform 0.2s, box-shadow 0.2s;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     height: 100%;
     display: flex;
     flex-direction: column;
     background-color: #fafafa;
+    overflow: hidden;
+    cursor: pointer;
   }
   
   .project-box:hover {
@@ -66,7 +69,7 @@ layout: wide
   }
   
   .project-title {
-    font-size: 1.1em;
+    font-size: 0.95em;
     font-weight: bold;
     margin-bottom: 0.5em;
     color: #0033A0;
@@ -80,14 +83,14 @@ layout: wide
   }
   
   .project-excerpt {
-    font-size: 0.9em;
+    font-size: 0.8em;
     color: #555;
     flex-grow: 1;
-    line-height: 1.3;
+    line-height: 1.4;
   }
 
   .project-tags {
-    font-size: 0.85em;
+    font-size: 0.75em;
     color: #555;
   }
 
@@ -244,27 +247,55 @@ layout: wide
     font-size: 0.9em;
     margin-bottom: 1em;
   }
+
+  .project-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+    cursor: pointer;
+    pointer-events: all;
+    text-decoration: none;
+  }
 </style>
 
 <div class="nav-tabs">
-  <div class="nav-tab active" onclick="showCategory('research')">Research Projects</div>
-  <div class="nav-tab" onclick="showCategory('design')">Design Projects</div>
+  <div class="nav-tab active" data-category="urban" onclick="showCategory('urban')">Urban Research</div>
+  <div class="nav-tab" data-category="cs" onclick="showCategory('cs')">Computer Science</div>
+  <div class="nav-tab" data-category="design" onclick="showCategory('design')">Design Projects</div>
 </div>
 
-<div id="research-tags" class="all-tags">
+<div id="urban-tags" class="all-tags">
   <div class="tag-filter" data-tag="urban-analytics">Urban Analytics</div>
-  <div class="tag-filter" data-tag="computer-vision">Computer Vision</div>
   <div class="tag-filter" data-tag="energy">Energy</div>
   <div class="tag-filter" data-tag="transportation">Transportation</div>
   <div class="tag-filter" data-tag="social-equity">Social Equity</div>
   <div class="tag-filter" data-tag="simulation">Simulation</div>
   <div class="tag-filter" data-tag="walkability">Walkability</div>
   <div class="tag-filter" data-tag="urban-planning">Urban Planning</div>
+  <div class="tag-filter" data-tag="climate-resilience">Climate Resilience</div>
+  <div class="tag-filter" data-tag="pedestrian-modeling">Pedestrian Modeling</div>
+  <div class="clear-filters">Clear filters</div>
+</div>
+
+<div id="cs-tags" class="all-tags" style="display: none;">
+  <div class="tag-filter" data-tag="computer-vision">Computer Vision</div>
+  <div class="tag-filter" data-tag="machine-learning">Machine Learning</div>
+  <div class="tag-filter" data-tag="deep-learning">Deep Learning</div>
+  <div class="tag-filter" data-tag="human-computer-interaction">Human-Computer Interaction</div>
+  <div class="tag-filter" data-tag="mobile-development">Mobile Development</div>
+  <div class="tag-filter" data-tag="data-science">Data Science</div>
+  <div class="tag-filter" data-tag="education-technology">Education Technology</div>
+  <div class="tag-filter" data-tag="computer-science">Computer Science</div>
   <div class="clear-filters">Clear filters</div>
 </div>
 
 <div id="design-tags" class="all-tags" style="display: none;">
   <div class="tag-filter" data-tag="urban-design">Urban Design</div>
+  <div class="tag-filter" data-tag="ecological-design">Ecological Design</div>
+  <div class="tag-filter" data-tag="education-design">Education Design</div>
   <div class="tag-filter" data-tag="public-space">Public Space</div>
   <div class="tag-filter" data-tag="infrastructure">Infrastructure</div>
   <div class="tag-filter" data-tag="economic-development">Economic Development</div>
@@ -273,10 +304,49 @@ layout: wide
   <div class="clear-filters">Clear filters</div>
 </div>
 
-<div id="research-projects" class="category-section">
+<div id="urban-projects" class="category-section">
   <div class="projects-grid">
-    <!-- Research Project 1 -->
+    <!-- Urban Research Project: Maine DOT -->
+    <div class="project-box" data-tags="transportation,walkability,urban-analytics,pedestrian-modeling">
+      <a href="/projects/maine-pedestrian-model/" class="project-link" aria-label="View Maine DOT Pedestrian Volume Estimation project details"></a>
+      <div class="project-image">
+        <img src="/assets/images/projects/maine-pedestrian.jpg" alt="Maine Pedestrian Modeling Project">
+      </div>
+      <div class="project-title">Maine DOT Pedestrian Volume Estimation</div>
+      <div class="project-subtitle">Developing a pedestrian volume model to support infrastructure and safety planning</div>
+      <div class="project-excerpt">
+        This project addresses the lack of pedestrian volume data in Maine by developing a comprehensive model to estimate pedestrian activity, enabling better decision-making around non-motorized street user needs...
+      </div>
+      <div class="project-tags">
+        <span class="project-tag" onclick="filterByTag('transportation')">Transportation</span>
+        <span class="project-tag" onclick="filterByTag('walkability')">Walkability</span>
+        <span class="project-tag" onclick="filterByTag('urban-analytics')">Urban Analytics</span>
+        <span class="project-tag" onclick="filterByTag('pedestrian-modeling')">Pedestrian Modeling</span>
+      </div>
+    </div>
+    
+    <!-- Urban Research Project: Newark Heat Resilience -->
+    <div class="project-box" data-tags="urban-planning,climate-resilience,social-equity,urban-analytics">
+      <a href="/projects/newark-heat-resilience/" class="project-link" aria-label="View Newark Heat Resilience project details"></a>
+      <div class="project-image">
+        <img src="/assets/images/projects/newark-heat.jpg" alt="Newark Heat Resilience Project">
+      </div>
+      <div class="project-title">Advancing Extreme Heat Resilience in Newark</div>
+      <div class="project-subtitle">Freedom Summer Fellow Research with City of Newark, Office of Sustainability</div>
+      <div class="project-excerpt">
+        This project addresses the growing challenge of extreme heat events in Newark, focusing on developing targeted interventions for vulnerable communities through data-driven planning and community engagement...
+      </div>
+      <div class="project-tags">
+        <span class="project-tag" onclick="filterByTag('urban-planning')">Urban Planning</span>
+        <span class="project-tag" onclick="filterByTag('climate-resilience')">Climate Resilience</span>
+        <span class="project-tag" onclick="filterByTag('social-equity')">Social Equity</span>
+        <span class="project-tag" onclick="filterByTag('urban-analytics')">Urban Analytics</span>
+      </div>
+    </div>
+    
+    <!-- Urban Research Project: SideWalk Ballet -->
     <div class="project-box" data-tags="urban-analytics,computer-vision,social-equity,urban-planning">
+      <a href="/projects/sidewalk-ballet/" class="project-link" aria-label="View Sidewalk Ballet project details"></a>
       <div class="project-image">
         <img src="/assets/images/projects/sidewalk-ballet.jpg" alt="SideWalk Ballet Project">
       </div>
@@ -293,8 +363,9 @@ layout: wide
       </div>
     </div>
     
-    <!-- Research Project 2 -->
+    <!-- Urban Research Project: Neighborhood Archetypes -->
     <div class="project-box" data-tags="energy,urban-planning,simulation">
+      <a href="/projects/neighborhood-archetypes/" class="project-link" aria-label="View Neighborhood Archetypes project details"></a>
       <div class="project-image">
         <img src="/assets/images/projects/neighborhood-archetype.jpg" alt="Neighborhood Archetype Project">
       </div>
@@ -310,8 +381,9 @@ layout: wide
       </div>
     </div>
     
-    <!-- Research Project 3 -->
+    <!-- Urban Research Project: EV Charging Gap -->
     <div class="project-box" data-tags="transportation,social-equity,urban-planning">
+      <a href="/projects/ev-charging-gap/" class="project-link" aria-label="View EV Charging Gap project details"></a>
       <div class="project-image">
         <img src="/assets/images/projects/ev-charging.jpg" alt="EV Charging Project">
       </div>
@@ -327,8 +399,9 @@ layout: wide
       </div>
     </div>
     
-    <!-- Research Project 4 -->
+    <!-- Urban Research Project: Boston Walker -->
     <div class="project-box" data-tags="transportation,walkability,urban-planning,urban-analytics">
+      <a href="/projects/boston-walker/" class="project-link" aria-label="View Boston Walker project details"></a>
       <div class="project-image">
         <img src="/assets/images/projects/boston-walker.jpg" alt="Boston Walker Project">
       </div>
@@ -345,8 +418,9 @@ layout: wide
       </div>
     </div>
     
-    <!-- Research Project 5 -->
+    <!-- Urban Research Project: Wildfire Evacuation -->
     <div class="project-box" data-tags="transportation,simulation,urban-planning">
+      <a href="/projects/wildfire-evacuation/" class="project-link" aria-label="View Wildfire Evacuation Simulation project details"></a>
       <div class="project-image">
         <img src="/assets/images/projects/wildfire-evacuation.jpg" alt="Berkeley Wildfire Evacuation Project">
       </div>
@@ -364,10 +438,72 @@ layout: wide
   </div>
 </div>
 
+<div id="cs-projects" class="category-section" style="display: none;">
+  <div class="projects-grid">
+    <!-- CS Project: Write Out Loud -->
+    <div class="project-box" data-tags="human-computer-interaction,mobile-development,machine-learning,computer-science,education-technology">
+      <a href="/projects/write-out-loud/" class="project-link" aria-label="View Write Out Loud project details"></a>
+      <div class="project-image">
+        <img src="/assets/images/projects/write-out-loud.jpg" alt="Write Out Loud Project">
+      </div>
+      <div class="project-title">Write Out Loud</div>
+      <div class="project-subtitle">A Multi-modal Way to Learn Chinese Characters and More</div>
+      <div class="project-excerpt">
+        An iPadOS application leveraging multimodal learning through synchronized kinesthetic and auditory inputs to enhance Chinese character learning, using Apple Pencil and speech recognition...
+      </div>
+      <div class="project-tags">
+        <span class="project-tag" onclick="filterByTag('human-computer-interaction')">HCI</span>
+        <span class="project-tag" onclick="filterByTag('mobile-development')">Mobile Dev</span>
+        <span class="project-tag" onclick="filterByTag('education-technology')">EdTech</span>
+        <span class="project-tag" onclick="filterByTag('computer-science')">Computer Science</span>
+      </div>
+    </div>
+  
+    <!-- CS Project: Sparse Matrix Imputation -->
+    <div class="project-box" data-tags="machine-learning,deep-learning,computer-science,data-science">
+      <a href="/projects/sparse-matrix-imputation/" class="project-link" aria-label="View Sparse Matrix Imputation project details"></a>
+      <div class="project-image">
+        <img src="/assets/images/projects/sparse-matrix.jpg" alt="Sparse Matrix Imputation Project">
+      </div>
+      <div class="project-title">Sparse Matrix Imputation Using Multi-Objective Loss Function Balancing</div>
+      <div class="project-subtitle">Deep learning approach for processing sparse matrices directly without low-rank approximations</div>
+      <div class="project-excerpt">
+        This project develops a novel method for processing sparse matrices directly without low-rank approximations, using a multi-objective loss function that balances learning from both data-dense and sparse regions...
+      </div>
+      <div class="project-tags">
+        <span class="project-tag" onclick="filterByTag('machine-learning')">Machine Learning</span>
+        <span class="project-tag" onclick="filterByTag('deep-learning')">Deep Learning</span>
+        <span class="project-tag" onclick="filterByTag('data-science')">Data Science</span>
+        <span class="project-tag" onclick="filterByTag('computer-science')">Computer Science</span>
+      </div>
+    </div>
+    
+    <!-- CS Project: Gist, Blur, and Attention -->
+    <div class="project-box" data-tags="computer-vision,machine-learning,human-computer-interaction,computer-science">
+      <a href="/projects/gist-blur-attention/" class="project-link" aria-label="View Gist, Blur, and Attention project details"></a>
+      <div class="project-image">
+        <img src="/assets/images/projects/gist-blur-attention.jpg" alt="Gist, Blur, and Attention Project">
+      </div>
+      <div class="project-title">Gist, Blur, and Attention</div>
+      <div class="project-subtitle">Analyzing Temporally Averaged Visual Representations for Alignment with Human Engagement Signals</div>
+      <div class="project-excerpt">
+        This project investigates the alignment between machine vision models and human perception by contrasting standard VLM analysis with temporally averaged image representations that better match human visual processing...
+      </div>
+      <div class="project-tags">
+        <span class="project-tag" onclick="filterByTag('computer-vision')">Computer Vision</span>
+        <span class="project-tag" onclick="filterByTag('machine-learning')">Machine Learning</span>
+        <span class="project-tag" onclick="filterByTag('human-computer-interaction')">HCI</span>
+        <span class="project-tag" onclick="filterByTag('computer-science')">Computer Science</span>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div id="design-projects" class="category-section" style="display: none;">
   <div class="projects-grid">
     <!-- Design Project 1 -->
     <div class="project-box" data-tags="urban-design,public-space,infrastructure,community">
+      <a href="/projects/where-to-return/" class="project-link" aria-label="View WHERE TO RETURN project details"></a>
       <div class="project-image">
         <img src="/assets/images/projects/cemetery-design.jpg" alt="Cemetery Design Project">
       </div>
@@ -386,6 +522,7 @@ layout: wide
     
     <!-- Design Project 2 -->
     <div class="project-box" data-tags="urban-design,economic-development,community,social-impact">
+      <a href="/projects/thorns-blossom/" class="project-link" aria-label="View Thorns & Blossom project details"></a>
       <div class="project-image">
         <img src="/assets/images/projects/flowers-industry.jpg" alt="Flowers Industry Project">
       </div>
@@ -404,6 +541,7 @@ layout: wide
     
     <!-- Design Project 3 -->
     <div class="project-box" data-tags="urban-design,public-space,social-impact,community">
+      <a href="/projects/migrant-children/" class="project-link" aria-label="View Design for Children of Migrant project details"></a>
       <div class="project-image">
         <img src="/assets/images/projects/migrant-children.jpg" alt="Design for Children of Migrant Project">
       </div>
@@ -419,10 +557,37 @@ layout: wide
         <span class="project-tag" onclick="filterByTag('community')">Community</span>
       </div>
     </div>
+    
+    <!-- Design Project 4: Reimagining Salinas Valley -->
+    <div class="project-box" data-tags="urban-design,ecological-design,education-design,public-space,community,social-impact">
+      <a href="/projects/reimagining-salinas-valley/" class="project-link" aria-label="View Reimagining Salinas Valley project details"></a>
+      <div class="project-image">
+        <img src="/assets/images/projects/salinas-valley.jpg" alt="Reimagining Salinas Valley Project">
+      </div>
+      <div class="project-title">Reimaging Education, Rewilding Valley</div>
+      <div class="project-subtitle">A new knowledge-Production envision for Salinas Valley</div>
+      <div class="project-excerpt">
+        This project addresses emerging challenges to Salinas Valley's resources, such as soil fertility loss, water scarcity, and biodiversity decline, by rebuilding the relationship between humans and the land through education...
+      </div>
+      <div class="project-tags">
+        <span class="project-tag" onclick="filterByTag('urban-design')">Urban Design</span>
+        <span class="project-tag" onclick="filterByTag('ecological-design')">Ecological Design</span>
+        <span class="project-tag" onclick="filterByTag('education-design')">Education Design</span>
+        <span class="project-tag" onclick="filterByTag('public-space')">Public Space</span>
+        <span class="project-tag" onclick="filterByTag('community')">Community</span>
+        <span class="project-tag" onclick="filterByTag('social-impact')">Social Impact</span>
+      </div>
+    </div>
   </div>
 </div>
 
 <script>
+  // On page load, ensure the default category is shown
+  document.addEventListener('DOMContentLoaded', function() {
+    // Show urban by default
+    showCategory('urban');
+  });
+
   function showCategory(category) {
     // Hide all category sections
     document.querySelectorAll('.category-section').forEach(section => {
@@ -444,14 +609,14 @@ layout: wide
     document.getElementById(category + '-tags').style.display = 'flex';
     
     // Activate the clicked tab
-    document.querySelector('.nav-tab[onclick="showCategory(\'' + category + '\')"]').classList.add('active');
+    document.querySelector('.nav-tab[data-category="' + category + '"]').classList.add('active');
     
     // Reset all filters
     clearFilters();
   }
   
   function filterByTag(tag) {
-    const currentCategory = document.querySelector('.nav-tab.active').innerText.toLowerCase().split(' ')[0];
+    const currentCategory = document.querySelector('.nav-tab.active').getAttribute('data-category');
     const tagFilters = document.querySelectorAll(`#${currentCategory}-tags .tag-filter`);
     const clearBtn = document.querySelector(`#${currentCategory}-tags .clear-filters`);
     const activeFilter = document.querySelector(`#${currentCategory}-tags .tag-filter[data-tag="${tag}"]`);
@@ -492,7 +657,7 @@ layout: wide
   }
   
   function clearFilters() {
-    const currentCategory = document.querySelector('.nav-tab.active').innerText.toLowerCase().split(' ')[0];
+    const currentCategory = document.querySelector('.nav-tab.active').getAttribute('data-category');
     const tagFilters = document.querySelectorAll(`#${currentCategory}-tags .tag-filter`);
     const clearBtn = document.querySelector(`#${currentCategory}-tags .clear-filters`);
     const projectBoxes = document.querySelectorAll(`#${currentCategory}-projects .project-box`);
