@@ -194,6 +194,85 @@ author_profile: false
     text-decoration: none;
   }
   
+  /* News section styling */
+  .news-section {
+    margin-top: 3em;
+    margin-bottom: 3em;
+  }
+  
+  .news-heading {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom: 0.8em;
+    padding-bottom: 0.3em;
+    border-bottom: 2px solid #f2f3f3;
+    color: #0033A0;
+  }
+  
+  .news-description {
+    font-size: 0.95em;
+    line-height: 1.6;
+    margin-bottom: 2em;
+  }
+  
+  .news-list {
+    margin-bottom: 30px;
+  }
+  
+  .news-item {
+    margin-bottom: 1.8em;
+    padding-bottom: 1.8em;
+    border-bottom: 1px solid #f2f3f3;
+  }
+  
+  .news-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0.8em;
+  }
+  
+  .news-date {
+    font-size: 0.8em;
+    font-style: italic;
+    margin-bottom: 0.4em;
+    color: #666;
+  }
+  
+  .news-title {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+  }
+  
+  .news-title a {
+    color: #0033A0;
+    text-decoration: none;
+  }
+  
+  .news-title a:hover {
+    text-decoration: underline;
+  }
+  
+  .news-excerpt {
+    font-size: 0.85em;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  .news-more {
+    margin-top: 1.5em;
+    text-align: right;
+  }
+  
+  .news-more a {
+    font-size: 0.9em;
+    color: #0033A0;
+    text-decoration: none;
+  }
+  
+  .news-more a:hover {
+    text-decoration: underline;
+  }
+  
   /* Center footer content */
   .footer-section {
     text-align: center;
@@ -256,6 +335,17 @@ author_profile: false
   </p>
   
   {% include projects-section.html limit=3 %}
+</div>
+
+<!-- News Section -->
+<div class="news-section">
+  <div class="news-heading">News</div>
+  
+  <div class="news-description">
+    Stay updated with the latest news and developments in my research and projects.
+  </div>
+  
+  {% include news-section.html limit=3 %}
 </div>
 
 <!-- Footer section -->

@@ -282,6 +282,9 @@ collections:
   projects:
     output: true
     permalink: /:collection/:path/
+  news:
+    output: true
+    permalink: /:collection/:path/
     
 # Defaults
 defaults:
@@ -314,3 +317,14 @@ defaults:
       show_date: true
       read_time: true
       share: true
+  # _news
+  - scope:
+      path: ""
+      type: news
+    values:
+      layout: news
+      author_profile: false
+      show_date: true
+      read_time: false
+      share: true
+      classes: wide

@@ -1,4 +1,22 @@
 var store = [{
+        "title": "Project Launch: Write Out Loud App for Chinese Character Learning",
+        "excerpt":"Today marks the official launch of our “Write Out Loud” application for iPadOS! This innovative app leverages multimodal learning through synchronized kinesthetic and auditory inputs to enhance Chinese character learning. How It Works The app combines Apple Pencil technology with speech recognition to create a comprehensive learning experience that engages...","categories": [],
+        "tags": [],
+        "url": "/news/2024-04-10-research-update/",
+        "teaser": null
+      },{
+        "title": "Presenting at the Urban Computing Conference 2024",
+        "excerpt":"I’m pleased to announce that our paper on pedestrian volume estimation for Maine DOT has been accepted for presentation at the Urban Computing Conference 2024! Conference Details The conference will take place June 15-17 in Boston, where I’ll be sharing our methodology for developing a comprehensive model to estimate pedestrian...","categories": [],
+        "tags": [],
+        "url": "/news/2024-05-01-conference-presentation/",
+        "teaser": null
+      },{
+        "title": "New Research on Neighborhood Energy Modeling",
+        "excerpt":"I’m thrilled to share that our research on automated neighborhood archetypes for urban building energy modeling is progressing well. Working with the City Form Lab at MIT, we’ve developed a graph-based representation that can map cities into a spectrum of representative neighborhoods. Recent Progress This model effectively captures both morphological...","categories": [],
+        "tags": [],
+        "url": "/news/2024-05-15-first-news-post/",
+        "teaser": null
+      },{
         "title": "Bridging The Charging Gap",
         "excerpt":"This post has many categories.  ","categories": ["aciform"],
         "tags": ["categories"],

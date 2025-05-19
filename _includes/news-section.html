@@ -1,0 +1,20 @@
+{% assign news_items = site.news | sort: 'date' | reverse %}
+{% assign display_count = include.limit | default: 3 %}
+
+<div class="news-list">
+  {% for news in news_items limit:display_count %}
+    <div class="news-item">
+      <div class="news-date">{{ news.date | date: "%B %d, %Y" }}</div>
+      <div class="news-title">
+        <a href="{{ news.url | relative_url }}">{{ news.title }}</a>
+      </div>
+      <div class="news-excerpt">{{ news.excerpt }}</div>
+    </div>
+  {% endfor %}
+  
+  {% if site.news.size > display_count %}
+    <div class="news-more">
+      <a href="/news/">View all news →</a>
+    </div>
+  {% endif %}
+</div> 
