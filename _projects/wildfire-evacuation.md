@@ -4,7 +4,7 @@ layout: project
 title: "Berkeley Wildfire Evacuation Simulation"
 excerpt: "Optimizing Wildfire Evacuations Through Integrated Traffic Simulation Strategies"
 permalink: /projects/wildfire-evacuation/
-date: 2022-11-20
+date: 2023-12-10
 tags:
   - transportation
   - simulation

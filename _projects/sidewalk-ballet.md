@@ -5,7 +5,7 @@ title: "SideWalk Ballet"
 excerpt: "Detecting Social Activities through Geo-tagged Urban Visual Contents"
 permalink: /projects/sidewalk-ballet/
 layout: project
-date: 2023-05-15
+date: 2025-05-15
 tags:
   - urban-analytics
   - computer-vision

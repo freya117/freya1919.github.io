@@ -36,6 +36,7 @@ layout: default
             {% if page.title %}<h1 id="page-title" class="page__title p-name" itemprop="headline" style="color: #0033A0;">
               <a href="{{ page.url | absolute_url }}" class="u-url" itemprop="url" style="color: #0033A0;">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</a>
             </h1>{% endif %}
+            {% if page.subtitle %}<p id="page-subtitle" class="page__subtitle" itemprop="alternativeHeadline">{{ page.subtitle | markdownify | remove: "<p>" | remove: "</p>" }}</p>{% endif %}
             {% include page__meta.html %}
           </header>
         {% endunless %}

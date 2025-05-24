@@ -36,7 +36,7 @@
 
 
 
-  <meta property="article:published_time" content="2024-05-10T00:00:00-04:00">
+  <meta property="article:published_time" content="2024-12-10T00:00:00-05:00">
 
 
 
@@ -260,6 +260,107 @@
 <!-- Load project styles -->
 <link rel="stylesheet" href="/assets/css/project-style.css">
 
+<style>
+  /* Custom styles for search overlay */
+  .search-content {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 5rem;
+  }
+  
+  .search-content__inner-wrap {
+    max-width: 500px !important;
+    margin: 0 auto !important;
+    padding: 1.5rem !important;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    position: relative;
+  }
+  
+  .search-content .search-input {
+    font-size: 0.9rem !important;
+    text-align: center;
+    border-bottom: 1px solid #eee !important;
+    padding-bottom: 0.5rem !important;
+    margin-bottom: 1.5rem !important;
+    width: 100%;
+    transition: all 0.2s ease;
+  }
+  
+  .search-content .search-input:focus {
+    border-bottom: 1px solid #0033A0 !important;
+    box-shadow: 0 1px 0 0 rgba(0, 51, 160, 0.1);
+  }
+  
+  .search-content .results__found {
+    font-size: 0.75rem !important;
+    text-align: center;
+    color: #777;
+    margin-bottom: 1rem;
+    font-style: italic;
+  }
+  
+  .search-content .archive__item {
+    margin-bottom: 0.8rem !important;
+    width: 100% !important;
+    padding: 0.6rem 0.8rem;
+    border-radius: 6px;
+    background: #f9f9f9;
+    transition: all 0.2s ease;
+    border-left: 3px solid transparent;
+  }
+  
+  .search-content .archive__item:hover {
+    background: #f2f2f2;
+    border-left-color: #0033A0;
+    transform: translateX(2px);
+  }
+  
+  .search-content .archive__item-title {
+    font-size: 0.85rem !important;
+    margin-bottom: 0.3rem !important;
+    font-weight: 500;
+  }
+  
+  .search-content .archive__item-title a {
+    color: #0033A0;
+    text-decoration: none;
+  }
+  
+  .search-content .archive__item-excerpt {
+    font-size: 0.7rem !important;
+    color: #666;
+    line-height: 1.4;
+    margin: 0;
+  }
+
+  .search__toggle {
+    font-size: 0.85em;
+    height: 1.7rem;
+    color: #0033A0;
+    transform: translateY(1px);
+  }
+
+  .search__toggle:hover {
+    color: #002678;
+  }
+  
+  /* Make search work better on mobile */
+  @media (max-width: 768px) {
+    .search-content {
+      padding-top: 3rem;
+    }
+    
+    .search-content__inner-wrap {
+      max-width: 90% !important;
+      padding: 1rem !important;
+    }
+  }
+</style>
+
   </head>
 
   <body class="layout--project wide">
@@ -350,6 +451,275 @@
   </div>
 </div>
 
+    <!-- Sticky Header that appears when scrolling up -->
+<div id="sticky-header" class="sticky-header">
+  <div class="sticky-header__inner-wrap">
+    <div class="sticky-header__menu">
+      <nav id="sticky-site-nav" class="sticky-greedy-nav">
+        <a class="sticky-site-title" href="/">
+          Freya Tan
+          <span class="sticky-site-subtitle">Urban Science. Human Mobility.</span>
+        </a>
+        <ul class="sticky-visible-links"><li class="sticky-masthead__menu-item">
+              <a href="/about/"  >About</a>
+            </li><li class="sticky-masthead__menu-item">
+              <a href="/research/"  >Research & Projects</a>
+            </li><li class="sticky-masthead__menu-item">
+              <a href="/publications/"  >Publications</a>
+            </li><li class="sticky-masthead__menu-item">
+              <a href="/contact/"  >Contact</a>
+            </li></ul>
+        
+        <button class="sticky-search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="sticky-greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="sticky-navicon"></div>
+        </button>
+        <ul class="sticky-hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* Sticky header styles to match masthead exactly */
+  .sticky-header {
+    position: fixed;
+    top: -80px;
+    left: 0;
+    right: 0;
+    background: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+    z-index: 10;
+    animation-delay: 0.15s;
+    transition: top 0.3s ease;
+    width: 100%;
+  }
+
+  .sticky-header__inner-wrap {
+    padding: 0.5em 1em;
+    max-width: 100%;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+    clear: both;
+  }
+
+  .sticky-header__menu {
+    max-width: 1024px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0;
+  }
+
+  /* Greedy Nav styling to match masthead */
+  .sticky-greedy-nav {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    min-height: 2em;
+    background: #fff;
+  }
+
+  .sticky-greedy-nav a {
+    font-size: 0.75em !important; /* To match masthead */
+    display: block;
+    margin: 0 1rem;
+    padding: 0.5rem 0;
+    color: #5c6266;
+    text-decoration: none;
+  }
+
+  .sticky-greedy-nav a:hover {
+    color: #0033A0;
+  }
+
+  .sticky-site-title {
+    padding: 0;
+    font-size: 0.9em !important; /* To match masthead */
+    font-weight: bold;
+    color: #0033A0;
+    text-decoration: none;
+  }
+
+  .sticky-site-subtitle {
+    display: block;
+    font-size: 0.75em;
+    font-weight: normal;
+    color: #5c6266;
+  }
+
+  .sticky-visible-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    overflow: hidden;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .sticky-visible-links li {
+    margin-right: 1em; /* To match masthead */
+  }
+
+  .sticky-visible-links li a {
+    font-size: 0.75em !important; /* To match masthead */
+    position: relative;
+  }
+
+  .sticky-visible-links li a.active {
+    color: #0033A0 !important; /* To match masthead active style */
+    font-weight: bold;
+  }
+
+  .sticky-search__toggle {
+    font-size: 0.75em; /* To match masthead */
+    margin-left: 1rem;
+    border: 0;
+    padding: 0;
+    color: #5c6266;
+    background-color: transparent;
+    cursor: pointer;
+    -webkit-transition: color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
+  }
+
+  .sticky-search__toggle:hover {
+    color: #0033A0;
+  }
+
+  .sticky-greedy-nav__toggle {
+    -ms-flex-item-align: center;
+    align-self: center;
+    height: 2rem;
+    border: 0;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .sticky-navicon {
+    position: relative;
+    width: 1.5rem;
+    height: 0.25rem;
+    background: #5c6266;
+    margin: auto;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+
+  .sticky-navicon:before,
+  .sticky-navicon:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 1.5rem;
+    height: 0.25rem;
+    background: #5c6266;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+
+  .sticky-navicon:before {
+    top: -0.5rem;
+  }
+
+  .sticky-navicon:after {
+    bottom: -0.5rem;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .sticky-hidden-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 15px;
+    padding: 5px;
+    border: 1px solid #f2f3f3;
+    border-radius: 4px;
+    background: #fff;
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    list-style-type: none;
+  }
+
+  /* Mobile styles */
+  @media (max-width: 600px) {
+    .sticky-visible-links {
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+    }
+
+    .sticky-site-subtitle {
+      display: none;
+    }
+
+    .sticky-visible-links li a {
+      font-size: 0.7em !important;
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    let lastScrollTop = 0;
+    const stickyHeader = document.getElementById('sticky-header');
+    const scrollThreshold = 300; // Only show after scrolling down 300px
+    
+    window.addEventListener('scroll', function() {
+      let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      
+      // Only activate sticky behavior after scrolling past threshold
+      if (scrollTop > scrollThreshold) {
+        // Scrolling down
+        if (scrollTop > lastScrollTop) {
+          stickyHeader.style.top = '-80px';
+        } 
+        // Scrolling up
+        else {
+          stickyHeader.style.top = '0';
+        }
+      } else {
+        // Hide when near the top
+        stickyHeader.style.top = '-80px';
+      }
+      
+      lastScrollTop = scrollTop;
+    });
+    
+    // Handle search toggle functionality
+    const searchToggle = document.querySelector('.sticky-search__toggle');
+    if (searchToggle) {
+      searchToggle.addEventListener('click', function() {
+        const searchContent = document.querySelector('.search-content');
+        if (searchContent) {
+          // Use the same behavior as the main search toggle
+          document.body.classList.toggle('search--opened');
+          searchContent.classList.toggle('is--visible');
+        }
+      });
+    }
+  });
+</script> 
 
     <div class="initial-content">
       
@@ -364,7 +734,7 @@
   <article class="page h-entry layout--project" itemscope itemtype="https://schema.org/CreativeWork" style="width: 100%; float: none; padding-right: 0;">
     <meta itemprop="headline" content="Sparse Matrix Imputation Using Multi-Objective Loss Function Balancing">
     <meta itemprop="description" content="Deep learning approach for processing sparse matrices directly without low-rank approximations">
-    <meta itemprop="datePublished" content="2024-05-10T00:00:00-04:00">
+    <meta itemprop="datePublished" content="2024-12-10T00:00:00-05:00">
     
 
     <div class="page__inner-wrap" style="max-width: 100%; margin: 0 auto; padding-left: 1em; padding-right: 1em; box-sizing: border-box;">
@@ -376,6 +746,7 @@
 </a>
             </h1>
             
+            
 
   <p class="page__meta">
     
@@ -383,7 +754,7 @@
       <span class="page__meta-date">
         <i class="far fa-calendar-alt" aria-hidden="true"></i>
         
-        <time datetime="2024-05-10T00:00:00-04:00">May 10, 2024</time>
+        <time datetime="2024-12-10T00:00:00-05:00">December 10, 2024</time>
       </span>
     
 
@@ -396,7 +767,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          1 minute read
+          6 minute read
         
       </span>
     
@@ -414,68 +785,157 @@
 
 <p>Current sparse matrix modeling techniques, like Principal Component Analysis (PCA), often use low-rank approximations to convert sparse matrices into denser, lower-dimensional forms for deep learning models. While these methods enhance computational efficiency, they struggle to preserve the nuanced relationships in the original data, which is crucial for tasks requiring structural or contextual information, such as temporal analysis, sensor networks, and various scientific fields involving high-dimensional or structured data.</p>
 
-<h2 id="approach">Approach</h2>
+<p>We propose a model that processes sparse matrices directly, learning intrinsic patterns and relationships without relying on low-rank approximations. Our hypothesis is that inputting sparse matrices into autoencoders (AEs) often biases the model toward zero-value areas, neglecting patterns in data-dense regions, thus compromising the reconstruction of significant information. To address this, we propose a multi-objective loss function that balances learning from both data-dense and sparse regions, dynamically adjusting the loss functions to capture meaningful patterns within sparse matrices effectively.</p>
 
-<p>We propose a model that processes sparse matrices directly, learning intrinsic patterns and relationships without relying on low-rank approximations. Our research addresses a significant limitation in existing approaches: when inputting sparse matrices into autoencoders (AEs), models often bias toward zero-value areas, neglecting patterns in data-dense regions.</p>
+<h2 id="background-and-motivation">Background and Motivation</h2>
 
-<p>To solve this problem, we developed a <strong>multi-objective loss function</strong> that:</p>
+<p>Sparse matrix imputation is a critical task in modern data science, particularly for applications involving spatio-temporal data, such as traffic modeling, environmental monitoring, and sensor networks. Traditional methods like PCA and low-rank approximations improve computational efficiency but often fail to preserve the nuanced relationships in high-dimensional structured data.</p>
 
-<ul>
-  <li>Balances learning from both data-dense and sparse regions</li>
-  <li>Dynamically adjusts during training to prioritize meaningful patterns</li>
-  <li>Preserves structural relationships in the original data</li>
-</ul>
+<p>The advent of deep learning, specifically autoencoders (AEs), has provided new opportunities to directly process sparse matrices. However, existing approaches often suffer from overfitting to zero-value areas, neglecting meaningful patterns in data-dense regions due to their relative scarcity. This imbalance limits their ability to generalize across diverse datasets and spatio-temporal scenarios.</p>
 
-<h2 id="methodology">Methodology</h2>
+<p>Our motivation is to address these gaps by introducing a dynamic, multi-objective loss function to enable balanced learning from both sparse and dense regions. This approach ensures robust imputation, preserves intrinsic data structures, and improves generalization across tasks.</p>
 
-<p>Our approach consists of several key components:</p>
+<h2 id="approach-and-methods">Approach and Methods</h2>
+
+<h3 id="vision-transformer-architecture">Vision Transformer Architecture</h3>
+
+<p>Our solution utilizes a Vision Transformer (ViT) architecture combined with learnable positional and time embeddings to effectively model both spatial and temporal dependencies in sparse matrices. The ViT model divides the input matrix into smaller patches and processes them as tokens, leveraging the self-attention mechanism to capture global dependencies. This approach is particularly suited for sparse matrices as it:</p>
 
 <ol>
-  <li><strong>Custom Autoencoder Architecture</strong>: Designed specifically for sparse matrix inputs with attention mechanisms to focus on data-dense regions</li>
-  <li><strong>Multi-Objective Loss Function</strong>: Combines reconstruction loss with pattern preservation metrics</li>
-  <li><strong>Dynamic Weighting Scheme</strong>: Automatically adjusts loss weights during training based on input sparsity patterns</li>
+  <li>Preserves the structure of the matrix while modeling long-range dependencies</li>
+  <li>Adapts seamlessly to matrices with varying sparsity levels</li>
 </ol>
 
-<p>We evaluated our model across multiple domains, including sensor network data, user-item interaction matrices, and scientific datasets with inherent sparsity.</p>
+<h3 id="multi-objective-loss-function-with-gradnorm">Multi-Objective Loss Function with GradNorm</h3>
 
-<figure class=" ">
-  
-    
-      <a href="/assets/images/projects/sparse-matrix.jpg" title="Multi-objective loss function visualization">
-          <img src="/assets/images/projects/sparse-matrix.jpg" alt="Sparse Matrix Imputation" />
-      </a>
-    
-  
-  
-    <figcaption>Sparse Matrix Imputation with Multi-Objective Loss Function
-</figcaption>
-  
-</figure>
+<p>The key innovation is integrating GradNorm to dynamically balance the contributions of nonzero and zero-area losses during training. To address the imbalance observed with traditional models like UNet, we incorporate GradNorm, a dynamic loss-balancing method that scales loss terms based on their gradient magnitudes.</p>
 
-<h2 id="results">Results</h2>
-
-<p>Our method demonstrates significant improvements over traditional approaches:</p>
-
+<p>We partition the loss function into two components:</p>
 <ul>
-  <li><strong>Higher accuracy</strong> in reconstructing values in data-dense regions</li>
-  <li><strong>Better preservation</strong> of structural relationships between data points</li>
-  <li><strong>More robust performance</strong> on varying levels of sparsity</li>
+  <li><strong>Loss for nonzero regions</strong>: Focuses on minimizing the reconstruction error in data-dense areas</li>
+  <li><strong>Loss for zero regions</strong>: Focuses on accurately reconstructing sparse (zero) areas</li>
 </ul>
 
-<h2 id="applications">Applications</h2>
+<p>The total loss is given by:
+\(L = w_{nz} \cdot L_{nz} + w_z \cdot L_z\)</p>
+
+<p>By dynamically scaling $w_{nz}$ and $w_z$, GradNorm ensures that both nonzero and zero regions are learned effectively. If one loss dominates (e.g., large gradients for $L_{nz}$), GradNorm reduces its weight while increasing the weight of $L_z$, encouraging balanced learning.</p>
+
+<h2 id="experiments--dataset">Experiments &amp; Dataset</h2>
+
+<p>The dataset spans a 3-month period from April to June 2024, consisting of traffic flow data across various intersections and roads within Taipei City. Each data point includes traffic flow count, geographical coordinates, and precise timestamps.</p>
+
+<p>To simulate realistic sparsity conditions, we randomly masked 80% of the non-zero entries, reflecting scenarios where sensor failures or missing records are commonplace. The dataset was split into training (70%), validation (15%), and testing (15%) sets, respecting temporal order to prevent leakage of future information.</p>
+
+<h3 id="data-processing-with-h3-geo-partitioning">Data Processing with H3 Geo-partitioning</h3>
+
+<p>We employed the H3 geo-partitioning method, a hexagonal hierarchical spatial indexing system developed by Uber. H3 partitions the geographical space into uniform hexagonal cells, ensuring consistent spatial distribution and preserving geographical proximity.</p>
+
+<p>The traffic flow data was vectorized by mapping each measurement to its corresponding H3 cell based on geographical coordinates, converting the spatial-temporal data into a series of matrices where each matrix represents a snapshot of traffic flow across Taipei at a specific time.</p>
+
+<p><img src="/assets/images/projects/sparse-matrix-imputation/traffic_flow_filtered.gif" alt="Vectorized Traffic Flow Data in H3 Cells" /></p>
+<p style="text-align: center; font-size: 0.9em;"><em>Figure 1: Vectorized Traffic Flow Data in H3 Cells</em></p>
+
+<h3 id="experimental-design">Experimental Design</h3>
+
+<p>We conducted experiments with three different approaches:</p>
+
+<ol>
+  <li><strong>Baseline: Neighbor-Averaging Mask Reconstruction</strong>
+    <ul>
+      <li>Random masking of 80% of non-zero values</li>
+      <li>Prediction by averaging values of valid neighboring cells</li>
+      <li>Results showed severe limitations in capturing meaningful spatial relationships</li>
+    </ul>
+  </li>
+</ol>
+
+<p><img src="/assets/images/projects/sparse-matrix-imputation/arr_9.png" alt="Neighbor-Averaging Mask Reconstruction Results" width="90%" /></p>
+<p style="text-align: center; font-size: 0.9em;"><em>Figure 2: Neighbor-Averaging Mask Reconstruction Results</em></p>
+
+<ol>
+  <li><strong>UNet with a Single Loss Function</strong>
+    <ul>
+      <li>Encoder-decoder architecture with skip connections</li>
+      <li>Mean Squared Error (MSE) between reconstructed and original matrices</li>
+      <li>Results showed overfitting to zero areas, failing to capture detail in high-traffic zones</li>
+    </ul>
+  </li>
+  <li><strong>Transformer with GradNorm (Our Proposed Solution)</strong>
+    <ul>
+      <li>ViT architecture with learnable positional and time embeddings</li>
+      <li>Dynamic loss balancing using GradNorm</li>
+      <li>Results demonstrated balanced learning across both sparse and data-dense regions</li>
+    </ul>
+  </li>
+</ol>
+
+<p><img src="/assets/images/projects/sparse-matrix-imputation/imputation_example_vit.png" alt="Imputation Example" /></p>
+<p style="text-align: center; font-size: 0.9em;"><em>Figure 3: Imputation Example from our Transformer with GradNorm approach</em></p>
+
+<h2 id="results-and-analysis">Results and Analysis</h2>
+
+<h3 id="balanced-learning">Balanced Learning</h3>
+
+<p>GradNorm allowed the model to prioritize learning from the nonzero areas during the early stages of training. Over time, it dynamically balanced the focus between nonzero and zero-area imputations, enabling the model to learn both effectively. This approach not only ensured comprehensive training but also enhanced the accuracy of nonzero-area imputations.</p>
+
+<h3 id="generalizability">Generalizability</h3>
+
+<p>Our model was trained with matrices where 80% of the non-zero entries were masked. Despite this highly sparse training scenario, the model demonstrated strong generalization capabilities when applied to input matrices with lower masking ratios. When tested on inputs with reduced levels of missing data (e.g., 50% or 60% masked), it not only maintained its performance but actually improved upon it.</p>
+
+<p><img src="/assets/images/projects/sparse-matrix-imputation/vit_unet.png" alt="Performance Comparison between UNet and ViT Models" width="50%" /></p>
+<p style="text-align: center; font-size: 0.9em;"><em>Figure 4: Performance Comparison between UNet and ViT Models at Different Masking Ratios</em></p>
+
+<h3 id="strategic-sampling">Strategic Sampling</h3>
+
+<p>During the experiment, we observed that certain traffic flow data in the city contained more critical information for accurate imputation. We applied a greedy approach and a Genetic algorithm to identify which elements inside the matrix are critical for improving accuracy. With a masked ratio above 90%, our method achieved an MSE error of 31.82, a twofold improvement compared to random sampling.</p>
+
+<p>This finding suggests that the model relies more heavily on certain “key” nodes in the transportation network. These insights could inform sensor placement strategies or highlight particularly influential regions of a city’s traffic flow, aiding urban planners and transportation engineers.</p>
+
+<h3 id="geospatial-imputation-demonstration">Geospatial Imputation Demonstration</h3>
+
+<p>The model’s ability to use sparse yet informative data points—coupled with its learned understanding of the city’s road network—allows for accurate geospatial imputations. By observing only a small fraction of the matrix, the model infers missing values across large, masked-out areas, effectively reconstructing complex spatial structures.</p>
+
+<p><img src="/assets/images/projects/sparse-matrix-imputation/imputation_progress.gif" alt="Geospatial Imputation Demonstration" /></p>
+<p style="text-align: center; font-size: 0.9em;"><em>Figure 5: Geospatial Imputation Demonstration Over Time and Space</em></p>
+
+<h2 id="applications--future-work">Applications &amp; Future Work</h2>
+
+<h3 id="key-contributions">Key Contributions</h3>
+
+<ul>
+  <li><strong>Direct Sparse Matrix Processing</strong>: Moving beyond traditional low-rank approximations by directly modeling sparse matrices without compressing them</li>
+  <li><strong>Dynamic Loss Balancing with GradNorm</strong>: Introducing a multi-objective loss function that dynamically adjusts its focus between zero and non-zero regions</li>
+  <li><strong>Integration of Transformer Architectures and Time Embeddings</strong>: Demonstrating that global attention mechanisms can effectively handle complex spatial-temporal dependencies in highly sparse traffic data</li>
+  <li><strong>Empirical Validation and Insights for Urban Analysis</strong>: Providing insights for urban planners and engineers on sensor placement and network design</li>
+</ul>
+
+<h3 id="applications">Applications</h3>
 
 <p>This research has applications in:</p>
-
 <ul>
-  <li>Recommender systems with sparse user-item interaction matrices</li>
-  <li>Sensor networks with missing data points</li>
-  <li>Scientific computing with high-dimensional sparse datasets</li>
-  <li>Network analysis with incomplete connection data</li>
+  <li>Urban traffic flow prediction and analysis</li>
+  <li>Sensor network optimization and placement strategies</li>
+  <li>Environmental monitoring with incomplete data</li>
+  <li>Any domain involving sparse spatio-temporal data</li>
 </ul>
 
-<h2 id="future-work">Future Work</h2>
+<h3 id="limitations">Limitations</h3>
 
-<p>We are currently extending this work to integrate with graph neural networks for improved structural learning and exploring semi-supervised approaches that can leverage partial labeling in sparse datasets.</p>
+<ul>
+  <li><strong>Computational Overhead</strong>: The Transformer-based model, while providing improved accuracy, introduced higher computational and memory requirements</li>
+  <li><strong>Limited External Factors</strong>: Our current experiments did not integrate external variables such as weather conditions, events, or public holidays</li>
+  <li><strong>Fixed Geographic Partitioning</strong>: The H3 partitioning scheme may not adapt seamlessly to heterogeneous urban topologies</li>
+</ul>
+
+<h3 id="future-work">Future Work</h3>
+
+<ul>
+  <li><strong>Efficiency and Scalability Improvements</strong>: Developing more efficient attention mechanisms or model architectures</li>
+  <li><strong>Incorporation of External Contextual Factors</strong>: Integrating complementary data sources to enrich the model’s representation of urban dynamics</li>
+  <li><strong>Adaptive Spatial Partitioning and Sensor Placement</strong>: Investigating adaptive or learned partitioning schemes</li>
+  <li><strong>Transferability and Domain Adaptation</strong>: Extending the model to other cities or domains to test its adaptability and robustness</li>
+</ul>
 
           </div>
           
@@ -510,7 +970,7 @@
 
           
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2024-05-10T00:00:00-04:00">May 10, 2024</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2024-12-10T00:00:00-05:00">December 10, 2024</time></p>
 
         </footer>
 
@@ -530,11 +990,12 @@
         
   <nav class="pagination">
     
-      <a href="/projects/gist-blur-attention/" class="pagination--pager" title="Gist, Blur, and Attention
+      <a href="/projects/neighborhood-archetypes/" class="pagination--pager" title="Automated Neighborhood Archetype
 ">Previous</a>
     
     
-      <a href="#" class="pagination--pager disabled">Next</a>
+      <a href="/projects/fragmented-network-topology/" class="pagination--pager" title="Automating Topology Corrections for Fragmented Network
+">Next</a>
     
   </nav>
 

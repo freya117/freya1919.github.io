@@ -4,7 +4,7 @@ layout: project
 title: "Boston Walker"
 excerpt: "Analyzing Pedestrian Behavior and Infrastructure"
 permalink: /projects/boston-walker/
-date: 2023-02-15
+date: 2024-09-15
 tags:
   - transportation
   - walkability

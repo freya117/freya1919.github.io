@@ -4,7 +4,7 @@ layout: project
 title: "Electric Vehicle Charging Gap"
 excerpt: "Evaluating EV Infrastructure Accessibility in Disadvantaged Communities"
 permalink: /projects/ev-charging-gap/
-date: 2023-03-25
+date: 2024-06-25
 tags:
   - transportation
   - social-equity

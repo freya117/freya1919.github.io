@@ -1,10 +1,4 @@
 var store = [{
-        "title": "Project Launch: Write Out Loud App for Chinese Character Learning",
-        "excerpt":"Today marks the official launch of our “Write Out Loud” application for iPadOS! This innovative app leverages multimodal learning through synchronized kinesthetic and auditory inputs to enhance Chinese character learning. How It Works The app combines Apple Pencil technology with speech recognition to create a comprehensive learning experience that engages...","categories": [],
-        "tags": [],
-        "url": "/news/2024-04-10-research-update/",
-        "teaser": null
-      },{
         "title": "Presenting at the Urban Computing Conference 2024",
         "excerpt":"I’m pleased to announce that our paper on pedestrian volume estimation for Maine DOT has been accepted for presentation at the Urban Computing Conference 2024! Conference Details The conference will take place June 15-17 in Boston, where I’ll be sharing our methodology for developing a comprehensive model to estimate pedestrian...","categories": [],
         "tags": [],
@@ -15,6 +9,12 @@ var store = [{
         "excerpt":"I’m thrilled to share that our research on automated neighborhood archetypes for urban building energy modeling is progressing well. Working with the City Form Lab at MIT, we’ve developed a graph-based representation that can map cities into a spectrum of representative neighborhoods. Recent Progress This model effectively captures both morphological...","categories": [],
         "tags": [],
         "url": "/news/2024-05-15-first-news-post/",
+        "teaser": null
+      },{
+        "title": "NYC Walks and Sidewalk Ballet at Venice Architecture Biennale 2025",
+        "excerpt":"Excited to share that NYC Walks and Sidewalk Ballet, two projects developed by our team at MIT’s City Form Lab, are now on display at the 2025 Venice Architecture Biennale! I had the chance to contribute to the Sidewalk Ballet project, an interdisciplinary effort exploring the social dynamics of urban...","categories": [],
+        "tags": [],
+        "url": "/news/2025-05-10-venice-biennale/",
         "teaser": null
       },{
         "title": "Bridging The Charging Gap",
@@ -54,10 +54,16 @@ var store = [{
         "teaser": "/assets/images/projects/migrant-children.jpg"
       },{
         "title": "Thorns & Blossom",
-        "excerpt":"Project Vision This project explores the revitalization of Richmond’s economy and community through the reintroduction of the flower industry, connecting history with future sustainability. Building on Richmond’s historical connection to flower cultivation, this project proposes a comprehensive strategy to reintroduce and modernize the flower industry as a catalyst for economic...","categories": [],
+        "excerpt":"Project Overview Nestled along the picturesque shoreline of the San Francisco Bay, Richmond is a city steeped in history and rich in natural beauty. However, in recent years, the city’s landscape has become dominated by heavy industries, casting a shadow over the lives of its residents. Amidst this complex urban...","categories": [],
         "tags": ["urban-design","economic-development","community","social-impact"],
         "url": "/projects/thorns-blossom/",
         "teaser": "/assets/images/projects/flowers-industry.jpg"
+      },{
+        "title": "Reimaging Education, Rewilding Valley",
+        "excerpt":"Project Overview Salinas Valley, renowned for its agricultural landscape, hosts hidden natural ecosystems beyond its farming industry. Our project addresses emerging challenges to the valley’s resources, such as soil fertility loss, water scarcity, and biodiversity decline, by rebuilding the relationship between humans and the land through education. Vision &amp; Approach...","categories": [],
+        "tags": ["urban-design","ecological-design","education-design","public-space","community"],
+        "url": "/projects/reimagining-salinas-valley/",
+        "teaser": "/assets/images/projects/salinas-valley.jpg"
       },{
         "title": "WHERE TO RETURN",
         "excerpt":"Project Vision This design project reimagines cemeteries as multifunctional spaces serving as infrastructure, public space, and cultural landmarks that preserve community identity. Moving beyond the traditional conception of cemeteries as solely memorialization spaces, this project explores how these sacred sites can also function as vital urban infrastructure and public spaces...","categories": [],
@@ -71,6 +77,12 @@ var store = [{
         "url": "/projects/wildfire-evacuation/",
         "teaser": "/assets/images/projects/wildfire-evacuation.jpg"
       },{
+        "title": "Electric Vehicle Charging Gap",
+        "excerpt":"Project Overview This project evaluates the accessibility of electric vehicle charging infrastructure in disadvantaged communities to identify gaps and propose equitable solutions. As electric vehicle adoption increases, ensuring equitable access to charging infrastructure is critical for inclusive transportation planning. Research Questions The project addresses several key questions: How equitably distributed...","categories": [],
+        "tags": ["transportation","social-equity","urban-planning"],
+        "url": "/projects/ev-charging-gap/",
+        "teaser": "/assets/images/projects/ev-charging.jpg"
+      },{
         "title": "Boston Walker",
         "excerpt":"Project Overview The Boston Walker project examines pedestrian movement patterns and infrastructure quality throughout Boston to identify areas for improvement and enhance walkability. Using a combination of sensor data, computer vision, and survey methods, this research provides insights into pedestrian behavior and infrastructure needs. Research Goals The project aims to:...","categories": [],
         "tags": ["transportation","walkability","urban-planning","urban-analytics"],
@@ -78,28 +90,40 @@ var store = [{
         "teaser": "/assets/images/projects/boston-walker.jpg"
       },{
         "title": "Automated Neighborhood Archetype",
-        "excerpt":"Project Overview Climate change and urban densification have escalated energy demands in urban environments, highlighting the need for sustainable energy strategies. This research focuses on creating automated neighborhood archetypes by integrating urban morphology and topology to improve building energy modeling performance. Abstract Existing urban-scale energy models are structured with aggregated...","categories": [],
-        "tags": ["energy","urban-planning","simulation"],
+        "excerpt":"Automated Neighborhood Archetype: Integrating Morphology and Topology for Urban Building Energy Modeling Overview This research introduces neighborhood archetype, a graph-based representation enriched with metadata, mapping cities into a spectrum of representative neighborhoods. This model captures both the morphological characteristics of buildings and their topological relationships within urban fabrics, enabling downstream...","categories": [],
+        "tags": ["machine-learning","deep-learning","computer-science","data-science","urban-analytics"],
         "url": "/projects/neighborhood-archetypes/",
-        "teaser": "/assets/images/projects/neighborhood-archetype.jpg"
+        "teaser": "/assets/images/projects/neighborhood-archetypes.jpg"
       },{
-        "title": "Electric Vehicle Charging Gap",
-        "excerpt":"Project Overview This project evaluates the accessibility of electric vehicle charging infrastructure in disadvantaged communities to identify gaps and propose equitable solutions. As electric vehicle adoption increases, ensuring equitable access to charging infrastructure is critical for inclusive transportation planning. Research Questions The project addresses several key questions: How equitably distributed...","categories": [],
-        "tags": ["transportation","social-equity","urban-planning"],
-        "url": "/projects/ev-charging-gap/",
-        "teaser": "/assets/images/projects/ev-charging.jpg"
+        "title": "Sparse Matrix Imputation Using Multi-Objective Loss Function Balancing",
+        "excerpt":"Project Overview Current sparse matrix modeling techniques, like Principal Component Analysis (PCA), often use low-rank approximations to convert sparse matrices into denser, lower-dimensional forms for deep learning models. While these methods enhance computational efficiency, they struggle to preserve the nuanced relationships in the original data, which is crucial for tasks...","categories": [],
+        "tags": ["machine-learning","deep-learning","computer-science","data-science"],
+        "url": "/projects/sparse-matrix-imputation/",
+        "teaser": "/assets/images/projects/sparse-matrix.jpg"
+      },{
+        "title": "Automating Topology Corrections for Fragmented Network",
+        "excerpt":"Project Overview Many real-world networks, from transportation to utility grids, often suffer from fragmentation. Fragmented networks contain disconnected subgraphs, missing links, and irregular topological structures, making them inefficient for routing, analysis, or simulation. While vehicular road networks have received extensive efforts in ensuring topological coherence, networks like pedestrian infrastructure, bike...","categories": [],
+        "tags": ["machine-learning","llm","computer-science","urban-planning","network-analysis"],
+        "url": "/projects/fragmented-network-topology/",
+        "teaser": "/assets/images/projects/network-topology.jpg"
+      },{
+        "title": "Write Out Loud",
+        "excerpt":"Project Overview “Write Out Loud” is an iPadOS application designed to address the inherent complexities of mastering Chinese characters—particularly accurate stroke order and precise visual-motor skills. Unlike traditional methods that often fall short in providing immediate, engaging, and sensorily rich feedback, our system tackles this by uniquely integrating handwriting, speech,...","categories": [],
+        "tags": ["human-computer-interaction","mobile-development","machine-learning","computer-science","education-technology"],
+        "url": "/projects/write-out-loud/",
+        "teaser": "/assets/images/projects/write-out-loud.jpg"
+      },{
+        "title": "Gist, Blur, and Attention",
+        "excerpt":"Figure 1: Visualization of the Average Image Pathway showing how frames are sampled and averaged to create representations that emphasize stable elements while minimizing transient details. Abstract Standard Vision-Language Models (VLMs) excel at semantic extraction from raw video frames, but it remains unclear if these machine-centric representations align with human...","categories": [],
+        "tags": ["computer-vision","machine-learning","human-computer-interaction","temporal-averaging","VLM","deep-learning"],
+        "url": "/projects/gist-blur-attention/",
+        "teaser": "/assets/images/projects/gist-blur-attention.jpg"
       },{
         "title": "SideWalk Ballet",
         "excerpt":"Project Overview This project originated from my thesis, which involved the collection of millions of photos from 26 cities. The objective was to utilize deep learning to analyze urban social activities through visual content analysis. Methodology The research utilized a combination of: Computer vision techniques for feature detection Machine learning...","categories": [],
         "tags": ["urban-analytics","computer-vision","social-equity","urban-planning"],
         "url": "/projects/sidewalk-ballet/",
         "teaser": "/assets/images/projects/sidewalk-ballet.jpg"
-      },{
-        "title": "Reimaging Education, Rewilding Valley",
-        "excerpt":"Project Overview Salinas Valley, renowned for its agricultural landscape, hosts hidden natural ecosystems beyond its farming industry. Our project addresses emerging challenges to the valley’s resources, such as soil fertility loss, water scarcity, and biodiversity decline, by rebuilding the relationship between humans and the land through education. Vision &amp; Approach...","categories": [],
-        "tags": ["urban-design","ecological-design","education-design","public-space","community"],
-        "url": "/projects/reimagining-salinas-valley/",
-        "teaser": "/assets/images/projects/salinas-valley.jpg"
       },{
         "title": "Maine DOT Pedestrian Volume Estimation",
         "excerpt":"Project Overview While the state of Maine has well-established models for vehicular traffic volumes (AADT), an analogous model for pedestrian volumes has been lacking. This gap makes it difficult for planners and engineers to make informed decisions about pedestrian infrastructure and safety investments. This project addresses this critical need by...","categories": [],
@@ -112,22 +136,4 @@ var store = [{
         "tags": ["urban-planning","climate-resilience","social-equity","urban-analytics"],
         "url": "/projects/newark-heat-resilience/",
         "teaser": "/assets/images/projects/newark-heat.jpg"
-      },{
-        "title": "Write Out Loud",
-        "excerpt":"Project Overview “Write Out Loud” is an iPadOS application designed to address the complexities of learning Chinese characters through a novel multimodal learning experience. The app leverages both kinesthetic and auditory learning pathways to reinforce character memorization and proper writing technique. The Challenge Mastering Chinese characters presents significant challenges, particularly...","categories": [],
-        "tags": ["human-computer-interaction","mobile-development","machine-learning","computer-science","education-technology"],
-        "url": "/projects/write-out-loud/",
-        "teaser": "/assets/images/projects/write-out-loud.jpg"
-      },{
-        "title": "Gist, Blur, and Attention",
-        "excerpt":"Project Overview Standard Vision-Language Models (VLMs) excel at semantic extraction from raw video frames, but it remains unclear if these machine-centric representations align with human temporal integration and memory processes. This research investigates whether temporally averaged representations can better capture human engagement with visual content than standard VLM approaches. Methodology...","categories": [],
-        "tags": ["computer-vision","machine-learning","human-computer-interaction","computer-science"],
-        "url": "/projects/gist-blur-attention/",
-        "teaser": "/assets/images/projects/gist-blur-attention.jpg"
-      },{
-        "title": "Sparse Matrix Imputation Using Multi-Objective Loss Function Balancing",
-        "excerpt":"Project Overview Current sparse matrix modeling techniques, like Principal Component Analysis (PCA), often use low-rank approximations to convert sparse matrices into denser, lower-dimensional forms for deep learning models. While these methods enhance computational efficiency, they struggle to preserve the nuanced relationships in the original data, which is crucial for tasks...","categories": [],
-        "tags": ["machine-learning","deep-learning","computer-science","data-science"],
-        "url": "/projects/sparse-matrix-imputation/",
-        "teaser": "/assets/images/projects/sparse-matrix.jpg"
       }]

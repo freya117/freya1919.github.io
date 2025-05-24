@@ -306,8 +306,27 @@ layout: wide
 
 <div id="urban-projects" class="category-section">
   <div class="projects-grid">
+    <!-- Urban Research Project: Newark Heat Resilience -->
+    <div class="project-box" data-tags="urban-planning,climate-resilience,social-equity,urban-analytics" data-date="2025-08-10">
+      <a href="/projects/newark-heat-resilience/" class="project-link" aria-label="View Newark Heat Resilience project details"></a>
+      <div class="project-image">
+        <img src="/assets/images/projects/newark-heat-resilience.jpg" alt="Newark Heat Resilience Project">
+      </div>
+      <div class="project-title">Newark Heat Vulnerability & Resilience</div>
+      <div class="project-subtitle">Mapping Urban Heat Islands and Vulnerable Populations</div>
+      <div class="project-excerpt">
+        This research maps urban heat islands in Newark, NJ, and identifies neighborhoods with vulnerable populations to prioritize heat resilience interventions and resources...
+      </div>
+      <div class="project-tags">
+        <span class="project-tag" onclick="filterByTag('urban-planning')">Urban Planning</span>
+        <span class="project-tag" onclick="filterByTag('climate-resilience')">Climate Resilience</span>
+        <span class="project-tag" onclick="filterByTag('social-equity')">Social Equity</span>
+        <span class="project-tag" onclick="filterByTag('urban-analytics')">Urban Analytics</span>
+      </div>
+    </div>
+    
     <!-- Urban Research Project: Maine DOT -->
-    <div class="project-box" data-tags="transportation,walkability,urban-analytics,pedestrian-modeling">
+    <div class="project-box" data-tags="transportation,walkability,urban-analytics,pedestrian-modeling" data-date="2025-06-10">
       <a href="/projects/maine-pedestrian-model/" class="project-link" aria-label="View Maine DOT Pedestrian Volume Estimation project details"></a>
       <div class="project-image">
         <img src="/assets/images/projects/maine-pedestrian.jpg" alt="Maine Pedestrian Modeling Project">
@@ -325,35 +344,16 @@ layout: wide
       </div>
     </div>
     
-    <!-- Urban Research Project: Newark Heat Resilience -->
-    <div class="project-box" data-tags="urban-planning,climate-resilience,social-equity,urban-analytics">
-      <a href="/projects/newark-heat-resilience/" class="project-link" aria-label="View Newark Heat Resilience project details"></a>
-      <div class="project-image">
-        <img src="/assets/images/projects/newark-heat.jpg" alt="Newark Heat Resilience Project">
-      </div>
-      <div class="project-title">Advancing Extreme Heat Resilience in Newark</div>
-      <div class="project-subtitle">Freedom Summer Fellow Research with City of Newark, Office of Sustainability</div>
-      <div class="project-excerpt">
-        This project addresses the growing challenge of extreme heat events in Newark, focusing on developing targeted interventions for vulnerable communities through data-driven planning and community engagement...
-      </div>
-      <div class="project-tags">
-        <span class="project-tag" onclick="filterByTag('urban-planning')">Urban Planning</span>
-        <span class="project-tag" onclick="filterByTag('climate-resilience')">Climate Resilience</span>
-        <span class="project-tag" onclick="filterByTag('social-equity')">Social Equity</span>
-        <span class="project-tag" onclick="filterByTag('urban-analytics')">Urban Analytics</span>
-      </div>
-    </div>
-    
     <!-- Urban Research Project: SideWalk Ballet -->
-    <div class="project-box" data-tags="urban-analytics,computer-vision,social-equity,urban-planning">
+    <div class="project-box" data-tags="urban-analytics,computer-vision,social-equity,urban-planning" data-date="2025-05-15">
       <a href="/projects/sidewalk-ballet/" class="project-link" aria-label="View Sidewalk Ballet project details"></a>
       <div class="project-image">
         <img src="/assets/images/projects/sidewalk-ballet.jpg" alt="SideWalk Ballet Project">
       </div>
-      <div class="project-title">SideWalk Ballet</div>
-      <div class="project-subtitle">Detecting Social Activities through geo-tagged Urban Visual Contents</div>
+      <div class="project-title">Sidewalk Ballet</div>
+      <div class="project-subtitle">Computer Vision Analysis of Pedestrian Behavior</div>
       <div class="project-excerpt">
-        This project originated from my thesis, which involved the collection of millions of photos from 26 cities. The objective was to utilize deep learning to analyze urban social activities through visual content...
+        Using computer vision to analyze pedestrian behavior patterns from street-level video footage, identifying the relationship between built environment features and social interactions...
       </div>
       <div class="project-tags">
         <span class="project-tag" onclick="filterByTag('urban-analytics')">Urban Analytics</span>
@@ -363,44 +363,27 @@ layout: wide
       </div>
     </div>
     
-    <!-- Urban Research Project: Neighborhood Archetypes -->
-    <div class="project-box" data-tags="energy,urban-planning,simulation">
-      <a href="/projects/neighborhood-archetypes/" class="project-link" aria-label="View Neighborhood Archetypes project details"></a>
+    <!-- Network Topology Project -->
+    <div class="project-box" data-tags="urban-analytics,transportation,walkability,urban-planning,pedestrian-modeling,computer-science" data-date="2025-03-12">
+      <a href="/projects/fragmented-network-topology/" class="project-link" aria-label="View Fragmented Network Topology project details"></a>
       <div class="project-image">
-        <img src="/assets/images/projects/neighborhood-archetype.jpg" alt="Neighborhood Archetype Project">
+        <img src="/assets/images/projects/network-topology.jpg" alt="Fragmented Network Topology Project">
       </div>
-      <div class="project-title">Automated Neighborhood Archetype</div>
-      <div class="project-subtitle">Integrating Morphology and Topology for Urban Building Energy Modeling</div>
+      <div class="project-title">Automating Topology Corrections for Fragmented Networks</div>
+      <div class="project-subtitle">An LLM-based interpretable model for pedestrian and cycling infrastructure</div>
       <div class="project-excerpt">
-        This research focuses on creating automated neighborhood archetypes by integrating urban morphology and topology to improve building energy modeling performance...
+        This thesis research develops an automated system for correcting fragmented network structures in pedestrian and cycling infrastructure using graph-based diffusion models and LLM reasoning...
       </div>
       <div class="project-tags">
-        <span class="project-tag" onclick="filterByTag('energy')">Energy</span>
-        <span class="project-tag" onclick="filterByTag('urban-planning')">Urban Planning</span>
-        <span class="project-tag" onclick="filterByTag('simulation')">Simulation</span>
-      </div>
-    </div>
-    
-    <!-- Urban Research Project: EV Charging Gap -->
-    <div class="project-box" data-tags="transportation,social-equity,urban-planning">
-      <a href="/projects/ev-charging-gap/" class="project-link" aria-label="View EV Charging Gap project details"></a>
-      <div class="project-image">
-        <img src="/assets/images/projects/ev-charging.jpg" alt="EV Charging Project">
-      </div>
-      <div class="project-title">Electric Vehicle Charging Gap</div>
-      <div class="project-subtitle">Evaluating EV Infrastructure Accessibility in Disadvantaged Communities</div>
-      <div class="project-excerpt">
-        This project evaluates the accessibility of electric vehicle charging infrastructure in disadvantaged communities to identify gaps and propose equitable solutions...
-      </div>
-      <div class="project-tags">
+        <span class="project-tag" onclick="filterByTag('urban-analytics')">Urban Analytics</span>
         <span class="project-tag" onclick="filterByTag('transportation')">Transportation</span>
-        <span class="project-tag" onclick="filterByTag('social-equity')">Social Equity</span>
+        <span class="project-tag" onclick="filterByTag('walkability')">Walkability</span>
         <span class="project-tag" onclick="filterByTag('urban-planning')">Urban Planning</span>
       </div>
     </div>
     
     <!-- Urban Research Project: Boston Walker -->
-    <div class="project-box" data-tags="transportation,walkability,urban-planning,urban-analytics">
+    <div class="project-box" data-tags="transportation,walkability,urban-planning,urban-analytics" data-date="2024-09-15">
       <a href="/projects/boston-walker/" class="project-link" aria-label="View Boston Walker project details"></a>
       <div class="project-image">
         <img src="/assets/images/projects/boston-walker.jpg" alt="Boston Walker Project">
@@ -418,8 +401,46 @@ layout: wide
       </div>
     </div>
     
+    <!-- Urban Research Project: Neighborhood Archetypes -->
+    <div class="project-box" data-tags="urban-planning,spatial-analysis,data-science,urban-analytics" data-date="2024-11-18">
+      <a href="/projects/neighborhood-archetypes/" class="project-link" aria-label="View Neighborhood Archetypes project details"></a>
+      <div class="project-image">
+        <img src="/assets/images/projects/neighborhood-archetypes.jpg" alt="Neighborhood Archetypes Project">
+      </div>
+      <div class="project-title">Neighborhood Archetypes</div>
+      <div class="project-subtitle">Using Data Science to Understand Urban Patterns at the Census Tract Level</div>
+      <div class="project-excerpt">
+        This project uses multi-dimensional clustering techniques to identify latent patterns in census tract-level data, creating a comprehensive typology of neighborhood archetypes across US metropolitan areas...
+      </div>
+      <div class="project-tags">
+        <span class="project-tag" onclick="filterByTag('urban-planning')">Urban Planning</span>
+        <span class="project-tag" onclick="filterByTag('spatial-analysis')">Spatial Analysis</span>
+        <span class="project-tag" onclick="filterByTag('data-science')">Data Science</span>
+        <span class="project-tag" onclick="filterByTag('urban-analytics')">Urban Analytics</span>
+      </div>
+    </div>
+    
+    <!-- Urban Research Project: EV Charging Gap -->
+    <div class="project-box" data-tags="energy,transportation,spatial-analysis,data-science" data-date="2024-06-25">
+      <a href="/projects/ev-charging-gap/" class="project-link" aria-label="View EV Charging Gap project details"></a>
+      <div class="project-image">
+        <img src="/assets/images/projects/ev-charging-gap.jpg" alt="EV Charging Gap Project">
+      </div>
+      <div class="project-title">EV Charging Infrastructure Gap Analysis</div>
+      <div class="project-subtitle">Spatial Analysis of Electric Vehicle Charging Station Distribution</div>
+      <div class="project-excerpt">
+        A spatial analysis of the distribution of electric vehicle charging stations across urban and rural environments to identify coverage gaps and prioritize new infrastructure deployments...
+      </div>
+      <div class="project-tags">
+        <span class="project-tag" onclick="filterByTag('energy')">Energy</span>
+        <span class="project-tag" onclick="filterByTag('transportation')">Transportation</span>
+        <span class="project-tag" onclick="filterByTag('spatial-analysis')">Spatial Analysis</span>
+        <span class="project-tag" onclick="filterByTag('data-science')">Data Science</span>
+      </div>
+    </div>
+    
     <!-- Urban Research Project: Wildfire Evacuation -->
-    <div class="project-box" data-tags="transportation,simulation,urban-planning">
+    <div class="project-box" data-tags="transportation,simulation,urban-planning" data-date="2023-12-10">
       <a href="/projects/wildfire-evacuation/" class="project-link" aria-label="View Wildfire Evacuation Simulation project details"></a>
       <div class="project-image">
         <img src="/assets/images/projects/wildfire-evacuation.jpg" alt="Berkeley Wildfire Evacuation Project">
@@ -440,46 +461,8 @@ layout: wide
 
 <div id="cs-projects" class="category-section" style="display: none;">
   <div class="projects-grid">
-    <!-- CS Project: Write Out Loud -->
-    <div class="project-box" data-tags="human-computer-interaction,mobile-development,machine-learning,computer-science,education-technology">
-      <a href="/projects/write-out-loud/" class="project-link" aria-label="View Write Out Loud project details"></a>
-      <div class="project-image">
-        <img src="/assets/images/projects/write-out-loud.jpg" alt="Write Out Loud Project">
-      </div>
-      <div class="project-title">Write Out Loud</div>
-      <div class="project-subtitle">A Multi-modal Way to Learn Chinese Characters and More</div>
-      <div class="project-excerpt">
-        An iPadOS application leveraging multimodal learning through synchronized kinesthetic and auditory inputs to enhance Chinese character learning, using Apple Pencil and speech recognition...
-      </div>
-      <div class="project-tags">
-        <span class="project-tag" onclick="filterByTag('human-computer-interaction')">HCI</span>
-        <span class="project-tag" onclick="filterByTag('mobile-development')">Mobile Dev</span>
-        <span class="project-tag" onclick="filterByTag('education-technology')">EdTech</span>
-        <span class="project-tag" onclick="filterByTag('computer-science')">Computer Science</span>
-      </div>
-    </div>
-  
-    <!-- CS Project: Sparse Matrix Imputation -->
-    <div class="project-box" data-tags="machine-learning,deep-learning,computer-science,data-science">
-      <a href="/projects/sparse-matrix-imputation/" class="project-link" aria-label="View Sparse Matrix Imputation project details"></a>
-      <div class="project-image">
-        <img src="/assets/images/projects/sparse-matrix.jpg" alt="Sparse Matrix Imputation Project">
-      </div>
-      <div class="project-title">Sparse Matrix Imputation Using Multi-Objective Loss Function Balancing</div>
-      <div class="project-subtitle">Deep learning approach for processing sparse matrices directly without low-rank approximations</div>
-      <div class="project-excerpt">
-        This project develops a novel method for processing sparse matrices directly without low-rank approximations, using a multi-objective loss function that balances learning from both data-dense and sparse regions...
-      </div>
-      <div class="project-tags">
-        <span class="project-tag" onclick="filterByTag('machine-learning')">Machine Learning</span>
-        <span class="project-tag" onclick="filterByTag('deep-learning')">Deep Learning</span>
-        <span class="project-tag" onclick="filterByTag('data-science')">Data Science</span>
-        <span class="project-tag" onclick="filterByTag('computer-science')">Computer Science</span>
-      </div>
-    </div>
-    
     <!-- CS Project: Gist, Blur, and Attention -->
-    <div class="project-box" data-tags="computer-vision,machine-learning,human-computer-interaction,computer-science">
+    <div class="project-box" data-tags="computer-vision,machine-learning,human-computer-interaction,computer-science" data-date="2025-05-10">
       <a href="/projects/gist-blur-attention/" class="project-link" aria-label="View Gist, Blur, and Attention project details"></a>
       <div class="project-image">
         <img src="/assets/images/projects/gist-blur-attention.jpg" alt="Gist, Blur, and Attention Project">
@@ -496,13 +479,109 @@ layout: wide
         <span class="project-tag" onclick="filterByTag('computer-science')">Computer Science</span>
       </div>
     </div>
+    
+    <!-- CS Project: Write Out Loud -->
+    <div class="project-box" data-tags="human-computer-interaction,mobile-development,machine-learning,computer-science,education-technology" data-date="2025-05-08">
+      <a href="/projects/write-out-loud/" class="project-link" aria-label="View Write Out Loud project details"></a>
+      <div class="project-image">
+        <img src="/assets/images/projects/write-out-loud.jpg" alt="Write Out Loud Project">
+      </div>
+      <div class="project-title">Write Out Loud</div>
+      <div class="project-subtitle">A Multi-modal Way to Learn Chinese Characters and More</div>
+      <div class="project-excerpt">
+        An iPadOS application leveraging multimodal learning through synchronized kinesthetic and auditory inputs to enhance Chinese character learning, using Apple Pencil and speech recognition...
+      </div>
+      <div class="project-tags">
+        <span class="project-tag" onclick="filterByTag('human-computer-interaction')">HCI</span>
+        <span class="project-tag" onclick="filterByTag('mobile-development')">Mobile Dev</span>
+        <span class="project-tag" onclick="filterByTag('education-technology')">EdTech</span>
+        <span class="project-tag" onclick="filterByTag('computer-science')">Computer Science</span>
+      </div>
+    </div>
+    
+    <!-- CS Project: SideWalk Ballet -->
+    <div class="project-box" data-tags="computer-vision,machine-learning,computer-science,urban-analytics" data-date="2025-05-15">
+      <a href="/projects/sidewalk-ballet/" class="project-link" aria-label="View Sidewalk Ballet project details"></a>
+      <div class="project-image">
+        <img src="/assets/images/projects/sidewalk-ballet.jpg" alt="SideWalk Ballet Project">
+      </div>
+      <div class="project-title">Sidewalk Ballet</div>
+      <div class="project-subtitle">Computer Vision Analysis of Pedestrian Behavior</div>
+      <div class="project-excerpt">
+        Using computer vision to analyze pedestrian behavior patterns from street-level video footage, identifying the relationship between built environment features and social interactions...
+      </div>
+      <div class="project-tags">
+        <span class="project-tag" onclick="filterByTag('computer-vision')">Computer Vision</span>
+        <span class="project-tag" onclick="filterByTag('machine-learning')">Machine Learning</span>
+        <span class="project-tag" onclick="filterByTag('urban-analytics')">Urban Analytics</span>
+        <span class="project-tag" onclick="filterByTag('computer-science')">Computer Science</span>
+      </div>
+    </div>
+    
+    <!-- CS Project: Automated Neighborhood Archetype -->
+    <div class="project-box" data-tags="machine-learning,deep-learning,computer-science,data-science,urban-analytics" data-date="2024-11-18">
+      <a href="/projects/neighborhood-archetypes/" class="project-link" aria-label="View Neighborhood Archetypes project details"></a>
+      <div class="project-image">
+        <img src="/assets/images/projects/neighborhood-archetypes.jpg" alt="Neighborhood Archetypes Project">
+      </div>
+      <div class="project-title">Automated Neighborhood Archetype</div>
+      <div class="project-subtitle">Integrating Morphology and Topology for Urban Building Energy Modeling</div>
+      <div class="project-excerpt">
+        This research develops a graph-based representation enriched with metadata, mapping cities into a spectrum of representative neighborhoods to capture both morphological characteristics of buildings and their topological relationships...
+      </div>
+      <div class="project-tags">
+        <span class="project-tag" onclick="filterByTag('machine-learning')">Machine Learning</span>
+        <span class="project-tag" onclick="filterByTag('deep-learning')">Deep Learning</span>
+        <span class="project-tag" onclick="filterByTag('data-science')">Data Science</span>
+        <span class="project-tag" onclick="filterByTag('urban-analytics')">Urban Analytics</span>
+        <span class="project-tag" onclick="filterByTag('computer-science')">Computer Science</span>
+      </div>
+    </div>
+    
+    <!-- CS Project: Fragmented Network Topology -->
+    <div class="project-box" data-tags="machine-learning,deep-learning,computer-science,data-science" data-date="2025-03-12">
+      <a href="/projects/fragmented-network-topology/" class="project-link" aria-label="View Fragmented Network Topology project details"></a>
+      <div class="project-image">
+        <img src="/assets/images/projects/network-topology.jpg" alt="Fragmented Network Topology Project">
+      </div>
+      <div class="project-title">Automating Topology Corrections for Fragmented Networks</div>
+      <div class="project-subtitle">An LLM-based interpretable model for network structure correction</div>
+      <div class="project-excerpt">
+        This research develops an automated system for correcting fragmented network structures by integrating graph-based diffusion models, large language model (LLM) reasoning, and multi-modal data validation...
+      </div>
+      <div class="project-tags">
+        <span class="project-tag" onclick="filterByTag('machine-learning')">Machine Learning</span>
+        <span class="project-tag" onclick="filterByTag('deep-learning')">Deep Learning</span>
+        <span class="project-tag" onclick="filterByTag('computer-science')">Computer Science</span>
+        <span class="project-tag" onclick="filterByTag('data-science')">Data Science</span>
+      </div>
+    </div>
+  
+    <!-- CS Project: Sparse Matrix Imputation -->
+    <div class="project-box" data-tags="machine-learning,deep-learning,computer-science,data-science" data-date="2024-12-10">
+      <a href="/projects/sparse-matrix-imputation/" class="project-link" aria-label="View Sparse Matrix Imputation project details"></a>
+      <div class="project-image">
+        <img src="/assets/images/projects/sparse-matrix.jpg" alt="Sparse Matrix Imputation Project">
+      </div>
+      <div class="project-title">Sparse Matrix Imputation Using Multi-Objective Loss Function Balancing</div>
+      <div class="project-subtitle">Deep learning approach for processing sparse matrices directly without low-rank approximations</div>
+      <div class="project-excerpt">
+        This project develops a novel method for processing sparse matrices directly without low-rank approximations, using a multi-objective loss function that balances learning from both data-dense and sparse regions...
+      </div>
+      <div class="project-tags">
+        <span class="project-tag" onclick="filterByTag('machine-learning')">Machine Learning</span>
+        <span class="project-tag" onclick="filterByTag('deep-learning')">Deep Learning</span>
+        <span class="project-tag" onclick="filterByTag('data-science')">Data Science</span>
+        <span class="project-tag" onclick="filterByTag('computer-science')">Computer Science</span>
+      </div>
+    </div>
   </div>
 </div>
 
 <div id="design-projects" class="category-section" style="display: none;">
   <div class="projects-grid">
-    <!-- Design Project 1 -->
-    <div class="project-box" data-tags="urban-design,public-space,infrastructure,community">
+    <!-- Design Project: WHERE TO RETURN -->
+    <div class="project-box" data-tags="urban-design,public-space,infrastructure,community" data-date="2023-05-10">
       <a href="/projects/where-to-return/" class="project-link" aria-label="View WHERE TO RETURN project details"></a>
       <div class="project-image">
         <img src="/assets/images/projects/cemetery-design.jpg" alt="Cemetery Design Project">
@@ -520,8 +599,8 @@ layout: wide
       </div>
     </div>
     
-    <!-- Design Project 2 -->
-    <div class="project-box" data-tags="urban-design,economic-development,community,social-impact">
+    <!-- Design Project: Thorns & Blossom -->
+    <div class="project-box" data-tags="urban-design,economic-development,community,social-impact" data-date="2022-07-20">
       <a href="/projects/thorns-blossom/" class="project-link" aria-label="View Thorns & Blossom project details"></a>
       <div class="project-image">
         <img src="/assets/images/projects/flowers-industry.jpg" alt="Flowers Industry Project">
@@ -539,8 +618,8 @@ layout: wide
       </div>
     </div>
     
-    <!-- Design Project 3 -->
-    <div class="project-box" data-tags="urban-design,public-space,social-impact,community">
+    <!-- Design Project: Design for Children of Migrant -->
+    <div class="project-box" data-tags="urban-design,public-space,social-impact,community" data-date="2021-08-15">
       <a href="/projects/migrant-children/" class="project-link" aria-label="View Design for Children of Migrant project details"></a>
       <div class="project-image">
         <img src="/assets/images/projects/migrant-children.jpg" alt="Design for Children of Migrant Project">
@@ -558,8 +637,8 @@ layout: wide
       </div>
     </div>
     
-    <!-- Design Project 4: Reimagining Salinas Valley -->
-    <div class="project-box" data-tags="urban-design,ecological-design,education-design,public-space,community,social-impact">
+    <!-- Design Project: Reimagining Salinas Valley -->
+    <div class="project-box" data-tags="urban-design,ecological-design,education-design,public-space,community,social-impact" data-date="2022-12-10">
       <a href="/projects/reimagining-salinas-valley/" class="project-link" aria-label="View Reimagining Salinas Valley project details"></a>
       <div class="project-image">
         <img src="/assets/images/projects/salinas-valley.jpg" alt="Reimagining Salinas Valley Project">
@@ -586,9 +665,26 @@ layout: wide
   document.addEventListener('DOMContentLoaded', function() {
     // Show urban by default
     showCategory('urban');
+    
+    // Attach click handlers to tabs to ensure sorting happens on tab change
+    document.querySelectorAll('.nav-tab').forEach(tab => {
+      tab.addEventListener('click', function() {
+        const category = this.getAttribute('data-category');
+        showCategory(category);
+      });
+    });
+    
+    // Log all project dates to check if they're properly set
+    console.log("========== ALL PROJECT DATES ==========");
+    document.querySelectorAll('.project-box').forEach(project => {
+      const title = project.querySelector('.project-title').textContent;
+      const date = project.getAttribute('data-date');
+      console.log(`${title}: ${date}`);
+    });
   });
 
   function showCategory(category) {
+    console.log(`Showing category: ${category}`);
     // Hide all category sections
     document.querySelectorAll('.category-section').forEach(section => {
       section.style.display = 'none';
@@ -613,6 +709,55 @@ layout: wide
     
     // Reset all filters
     clearFilters();
+    
+    // Sort projects by date
+    sortProjectsByDate(category);
+  }
+  
+  // Function to sort projects by date (newest first)
+  function sortProjectsByDate(category) {
+    console.log(`\n========== SORTING ${category.toUpperCase()} PROJECTS ==========`);
+    const projectsContainer = document.querySelector(`#${category}-projects .projects-grid`);
+    const projects = Array.from(projectsContainer.children);
+    
+    console.log(`Found ${projects.length} projects to sort`);
+    
+    // Log all projects before sorting
+    console.log("BEFORE SORTING:");
+    projects.forEach(project => {
+      const title = project.querySelector('.project-title').textContent;
+      const date = project.getAttribute('data-date');
+      console.log(`${title}: ${date}`);
+    });
+    
+    // Sort projects based on date attribute
+    projects.sort((a, b) => {
+      const dateA = new Date(a.getAttribute('data-date') || '2000-01-01');
+      const dateB = new Date(b.getAttribute('data-date') || '2000-01-01');
+      
+      // Debug logging
+      console.log(`Comparing ${a.querySelector('.project-title').textContent} (${a.getAttribute('data-date')}) with ${b.querySelector('.project-title').textContent} (${b.getAttribute('data-date')})`);
+      
+      return dateB - dateA; // Sort in descending order (newest first)
+    });
+    
+    // Log the sorted order
+    console.log("\nAFTER SORTING:");
+    projects.forEach(project => {
+      console.log(`${project.querySelector('.project-title').textContent} - ${project.getAttribute('data-date')}`);
+    });
+    
+    // Remove all existing projects from the DOM
+    while (projectsContainer.firstChild) {
+      projectsContainer.removeChild(projectsContainer.firstChild);
+    }
+    
+    // Add sorted projects back to container
+    projects.forEach(project => {
+      projectsContainer.appendChild(project);
+    });
+    
+    console.log(`Finished sorting for ${category}`);
   }
   
   function filterByTag(tag) {
@@ -672,15 +817,20 @@ layout: wide
     projectBoxes.forEach(box => box.classList.remove('hidden'));
   }
   
-  // Initialize event listeners for clear filters buttons
-  document.querySelectorAll('.clear-filters').forEach(btn => {
-    btn.addEventListener('click', clearFilters);
-  });
-  
   // Initialize tag filters
   document.querySelectorAll('.tag-filter').forEach(filter => {
-    filter.addEventListener('click', function() {
+    filter.setAttribute('data-tag', filter.getAttribute('data-tag'));
+    filter.addEventListener('click', function(e) {
+      e.stopPropagation(); // Prevent event bubbling
       filterByTag(this.getAttribute('data-tag'));
+    });
+  });
+  
+  // Initialize clear filters buttons
+  document.querySelectorAll('.clear-filters').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      e.stopPropagation(); // Prevent event bubbling
+      clearFilters();
     });
   });
 </script> 

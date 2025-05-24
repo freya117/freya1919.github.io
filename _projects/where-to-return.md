@@ -4,7 +4,7 @@ layout: project
 title: "WHERE TO RETURN"
 excerpt: "Cemetery as Infrastructure, Public Space and Cultural Identity"
 permalink: /projects/where-to-return/
-date: 2022-09-10
+date: 2023-05-10
 tags:
   - urban-design
   - public-space

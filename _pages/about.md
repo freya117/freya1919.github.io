@@ -9,26 +9,26 @@ author_profile: true
   .page__content {
     font-size: 0.75em;
     padding-top: 1em;
-  }
+    }
   
   /* Make headings slightly smaller too */
   .page__content h2 {
     font-size: 1.25em;
     margin-top: 1.5em;
     margin-bottom: 0.5em;
-  }
+      }
   
   .page__content h3 {
     font-size: 1.05em;
     margin-top: 1.2em;
     margin-bottom: 0.5em;
-  }
+      }
   
   /* Adjust list items */
   .page__content ul li {
     font-size: 0.85em;
     margin-bottom: 0.4em;
-  }
+    }
   
   /* Remove the custom author avatar size for About page */
   
@@ -40,13 +40,13 @@ author_profile: true
   /* Style for education section */
   .education-item {
     margin-bottom: 1.8em;
-  }
+    }
   
   .degree {
     font-weight: bold;
     margin-bottom: 0.3em;
     font-size: 0.95em;
-  }
+    }
   
   .university {
     font-style: italic;
@@ -58,9 +58,9 @@ author_profile: true
     color: #555;
     margin-top: 0.5em;
     font-size: 0.85em;
-  }
-</style>
-
+    }
+  </style>
+  
 ## Bio
 
 I am a Master's student at MIT in EECS + DUSP. My research focuses on urban science and human mobility.
@@ -74,7 +74,7 @@ I am a Master's student at MIT in EECS + DUSP. My research focuses on urban scie
   <div class="degree">Master in City Planning</div>
   <div class="university">Massachusetts Institute of Technology (MIT)</div>
 </div>
-
+     
 <div class="education-item">
   <div class="degree">Master of Urban Design, Urban Science Concentration</div>
   <div class="university">University of California, Berkeley</div>

@@ -273,14 +273,6 @@ author_profile: false
     text-decoration: underline;
   }
   
-  /* Center footer content */
-  .footer-section {
-    text-align: center;
-    padding-top: 3vh;
-    padding-bottom: 2vh;
-    font-size: 0.9em;
-  }
-  
   /* Additional top spacing for page content */
   .page__content {
     margin-top: 1em !important;
@@ -346,16 +338,4 @@ author_profile: false
   </div>
   
   {% include news-section.html limit=3 %}
-</div>
-
-<!-- Footer section -->
-<div class="footer-section">
-  <p class="highlights" style="font-size: 0.85em;">
-    <a href="https://dusp.mit.edu/people/freya-tan">DUSP Profile</a> | 
-    <a href="https://cityform.mit.edu/">City Form Lab</a> | 
-    <a href="https://www.linkedin.com/in/freya-tan-888145258/">LinkedIn</a> | 
-    <a href="https://www.researchgate.net/profile/Freya-Tan">ResearchGate</a> | 
-    <a href="https://github.com/freya1919">GitHub</a>
-  </p>
-  <img src="https://visitor-badge.laobi.icu/badge?page_id=freya1919/freya1919.github.io" alt="Visitor Count" style="margin-top: 10px;">
 </div>

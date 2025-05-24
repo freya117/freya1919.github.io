@@ -4,7 +4,7 @@ layout: project
 title: "Reimaging Education, Rewilding Valley"
 excerpt: "A new knowledge-Production envision for Salinas Valley"
 permalink: /projects/reimagining-salinas-valley/
-date: 2024-02-20
+date: 2022-12-10
 tags:
   - urban-design
   - ecological-design

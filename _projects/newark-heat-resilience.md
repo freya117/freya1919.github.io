@@ -4,7 +4,7 @@ layout: project
 title: "Advancing Extreme Heat Resilience in Newark"
 excerpt: "Freedom Summer Fellow Research with City of Newark, Office of Sustainability"
 permalink: /projects/newark-heat-resilience/
-date: 2024-04-15
+date: 2025-08-10
 tags:
   - urban-planning
   - climate-resilience

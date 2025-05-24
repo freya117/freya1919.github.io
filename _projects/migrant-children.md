@@ -4,7 +4,7 @@ layout: project
 title: "Design for Children of Migrant"
 excerpt: "Transformations of Public Spaces of Urban Village"
 permalink: /projects/migrant-children/
-date: 2022-03-15
+date: 2021-08-15
 tags:
   - urban-design
   - public-space

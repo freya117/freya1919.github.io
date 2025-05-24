@@ -11,7 +11,7 @@ tags:
   - computer-science
   - data-science
 header:
-  teaser: /assets/images/projects/sparse-matrix-imputation/teaser.jpg
+  teaser: /assets/images/projects/sparse-matrix.jpg
 sidebar:
   - title: "Role"
     text: "Lead Researcher"
