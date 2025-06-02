@@ -2,6 +2,7 @@
 classes: wide
 layout: project
 title: "Maine DOT Pedestrian Volume Estimation"
+subtitle: "Data-Driven Pedestrian Infrastructure Planning"
 excerpt: "Developing a pedestrian volume model to support infrastructure and safety planning"
 permalink: /projects/maine-pedestrian-model/
 date: 2025-06-10
@@ -10,9 +11,12 @@ tags:
   - walkability
   - urban-analytics
   - pedestrian-modeling
+  - ongoing-project
 header:
   teaser: /assets/images/projects/maine-pedestrian.jpg
 sidebar:
+  - title: "Status"
+    text: "**Ongoing Project**"
   - title: "Role"
     text: "Lead Researcher"
   - title: "Client"
