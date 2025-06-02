@@ -308,11 +308,11 @@ layout: wide
   <div class="projects-grid">
     <!-- Urban Research Project: Newark Heat Resilience -->
     <div class="project-box" data-tags="urban-planning,climate-resilience,social-equity,urban-analytics" data-date="2025-08-10">
-      <a href="/projects/newark-heat-resilience/" class="project-link" aria-label="View Newark Heat Resilience project details"></a>
+      <a href="/projects/newark-heat/" class="project-link" aria-label="View Newark Heat Resilience project details"></a>
       <div class="project-image">
-        <img src="/assets/images/projects/newark-heat-resilience.jpg" alt="Newark Heat Resilience Project">
+        <img src="/assets/images/projects/newark-heat.png" alt="Newark Heat Resilience Project" />
       </div>
-      <div class="project-title">Newark Heat Vulnerability & Resilience</div>
+      <div class="project-title">Newark Heat Vulnerability &amp; Resilience</div>
       <div class="project-subtitle">Mapping Urban Heat Islands and Vulnerable Populations</div>
       <div class="project-excerpt">
         This research maps urban heat islands in Newark, NJ, and identifies neighborhoods with vulnerable populations to prioritize heat resilience interventions and resources...
@@ -424,7 +424,7 @@ layout: wide
     <div class="project-box" data-tags="energy,transportation,spatial-analysis,data-science" data-date="2024-06-25">
       <a href="/projects/ev-charging-gap/" class="project-link" aria-label="View EV Charging Gap project details"></a>
       <div class="project-image">
-        <img src="/assets/images/projects/ev-charging-gap.jpg" alt="EV Charging Gap Project">
+        <img src="/assets/images/projects/ev-charging.jpg" alt="EV Charging Gap Project" />
       </div>
       <div class="project-title">EV Charging Infrastructure Gap Analysis</div>
       <div class="project-subtitle">Spatial Analysis of Electric Vehicle Charging Station Distribution</div>

@@ -49,6 +49,13 @@ author_profile: true
   .contact-info a:hover {
     text-decoration: underline;
   }
+  
+  /* Style for professional address */
+  .address {
+    font-size: 0.7em;
+    line-height: 1.2;
+    margin-bottom: 1.5em;
+  }
 </style>
 
 ## Get in Touch
@@ -68,10 +75,12 @@ I'm always interested in research collaborations, speaking opportunities, or dis
 
 ### Professional Address
 
-Massachusetts Institute of Technology  
-77 Massachusetts Ave  
-Cambridge, MA 02139  
+<div class="address">
+Massachusetts Institute of Technology<br>
+77 Massachusetts Ave<br>
+Cambridge, MA 02139<br>
 United States
+</div>
 
 ### Contact Form
 
