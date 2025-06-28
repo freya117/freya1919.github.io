@@ -10,7 +10,7 @@
     <meta charset="utf-8">
 
 <!-- begin _includes/seo.html --><title>SideWalk Ballet | Freya Tan</title>
-<meta name="description" content="Detecting Social Activities through Geo-tagged Urban Visual Contents">
+<meta name="description" content="Using large language models to identify and analyze social interactions in urban environments">
 
 
   <meta name="author" content="Freya Tan">
@@ -23,14 +23,14 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Freya Tan">
 <meta property="og:title" content="SideWalk Ballet">
-<meta property="og:url" content="http://localhost:4000/projects/sidewalk-ballet/">
+<meta property="og:url" content="/projects/sidewalk-ballet/">
 
 
-  <meta property="og:description" content="Detecting Social Activities through Geo-tagged Urban Visual Contents">
+  <meta property="og:description" content="Using large language models to identify and analyze social interactions in urban environments">
 
 
 
-  <meta property="og:image" content="http://localhost:4000/assets/images/projects/sidewalk-ballet.jpg">
+  <meta property="og:image" content="/assets/images/projects/sidewalk-ballet.jpg">
 
 
 
@@ -47,7 +47,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/projects/sidewalk-ballet/">
+<link rel="canonical" href="/projects/sidewalk-ballet/">
 
 
 
@@ -58,7 +58,7 @@
     
       "@type": "Person",
       "name": "Freya Tan",
-      "url": "http://localhost:4000/"
+      "url": "/"
     
   }
 </script>
@@ -89,6 +89,9 @@
 <link rel="stylesheet" href="/assets/css/main.css">
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+<!-- Smart Image Support -->
+<script src="/assets/js/smart-image.js"></script>
 
 
 
@@ -733,7 +736,7 @@
 
   <article class="page h-entry layout--project" itemscope itemtype="https://schema.org/CreativeWork" style="width: 100%; float: none; padding-right: 0;">
     <meta itemprop="headline" content="SideWalk Ballet">
-    <meta itemprop="description" content="Detecting Social Activities through Geo-tagged Urban Visual Contents">
+    <meta itemprop="description" content="Using large language models to identify and analyze social interactions in urban environments">
     <meta itemprop="datePublished" content="2025-05-15T00:00:00-04:00">
     
 
@@ -741,11 +744,12 @@
       <div style="max-width: 1024px; margin: 0 auto; width: 100%;">
         
           <header>
-            <h1 id="page-title" class="page__title p-name" itemprop="headline" style="color: #0033A0;">
-              <a href="http://localhost:4000/projects/sidewalk-ballet/" class="u-url" itemprop="url" style="color: #0033A0;">SideWalk Ballet
+            <h1 id="page-title" class="page__title p-name" itemprop="headline" style="color: #0033A0; margin-bottom: 1.2em;">
+              <a href="/projects/sidewalk-ballet/" class="u-url" itemprop="url" style="color: #0033A0;">SideWalk Ballet
 </a>
             </h1>
-            
+            <p id="page-subtitle" class="page__subtitle" itemprop="alternativeHeadline" style="font-size: 1.0em; font-weight: 300; font-style: italic; margin-top: -1em; margin-bottom: 2.8em; color: #505050; letter-spacing: 0.3px; border-bottom: 1px solid #e8e8e8; padding-bottom: 1.6em;">Detecting Social Activities through Geo-tagged Urban Visual Contents
+</p>
             
 
   <p class="page__meta">
@@ -767,7 +771,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          1 minute read
+          4 minute read
         
       </span>
     
@@ -789,62 +793,102 @@
 
 <h2 id="project-overview">Project Overview</h2>
 
-<p>This project originated from my thesis, which involved the collection of millions of photos from 26 cities. The objective was to utilize deep learning to analyze urban social activities through visual content analysis.</p>
+<p>This project originated from my thesis, which involved the collection and analysis of millions of geo-tagged photos from 26 cities worldwide. The objective is to utilize deep learning and large language models to detect, classify, and analyze urban social activities through visual content analysis. By understanding the “sidewalk ballet” of city life—a term coined by Jane Jacobs—we can better inform urban design that fosters vibrant social interactions.</p>
+
+<h2 id="background-and-motivation">Background and Motivation</h2>
+
+<p>Can you spot social interactions in urban spaces? Cities are alive with countless social interactions that shape their character and vitality. These interactions—whether between friends meeting at a café, strangers sharing a park bench, or families navigating a busy sidewalk—form what Jane Jacobs famously called the “sidewalk ballet” of city life.</p>
+
+<p>Understanding these patterns is crucial for creating more vibrant, inclusive, and socially sustainable urban environments. Traditional methods of studying urban social life have relied on time-consuming manual observations or limited-scale surveys, which cannot capture the full complexity and diversity of urban social interactions across different contexts and cultures.</p>
+
+<h2 id="research-gap-and-innovation">Research Gap and Innovation</h2>
+
+<p>While considerable research has been conducted on physical aspects of urban spaces (morphology, density, land use), the detection and analysis of social interactions in these environments remains challenging and under-explored. Traditional methods relying on manual observation are time-consuming and limited in scale, while existing computational approaches often fail to capture the nuanced nature of human social behavior.</p>
+
+<p>This project innovates by leveraging large language models (LLMs) and computer vision to automatically detect, categorize, and analyze social interactions from large-scale urban image datasets. The approach combines the pattern recognition capabilities of neural networks with the contextual understanding of LLMs to identify not just the presence of people, but the nature of their interactions and social relationships.</p>
 
 <h2 id="methodology">Methodology</h2>
 
-<p>The research utilized a combination of:</p>
+<p>The project employs a multi-stage approach that leverages the strengths of both computer vision and large language models:</p>
+
+<h3 id="llms-based-approach">LLMs Based Approach</h3>
+
+<h4 id="1-pairwise-relationship-detection">1. Pairwise Relationship Detection</h4>
+<p>First, we create a model that can distinguish whether a pair of bounding boxes (representing people in an image) belong to the same social group or not. This involves analyzing spatial proximity, body orientation, and contextual cues that suggest social connection.</p>
+
+<h4 id="2-group-combinations-analysis">2. Group Combinations Analysis</h4>
+<p>Based on the judgment of each pair of person-to-person relationships, we generate grouped bounding boxes that represent social units within the urban environment. This allows us to identify not just individuals, but social groupings and their spatial distribution.</p>
+
+<h4 id="3-activity-detection">3. Activity Detection</h4>
+<p>For each identified group, we detect a series of activities based on LLMs’ interpretation of visual cues, posture, and environmental context. This step classifies the nature of social interactions (e.g., conversing, dining together, waiting together, performing).</p>
+
+<h4 id="4-holistic-fine-tuning">4. Holistic Fine-tuning</h4>
+<p>Using the large dataset created through the previous steps, we fine-tune a holistic LLM that can identify social interactions with greater accuracy and nuance. This creates a feedback loop where the model continuously improves its understanding of urban social dynamics.</p>
+
+<h3 id="fine-tuning-process-for-the-large-language-model">Fine-tuning Process for the Large Language Model</h3>
+
+<p>The fine-tuning process involves several key steps:</p>
 <ul>
-  <li>Computer vision techniques for feature detection</li>
-  <li>Machine learning for activity classification</li>
-  <li>Spatial analysis to map social interactions</li>
-  <li>Integration with urban planning frameworks</li>
+  <li><strong>Base Model Selection</strong>: We evaluate several foundation models to identify the one with the best baseline performance for visual social interaction detection</li>
+  <li><strong>Training Data Creation</strong>: We generate extensive “Q&amp;A Chats” that teach the model to identify social interactions from visual inputs</li>
+  <li><strong>Parameter Optimization</strong>: We adjust the model parameters to balance accuracy with computational efficiency</li>
+  <li><strong>LoRA Implementation</strong>: We use Low-Rank Adaptation (LoRA) to reduce GPU VRAM requirements, making the fine-tuning process more efficient while only updating the LLM component rather than the entire model architecture</li>
 </ul>
 
-<h2 id="outcomes">Outcomes</h2>
+<h3 id="evaluation-indicators">Evaluation Indicators</h3>
 
-<p>The SideWalk Ballet project provides insights into how people interact with urban spaces across different cities, times of day, and contextual settings. The analysis reveals patterns of social activities that can inform urban planning decisions and public space design.</p>
-
-<p>Key findings include:</p>
+<p>We assess model performance using several metrics:</p>
 <ul>
-  <li>Identification of activity hotspots across urban environments</li>
-  <li>Temporal patterns of social behaviors in public spaces</li>
-  <li>Correlation between urban design elements and social activities</li>
-  <li>Framework for quantifying and qualifying social vibrancy</li>
+  <li><strong>Precision</strong>: The percentage of correctly predicted social interactions out of all predicted interactions</li>
+  <li><strong>Recall</strong>: The percentage of actual social interactions that have been correctly identified</li>
+  <li><strong>F1 Score</strong>: A balanced score between Precision and Recall, ranging from 0 to 1</li>
+  <li><strong>Spatial Accuracy</strong>: How accurately the model identifies the boundaries of social groups</li>
+  <li><strong>Interaction Classification Accuracy</strong>: How accurately the model categorizes the type of social interaction</li>
 </ul>
 
-<h2 id="applications">Applications</h2>
+<h2 id="data-sources">Data Sources</h2>
 
-<p>The methods and findings from this project can be applied to:</p>
+<p>Our analysis draws on an extensive collection of NYC Streetview Images from multiple platforms, creating one of the largest datasets for urban social interaction analysis:</p>
+
 <ul>
-  <li>Urban planning and public space design</li>
-  <li>Social impact assessment for development projects</li>
-  <li>Pedestrian planning and walkability improvements</li>
-  <li>Community activity trend analysis</li>
+  <li><strong>Google Street View</strong>: 2,242,871 images from diverse urban contexts worldwide</li>
+  <li><strong>Apple LookAround</strong>: 5,194,705 high-resolution panoramic images</li>
+  <li><strong>Bing Streetside</strong>: 1,379,623 images with particular coverage of secondary streets</li>
+  <li><strong>Mapillary Dataset</strong>: 3,354,593 user-contributed images offering unique perspectives</li>
 </ul>
 
-<figure class=" ">
-  
-    
-      <a href="/assets/images/projects/sidewalk-ballet.jpg" title="SideWalk Ballet analysis">
-          <img src="/assets/images/projects/sidewalk-ballet.jpg" alt="SideWalk Ballet Project" />
-      </a>
-    
-  
-  
-    <figcaption>Project visualization
-</figcaption>
-  
-</figure>
+<p>This diverse dataset allows us to analyze social interactions across different urban typologies, cultural contexts, and times of day, providing a comprehensive view of how social life manifests in public spaces.</p>
 
-<h2 id="future-development">Future Development</h2>
+<h2 id="expected-outcomes">Expected Outcomes</h2>
 
-<p>Future work on this project includes:</p>
+<p>The project aims to deliver several significant outcomes:</p>
+
 <ul>
-  <li>Expanding the dataset to include more cities</li>
-  <li>Incorporating temporal analysis to understand seasonal variations</li>
-  <li>Developing interactive tools for urban planners</li>
-  <li>Creating a public API for urban researchers</li>
+  <li><strong>Social Interaction Detection Model</strong>: A robust computational model capable of identifying and classifying social interactions in urban imagery</li>
+  <li><strong>Spatial Pattern Analysis</strong>: Maps and visualizations showing the distribution and characteristics of social activities across urban environments</li>
+  <li><strong>Design-Social Relationship Insights</strong>: Evidence-based insights into how specific urban design elements influence social interaction patterns</li>
+  <li><strong>Quantification Framework</strong>: A methodology for measuring and comparing social vibrancy across different urban spaces</li>
+  <li><strong>Planning Support Tool</strong>: An interactive tool that helps urban planners evaluate the social performance potential of design proposals</li>
+</ul>
+
+<h2 id="applications-and-future-work">Applications and Future Work</h2>
+
+<p>This research has significant applications for multiple stakeholders:</p>
+
+<ul>
+  <li><strong>Urban Planners and Designers</strong>: Providing evidence-based insights for creating socially vibrant spaces</li>
+  <li><strong>Public Space Managers</strong>: Offering tools to evaluate and improve the social performance of public spaces</li>
+  <li><strong>Urban Researchers</strong>: Enabling large-scale, cross-cultural studies of urban social dynamics</li>
+  <li><strong>Policy Makers</strong>: Supporting data-driven policies to enhance urban social life</li>
+  <li><strong>Community Advocates</strong>: Strengthening arguments for inclusive, socially supportive public spaces</li>
+</ul>
+
+<p>Future work will expand to include:</p>
+<ul>
+  <li>Temporal analysis tracking how social patterns change throughout the day, week, and seasons</li>
+  <li>Cross-cultural comparative studies examining how social interactions vary across different global contexts</li>
+  <li>Integration with other urban datasets (transportation, land use, economic activity) for more comprehensive analysis</li>
+  <li>Development of predictive models that can forecast the social impacts of proposed urban interventions</li>
 </ul>
 
           </div>
@@ -865,6 +909,8 @@
     <span itemprop="keywords">
     
       <a href="/tags/#computer-vision" class="page__taxonomy-item p-category" rel="tag">computer-vision</a><span class="sep">, </span>
+    
+      <a href="/tags/#ongoing-project" class="page__taxonomy-item p-category" rel="tag">ongoing-project</a><span class="sep">, </span>
     
       <a href="/tags/#social-equity" class="page__taxonomy-item p-category" rel="tag">social-equity</a><span class="sep">, </span>
     
@@ -889,11 +935,11 @@
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=SideWalk+Ballet%20http%3A%2F%2Flocalhost%3A4000%2Fprojects%2Fsidewalk-ballet%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=SideWalk+Ballet%20%2Fprojects%2Fsidewalk-ballet%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fprojects%2Fsidewalk-ballet%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=%2Fprojects%2Fsidewalk-ballet%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fprojects%2Fsidewalk-ballet%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=%2Fprojects%2Fsidewalk-ballet%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 

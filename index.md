@@ -291,7 +291,7 @@ author_profile: false
     <!-- Left text content -->
     <div class="text-content bio-content">
       <p>
-        <strong>Hi, I'm Freya</strong>, a graduate student at <a href="http://dusp.mit.edu">DUSP</a> and <a href="https://www.eecs.mit.edu/">EECS</a> at MIT. My research focuses on the intersection of urban science, human mobility, and computational methods. I use machine learning and data science approaches to tackle complex urban planning challenges.
+        <strong>Hi, I'm Freya</strong>, a graduate student at EECS and <a href="http://dusp.mit.edu">DUSP</a> at MIT. My research focuses on the intersection of urban science, human mobility, and computational methods. I use machine learning and data science approaches to tackle complex urban planning challenges.
       </p>
       
       <p>

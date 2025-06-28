@@ -72,8 +72,6 @@ The project has practical applications for:
 - Community advocates seeking data-driven arguments for improvements
 - Developers interested in walkable neighborhood characteristics
 
-{% include gallery caption="Boston Walker project visualization" %}
-
 ## Innovations
 
 The Boston Walker project introduces several methodological innovations:

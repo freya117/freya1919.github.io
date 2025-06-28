@@ -1,0 +1,28 @@
+{% comment %}
+  Smart Figure Include
+  This include handles figure elements with images regardless of their file extension.
+  
+  Parameters:
+  - image_path: Path to the image without extension (required)
+  - alt: Alt text for the image (optional)
+  - width: Width of the image (optional)
+  - class: CSS class for the figure (optional)
+  - caption: Caption for the figure (optional)
+  
+  Usage:
+  {% include smart-figure image_path="/assets/images/freya_2024" alt="Freya Tan" width="300" caption="Freya Tan's profile picture" %}
+{% endcomment %}
+
+<figure class="{{ include.class }}">
+  {% include smart-image.html 
+    path=include.image_path 
+    alt=include.alt 
+    width=include.width 
+    class=include.image_class 
+  %}
+  {%- if include.caption -%}
+    <figcaption>
+      {{ include.caption | markdownify | remove: "<p>" | remove: "</p>" }}
+    </figcaption>
+  {%- endif -%}
+</figure> 

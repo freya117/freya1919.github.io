@@ -2,6 +2,7 @@
 classes: wide
 layout: project
 title: "Electric Vehicle Charging Gap"
+subtitle: "Promoting Equity in Clean Transportation"
 excerpt: "Evaluating EV Infrastructure Accessibility in Disadvantaged Communities"
 permalink: /projects/ev-charging-gap/
 date: 2024-06-25
@@ -68,8 +69,6 @@ Based on the research, several policy recommendations have emerged:
 - Integration of charging infrastructure with affordable housing development
 - Public-private partnerships focused on disadvantaged communities
 - Community engagement in planning for charging infrastructure deployment
-
-{% include gallery caption="EV charging infrastructure analysis" %}
 
 ## Impact and Applications
 

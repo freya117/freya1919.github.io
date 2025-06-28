@@ -9,32 +9,28 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Spatial Data Fusion | Freya Tan</title>
-<meta name="description" content="#">
+<!-- begin _includes/seo.html --><title>Smart Image System | Freya Tan</title>
+<meta name="description" content="Freya’s personal website.">
 
 
   <meta name="author" content="Freya Tan">
   
-  <meta property="article:author" content="Freya Tan">
-  
 
 
-<meta property="og:type" content="article">
+<meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Freya Tan">
-<meta property="og:title" content="Spatial Data Fusion">
-<meta property="og:url" content="http://localhost:4000/aciform/bp/">
+<meta property="og:title" content="Smart Image System">
+<meta property="og:url" content="/smart-image-docs/">
 
 
-  <meta property="og:description" content="#">
-
-
-
+  <meta property="og:description" content="Freya’s personal website.">
 
 
 
 
-  <meta property="article:published_time" content="2024-01-09T00:00:00-05:00">
+
+
 
 
 
@@ -45,7 +41,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/aciform/bp/">
+<link rel="canonical" href="/smart-image-docs/">
 
 
 
@@ -56,7 +52,7 @@
     
       "@type": "Person",
       "name": "Freya Tan",
-      "url": "http://localhost:4000/"
+      "url": "/"
     
   }
 </script>
@@ -87,6 +83,9 @@
 <link rel="stylesheet" href="/assets/css/main.css">
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+<!-- Smart Image Support -->
+<script src="/assets/js/smart-image.js"></script>
 
 
 
@@ -737,7 +736,7 @@
   
     <div class="author__avatar">
       
-        <a href="http://localhost:4000/">
+        <a href="/">
           <img src="/assets/images/freya_2024.png" alt="Freya Tan" itemprop="image">
       </a>
       
@@ -867,37 +866,19 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Spatial Data Fusion">
-    <meta itemprop="description" content="#">
-    <meta itemprop="datePublished" content="2024-01-09T00:00:00-05:00">
+    <meta itemprop="headline" content="Smart Image System">
+    
+    
     
 
     <div class="page__inner-wrap">
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/aciform/bp/" class="u-url" itemprop="url">Spatial Data Fusion
+            <a href="/smart-image-docs/" class="u-url" itemprop="url">Smart Image System
 </a>
           </h1>
           
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          less than 1 minute read
-        
-      </span>
-    
-  </p>
 
 
         </header>
@@ -907,10 +888,60 @@
         
         
         
-        <p>#</p>
+        <h1 id="smart-image-system">Smart Image System</h1>
 
-<p>##</p>
+<p>The Smart Image System allows you to display images without worrying about the file extension. Whether your image is a JPG, PNG, GIF, or any other format, as long as the base filename is correct, the image will display properly.</p>
 
+<h2 id="using-smart-image-include">Using Smart Image Include</h2>
+
+<p>The simplest way to use the Smart Image System is with the <code class="language-plaintext highlighter-rouge">smart-image.html</code> include:</p>
+
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span>smart-image.html<span class="w"> </span><span class="na">path</span><span class="o">=</span><span class="s2">"/assets/images/filename"</span><span class="w"> </span><span class="na">alt</span><span class="o">=</span><span class="s2">"Image description"</span><span class="w"> </span><span class="na">width</span><span class="o">=</span><span class="s2">"300"</span><span class="w"> </span><span class="p">%}</span>
+</code></pre></div></div>
+
+<p>Note that you should <strong>not</strong> include the file extension in the <code class="language-plaintext highlighter-rouge">path</code> parameter.</p>
+
+<h2 id="using-smart-figure-include">Using Smart Figure Include</h2>
+
+<p>If you want to include a caption with your image, use the <code class="language-plaintext highlighter-rouge">smart-figure</code> include:</p>
+
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="nv">smart-figure</span><span class="w"> </span><span class="na">image_path</span><span class="o">=</span><span class="s2">"/assets/images/filename"</span><span class="w"> </span><span class="na">alt</span><span class="o">=</span><span class="s2">"Image description"</span><span class="w"> </span><span class="na">width</span><span class="o">=</span><span class="s2">"300"</span><span class="w"> </span><span class="na">caption</span><span class="o">=</span><span class="s2">"Image caption text"</span><span class="w"> </span><span class="p">%}</span>
+</code></pre></div></div>
+
+<h2 id="using-the-smart-image-tag">Using the Smart Image Tag</h2>
+
+<p>You can also use the custom <code class="language-plaintext highlighter-rouge">smart_image</code> tag:</p>
+
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{%</span><span class="w"> </span><span class="nt">smart_image</span><span class="w"> </span><span class="na">path</span><span class="o">=</span><span class="s2">"/assets/images/filename"</span><span class="w"> </span><span class="na">alt</span><span class="o">=</span><span class="s2">"Image description"</span><span class="w"> </span><span class="na">width</span><span class="o">=</span><span class="s2">"300"</span><span class="w"> </span><span class="p">%}</span>
+</code></pre></div></div>
+
+<h2 id="using-in-html">Using in HTML</h2>
+
+<p>If you prefer to use HTML directly, you can use the <code class="language-plaintext highlighter-rouge">data-image-base</code> attribute:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/assets/images/filename"</span> <span class="na">data-image-base=</span><span class="s">"/assets/images/filename"</span> <span class="na">alt=</span><span class="s">"Image description"</span> <span class="na">width=</span><span class="s">"300"</span> <span class="na">onerror=</span><span class="s">"smartImageFallback(this)"</span><span class="nt">&gt;</span>
+</code></pre></div></div>
+
+<h2 id="using-in-markdown">Using in Markdown</h2>
+
+<p>For Markdown, you can simply omit the extension:</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">![</span><span class="nv">Image description</span><span class="p">](</span><span class="sx">/assets/images/filename</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>The system will automatically try different file extensions until it finds one that works.</p>
+
+<h2 id="how-it-works">How It Works</h2>
+
+<p>The Smart Image System works by:</p>
+
+<ol>
+  <li>Trying to load the image with the specified base path and an initial extension (typically .jpg)</li>
+  <li>If that fails, it tries other common extensions like .png, .gif, etc.</li>
+  <li>Once a valid image is found, it displays that image</li>
+</ol>
+
+<p>This approach makes your image references more robust, as they’ll work regardless of the specific file format used.</p>
 
         
         
@@ -920,246 +951,20 @@
       <footer class="page__meta">
         
         
-  
-
-
-  
-
-  <p class="page__taxonomy">
-    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
-    <span itemprop="keywords">
-    
-      <a href="/tags/#categories" class="page__taxonomy-item p-category" rel="tag">categories</a>
-    
-    </span>
-  </p>
-
-
-
-
-  
-
-
-  
-
-  <p class="page__taxonomy">
-    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
-    <span itemprop="keywords">
-    
-      <a href="/categories/#aciform" class="page__taxonomy-item p-category" rel="tag">aciform</a>
-    
-    </span>
-  </p>
 
 
         
-
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2024-01-09T00:00:00-05:00">January 9, 2024</time></p>
 
       </footer>
 
-      <section class="page__share">
-  
-    <h4 class="page__share-title">Share on</h4>
-  
-
-  <a href="https://twitter.com/intent/tweet?text=Spatial+Data+Fusion%20http%3A%2F%2Flocalhost%3A4000%2Faciform%2Fbp%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
-
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Faciform%2Fbp%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
-
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Faciform%2Fbp%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
-</section>
-
+      
 
       
-  <nav class="pagination">
-    
-      <a href="/operation/reading%20list/spatial%20analysis/note/" class="pagination--pager" title="Sidewalk Ballet
-">Previous</a>
-    
-    
-      <a href="/posts/2024/06/sample-post/" class="pagination--pager" title="Sample Blog Post Template
-">Next</a>
-    
-  </nav>
-
     </div>
 
     
   </article>
 
-  
-  
-    <div class="page__related">
-      <h2 class="page__related-title">You may also enjoy</h2>
-      <div class="grid__wrapper">
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/posts/2024/06/sample-post/" rel="permalink">Sample Blog Post Template
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          less than 1 minute read
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">[PLACEHOLDER: Add Post Title]
-
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/operation/reading%20list/spatial%20analysis/note/" rel="permalink">Sidewalk Ballet
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          less than 1 minute read
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">Keywords
-computer vision
-
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/aciform/note/" rel="permalink">Boston Walker
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          less than 1 minute read
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">Research keyworks and todo
-
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/aciform/case/" rel="permalink">Bridging The Charging Gap
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          less than 1 minute read
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">This post has many categories.
-</p>
-  </article>
-</div>
-
-        
-      </div>
-    </div>
   
   
 </div>

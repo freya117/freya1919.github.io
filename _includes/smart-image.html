@@ -1,0 +1,36 @@
+{% comment %}
+  Smart Image Include
+  This include handles images regardless of their file extension.
+  
+  Parameters:
+  - path: Base path to the image without extension (required)
+  - alt: Alt text for the image (optional)
+  - width: Width of the image (optional)
+  - class: CSS class for the image (optional)
+  - caption: Caption for the image (optional)
+  
+  Usage:
+  {% include smart-image.html path="/assets/images/freya_2024" alt="Freya Tan" width="300" %}
+{% endcomment %}
+
+{% assign base_path = include.path %}
+
+<div class="smart-image">
+  <img
+    src="{{ base_path }}.jpg"
+    data-image-base="{{ base_path }}"
+    alt="{{ include.alt }}"
+    {% if include.width %}width="{{ include.width }}"{% endif %}
+    {% if include.class %}class="{{ include.class }}"{% endif %}
+    onerror="smartImageFallback(this)"
+  >
+
+  {% if include.caption %}
+  <figcaption>{{ include.caption | markdownify | remove: "<p>" | remove: "</p>" }}</figcaption>
+  {% endif %}
+</div>
+
+{% unless smartimage_js_included %}
+  {% assign smartimage_js_included = true %}
+  <script src="{{ '/assets/js/smart-image.js' | relative_url }}"></script>
+{% endunless %} 

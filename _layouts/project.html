@@ -33,10 +33,10 @@ layout: default
       <div style="max-width: 1024px; margin: 0 auto; width: 100%;">
         {% unless page.header.overlay_color or page.header.overlay_image %}
           <header>
-            {% if page.title %}<h1 id="page-title" class="page__title p-name" itemprop="headline" style="color: #0033A0;">
+            {% if page.title %}<h1 id="page-title" class="page__title p-name" itemprop="headline" style="color: #0033A0; margin-bottom: 1.2em;">
               <a href="{{ page.url | absolute_url }}" class="u-url" itemprop="url" style="color: #0033A0;">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</a>
             </h1>{% endif %}
-            {% if page.subtitle %}<p id="page-subtitle" class="page__subtitle" itemprop="alternativeHeadline">{{ page.subtitle | markdownify | remove: "<p>" | remove: "</p>" }}</p>{% endif %}
+            {% if page.subtitle %}<p id="page-subtitle" class="page__subtitle" itemprop="alternativeHeadline" style="font-size: 1.0em; font-weight: 300; font-style: italic; margin-top: -1em; margin-bottom: 2.8em; color: #505050; letter-spacing: 0.3px; border-bottom: 1px solid #e8e8e8; padding-bottom: 1.6em;">{{ page.subtitle | markdownify | remove: "<p>" | remove: "</p>" }}</p>{% endif %}
             {% include page__meta.html %}
           </header>
         {% endunless %}

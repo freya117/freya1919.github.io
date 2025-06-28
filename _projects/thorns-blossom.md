@@ -116,8 +116,6 @@ The economic revitalization strategy includes:
 - Value-added processing facilities for secondary products
 - Tourism opportunities centered around floral heritage and production
 
-{% include gallery caption="Thorns & Blossom project visualization" %}
-
 ## Community Engagement
 
 Community participation is central to the project through:

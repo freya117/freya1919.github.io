@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Sidewalk Ballet | Freya Tan</title>
-<meta name="description" content="Keywords computer vision">
+<!-- begin _includes/seo.html --><title>Maine DOT Pedestrian Volume Estimation | Freya Tan</title>
+<meta name="description" content="Developing a pedestrian volume model to support infrastructure and safety planning">
 
 
   <meta name="author" content="Freya Tan">
@@ -22,19 +22,21 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Freya Tan">
-<meta property="og:title" content="Sidewalk Ballet">
-<meta property="og:url" content="http://localhost:4000/operation/reading%20list/spatial%20analysis/note/">
+<meta property="og:title" content="Maine DOT Pedestrian Volume Estimation">
+<meta property="og:url" content="/projects/maine-pedestrian-model/">
 
 
-  <meta property="og:description" content="Keywords computer vision">
-
-
-
+  <meta property="og:description" content="Developing a pedestrian volume model to support infrastructure and safety planning">
 
 
 
+  <meta property="og:image" content="/assets/images/projects/maine-pedestrian.jpg">
 
-  <meta property="article:published_time" content="2023-12-29T00:00:00-05:00">
+
+
+
+
+  <meta property="article:published_time" content="2025-06-10T00:00:00-04:00">
 
 
 
@@ -45,7 +47,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/operation/reading%20list/spatial%20analysis/note/">
+<link rel="canonical" href="/projects/maine-pedestrian-model/">
 
 
 
@@ -56,7 +58,7 @@
     
       "@type": "Person",
       "name": "Freya Tan",
-      "url": "http://localhost:4000/"
+      "url": "/"
     
   }
 </script>
@@ -87,6 +89,9 @@
 <link rel="stylesheet" href="/assets/css/main.css">
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+<!-- Smart Image Support -->
+<script src="/assets/js/smart-image.js"></script>
 
 
 
@@ -361,7 +366,7 @@
 
   </head>
 
-  <body class="layout--single">
+  <body class="layout--project wide">
     <nav class="skip-links">
   <ul>
     <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
@@ -726,165 +731,38 @@
 
 
 
-<div id="main" role="main">
-  
-  <div class="sidebar sticky">
+<div id="main" role="main" style="padding-left: 0; padding-right: 0; max-width: 100%;">
   
 
-
-<div itemscope itemtype="https://schema.org/Person" class="h-card ">
-
-  
-    <div class="author__avatar">
-      
-        <a href="http://localhost:4000/">
-          <img src="/assets/images/freya_2024.png" alt="Freya Tan" itemprop="image">
-      </a>
-      
-    </div>
-  
-
-  <div class="author__content">
-    <h3 class="author__name p-name" itemprop="name">
-      Freya Tan
-    </h3>
-    
-      <div class="author__bio p-note" itemprop="description">
-        <p>MIT EECS + DUSP Master Student</p>
-
-      </div>
-    
-  </div>
-
-  <div class="author__urls-wrapper">
-    <button class="btn btn--inverse">Follow</button>
-    <ul class="author__urls social-icons">
-      
-        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
-          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Cambridge, MA</span>
-        </li>
-      
-
-      
-        
-          
-            <li><a href="https://github.com/freya117" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
-          
-        
-          
-            <li><a href="https://freya1919.github.io" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fas fa-fw fa-link" aria-hidden="true"></i><span class="label">Website</span></a></li>
-          
-        
-          
-            <li><a href="https://www.linkedin.com/in/freya-tan-888145258/" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
-          
-        
-          
-            <li><a href="https://www.researchgate.net/profile/Freya-Tan" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-researchgate" aria-hidden="true"></i><span class="label">ResearchGate</span></a></li>
-          
-        
-          
-            <li><a href="https://dusp.mit.edu/people/freya-tan" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fas fa-fw fa-university" aria-hidden="true"></i><span class="label">DUSP Profile</span></a></li>
-          
-        
-          
-            <li><a href="https://cityform.mit.edu/" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fas fa-fw fa-flask" aria-hidden="true"></i><span class="label">City Form Lab</span></a></li>
-          
-        
-          
-        
-      
-
-      
-
-      
-        <li>
-          <a href="mailto:freya117@mit.edu" rel="me" class="u-email">
-            <meta itemprop="email" content="freya117@mit.edu" />
-            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span>
-          </a>
-        </li>
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      <!--
-  <li>
-    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
-      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
-    </a>
-  </li>
--->
-    </ul>
-  </div>
-</div>
-
-  
-  </div>
-
-
-
-  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Sidewalk Ballet">
-    <meta itemprop="description" content="Keywordscomputer vision">
-    <meta itemprop="datePublished" content="2023-12-29T00:00:00-05:00">
+  <article class="page h-entry layout--project" itemscope itemtype="https://schema.org/CreativeWork" style="width: 100%; float: none; padding-right: 0;">
+    <meta itemprop="headline" content="Maine DOT Pedestrian Volume Estimation">
+    <meta itemprop="description" content="Developing a pedestrian volume model to support infrastructure and safety planning">
+    <meta itemprop="datePublished" content="2025-06-10T00:00:00-04:00">
     
 
-    <div class="page__inner-wrap">
-      
-        <header>
-          <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/operation/reading%20list/spatial%20analysis/note/" class="u-url" itemprop="url">Sidewalk Ballet
+    <div class="page__inner-wrap" style="max-width: 100%; margin: 0 auto; padding-left: 1em; padding-right: 1em; box-sizing: border-box;">
+      <div style="max-width: 1024px; margin: 0 auto; width: 100%;">
+        
+          <header>
+            <h1 id="page-title" class="page__title p-name" itemprop="headline" style="color: #0033A0; margin-bottom: 1.2em;">
+              <a href="/projects/maine-pedestrian-model/" class="u-url" itemprop="url" style="color: #0033A0;">Maine DOT Pedestrian Volume Estimation
 </a>
-          </h1>
-          
+            </h1>
+            <p id="page-subtitle" class="page__subtitle" itemprop="alternativeHeadline" style="font-size: 1.0em; font-weight: 300; font-style: italic; margin-top: -1em; margin-bottom: 2.8em; color: #505050; letter-spacing: 0.3px; border-bottom: 1px solid #e8e8e8; padding-bottom: 1.6em;">Data-Driven Pedestrian Infrastructure Planning
+</p>
+            
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2025-06-10T00:00:00-04:00">June 10, 2025</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -893,34 +771,74 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          less than 1 minute read
+          1 minute read
         
       </span>
     
   </p>
 
 
-        </header>
-      
+          </header>
+        
 
-      <section class="page__content e-content" itemprop="text">
-        
-        
-        
-        <h2 id="keywords">Keywords</h2>
-<h3 id="computer-vision">computer vision</h3>
+        <section class="page__content e-content" itemprop="text">
+          
+          
+          <div class="portfolio-item">
+            <h2 id="project-overview">Project Overview</h2>
 
-<h3 id="methodology">Methodology</h3>
+<p>While the state of Maine has well-established models for vehicular traffic volumes (AADT), an analogous model for pedestrian volumes has been lacking. This gap makes it difficult for planners and engineers to make informed decisions about pedestrian infrastructure and safety investments. This project addresses this critical need by developing a comprehensive pedestrian volume estimation model for cities and towns across Maine.</p>
 
+<h2 id="methodology">Methodology</h2>
 
-        
-        
-        
-      </section>
+<p>Building on recent advances in pedestrian volume modeling in urban districts (Sevtsuk et al. 2021; Sevtsuk et al. 2024) and larger cities (Alhassan &amp; Sevtsuk, 2024), this project develops a Maine-specific model that accounts for:</p>
 
-      <footer class="page__meta">
-        
-        
+<ul>
+  <li>Network-based pedestrian route choice behavior</li>
+  <li>Local land use and built environment characteristics</li>
+  <li>Seasonal variations in pedestrian activity</li>
+  <li>Demographic and socioeconomic factors</li>
+  <li>Existing pedestrian infrastructure</li>
+</ul>
+
+<p>The model employs spatial regression techniques and machine learning approaches to generate robust estimates that can be applied across Maine’s diverse urban and rural contexts.</p>
+
+<h2 id="applications--impact">Applications &amp; Impact</h2>
+
+<p>The pedestrian volume model developed through this project enables:</p>
+
+<ul>
+  <li><strong>Evidence-based infrastructure planning</strong>: Identifying locations where pedestrian improvements would benefit the most users</li>
+  <li><strong>Enhanced safety analysis</strong>: Normalizing crash data to reveal not just crash locations but areas with highest crash probabilities</li>
+  <li><strong>Equitable resource allocation</strong>: Ensuring investments align with actual pedestrian demand patterns</li>
+  <li><strong>Climate goals support</strong>: Informing efforts to decarbonize transportation in socially just ways</li>
+  <li><strong>Better policy decisions</strong>: Helping identify locations for RRFBs, Pedestrian Hybrid Beacons, and High Priority Active Transportation routes</li>
+</ul>
+
+<h2 id="key-findings">Key Findings</h2>
+
+<p>The project revealed significant spatial disparities in pedestrian volumes across Maine’s communities, highlighting areas with high pedestrian activity but inadequate infrastructure. The model successfully identified “pedestrian deserts” where latent demand for walking exists but is suppressed by poor infrastructure or safety concerns.</p>
+
+<h2 id="outcomes">Outcomes</h2>
+
+<p>This work has provided Maine DOT with:</p>
+
+<ul>
+  <li>A statewide pedestrian volume estimation tool</li>
+  <li>Priority zones for pedestrian infrastructure investment</li>
+  <li>A framework for integrating pedestrian considerations into standard transportation planning</li>
+  <li>Recommendations for continuous pedestrian data collection sites</li>
+  <li>Policy guidelines for advancing multimodal transportation planning</li>
+</ul>
+
+          </div>
+          
+          
+        </section>
+
+        <footer class="page__meta">
+          
+          
   
 
 
@@ -930,246 +848,59 @@
     <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
     <span itemprop="keywords">
     
-      <a href="/tags/#categories" class="page__taxonomy-item p-category" rel="tag">categories</a><span class="sep">, </span>
+      <a href="/tags/#ongoing-project" class="page__taxonomy-item p-category" rel="tag">ongoing-project</a><span class="sep">, </span>
     
-      <a href="/tags/#edge-case" class="page__taxonomy-item p-category" rel="tag">edge case</a>
+      <a href="/tags/#pedestrian-modeling" class="page__taxonomy-item p-category" rel="tag">pedestrian-modeling</a><span class="sep">, </span>
     
-    </span>
-  </p>
-
-
-
-
-  
-
-
-  
-
-  <p class="page__taxonomy">
-    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
-    <span itemprop="keywords">
+      <a href="/tags/#transportation" class="page__taxonomy-item p-category" rel="tag">transportation</a><span class="sep">, </span>
     
-      <a href="/categories/#operation" class="page__taxonomy-item p-category" rel="tag">operation</a><span class="sep">, </span>
+      <a href="/tags/#urban-analytics" class="page__taxonomy-item p-category" rel="tag">urban-analytics</a><span class="sep">, </span>
     
-      <a href="/categories/#reading-list" class="page__taxonomy-item p-category" rel="tag">reading list</a><span class="sep">, </span>
-    
-      <a href="/categories/#spatial-analysis" class="page__taxonomy-item p-category" rel="tag">spatial analysis</a>
+      <a href="/tags/#walkability" class="page__taxonomy-item p-category" rel="tag">walkability</a>
     
     </span>
   </p>
 
 
-        
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2023-12-29T00:00:00-05:00">December 29, 2023</time></p>
 
-      </footer>
+          
 
-      <section class="page__share">
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2025-06-10T00:00:00-04:00">June 10, 2025</time></p>
+
+        </footer>
+
+        <section class="page__share">
   
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=Sidewalk+Ballet%20http%3A%2F%2Flocalhost%3A4000%2Foperation%2Freading%2520list%2Fspatial%2520analysis%2Fnote%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Maine+DOT+Pedestrian+Volume+Estimation%20%2Fprojects%2Fmaine-pedestrian-model%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Foperation%2Freading%2520list%2Fspatial%2520analysis%2Fnote%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=%2Fprojects%2Fmaine-pedestrian-model%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Foperation%2Freading%2520list%2Fspatial%2520analysis%2Fnote%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=%2Fprojects%2Fmaine-pedestrian-model%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
-      
+        
   <nav class="pagination">
     
-      <a href="/aciform/note/" class="pagination--pager" title="Boston Walker
+      <a href="/projects/sidewalk-ballet/" class="pagination--pager" title="SideWalk Ballet
 ">Previous</a>
     
     
-      <a href="/aciform/bp/" class="pagination--pager" title="Spatial Data Fusion
+      <a href="/projects/newark-heat/" class="pagination--pager" title="Advancing Extreme Heat Resilience in Newark
 ">Next</a>
     
   </nav>
 
-    </div>
-
-    
-  </article>
-
-  
-  
-    <div class="page__related">
-      <h2 class="page__related-title">You may also enjoy</h2>
-      <div class="grid__wrapper">
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/posts/2024/06/sample-post/" rel="permalink">Sample Blog Post Template
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          less than 1 minute read
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">[PLACEHOLDER: Add Post Title]
-
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/aciform/bp/" rel="permalink">Spatial Data Fusion
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          less than 1 minute read
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">#
-
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/aciform/note/" rel="permalink">Boston Walker
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          less than 1 minute read
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">Research keyworks and todo
-
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/aciform/case/" rel="permalink">Bridging The Charging Gap
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          less than 1 minute read
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">This post has many categories.
-</p>
-  </article>
-</div>
-
-        
       </div>
     </div>
-  
-  
-</div>
 
+    
+  </article>
+</div> 
     </div>
 
     

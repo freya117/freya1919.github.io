@@ -62,8 +62,6 @@ The pedestrian volume model developed through this project enables:
 
 The project revealed significant spatial disparities in pedestrian volumes across Maine's communities, highlighting areas with high pedestrian activity but inadequate infrastructure. The model successfully identified "pedestrian deserts" where latent demand for walking exists but is suppressed by poor infrastructure or safety concerns.
 
-{% include gallery caption="Maine Pedestrian Volume Estimation Model" %}
-
 ## Outcomes
 
 This work has provided Maine DOT with:

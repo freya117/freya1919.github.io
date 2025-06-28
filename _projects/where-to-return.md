@@ -63,8 +63,6 @@ Key elements of the design include:
 - Flexible community spaces that can host cultural events and ceremonies
 - Educational components that highlight cultural relationships with death and remembrance
 
-{% include gallery caption="WHERE TO RETURN design concept" %}
-
 ## Cultural Significance
 
 The design specifically addresses cultural identity through:

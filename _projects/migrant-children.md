@@ -63,8 +63,6 @@ Based on the research, key design principles were established:
 - Safety features specific to children's needs
 - Cultural responsiveness to diverse backgrounds
 
-{% include gallery caption="Public space design for migrant children" %}
-
 ## Design Interventions
 
 The project proposes several types of interventions:

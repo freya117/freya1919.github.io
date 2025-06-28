@@ -21,7 +21,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Freya Tan">
 <meta property="og:title" content="Image Test">
-<meta property="og:url" content="http://localhost:4000/imagetest/">
+<meta property="og:url" content="/imagetest/">
 
 
   <meta property="og:description" content="Freya’s personal website.">
@@ -41,7 +41,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/imagetest/">
+<link rel="canonical" href="/imagetest/">
 
 
 
@@ -52,7 +52,7 @@
     
       "@type": "Person",
       "name": "Freya Tan",
-      "url": "http://localhost:4000/"
+      "url": "/"
     
   }
 </script>
@@ -83,6 +83,9 @@
 <link rel="stylesheet" href="/assets/css/main.css">
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+<!-- Smart Image Support -->
+<script src="/assets/js/smart-image.js"></script>
 
 
 
@@ -736,7 +739,7 @@
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/imagetest/" class="u-url" itemprop="url">Image Test
+            <a href="/imagetest/" class="u-url" itemprop="url">Image Test
 </a>
           </h1>
           
@@ -751,13 +754,59 @@
         
         <h2 id="testing-image-display">Testing Image Display</h2>
 
-<p>Here’s the headshot image:</p>
+<p>Here’s the headshot image using the old method:</p>
 
 <p><img src="/assets/images/freya_2024.JPG" alt="Freya Tan" width="300" /></p>
 
 <p>And using Markdown syntax:</p>
 
 <p><img src="/assets/images/freya_2024.JPG" alt="Freya Tan" /></p>
+
+<h2 id="using-smart-image-extension-agnostic">Using Smart Image (Extension Agnostic)</h2>
+
+<div class="smart-image">
+  <img src="/assets/images/freya_2024.jpg" data-image-base="/assets/images/freya_2024" alt="Freya Tan" width="300" onerror="smartImageFallback(this)" />
+
+  
+</div>
+
+<script src="/assets/js/smart-image.js"></script>
+
+<h2 id="using-smart-figure">Using Smart Figure</h2>
+
+<figure class="">
+  
+
+
+
+<div class="smart-image">
+  <img src="/assets/images/freya_2024.jpg" data-image-base="/assets/images/freya_2024" alt="Freya Tan" width="300" onerror="smartImageFallback(this)" />
+
+  
+</div>
+
+ <figcaption>
+      Freya’s profile picture
+
+    </figcaption></figure>
+
+<h2 id="testing-with-different-extensions">Testing With Different Extensions</h2>
+
+<p>These all point to the same base filename, but with different extensions:</p>
+
+<div class="smart-image">
+  <img src="/assets/images/profile.jpg" data-image-base="/assets/images/profile" alt="Profile" width="300" onerror="smartImageFallback(this)" />
+
+  
+</div>
+
+<h2 id="using-without-extensions-in-html">Using Without Extensions in HTML</h2>
+
+<p><img src="/assets/images/freya_2024" data-image-base="/assets/images/freya_2024" alt="Freya Tan (extension agnostic)" width="300" onerror="smartImageFallback(this)" /></p>
+
+<h2 id="using-without-extensions-in-markdown-will-fall-back-to-first-available-extension">Using Without Extensions in Markdown (will fall back to first available extension)</h2>
+
+<p><img src="/assets/images/freya_2024" alt="Freya Tan (extension agnostic)" /></p>
 
 <h2 id="direct-path-test">Direct Path Test</h2>
 

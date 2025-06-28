@@ -18,14 +18,14 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Freya Tan">
 <meta property="og:title" content="Gist, Blur, and Attention">
-<meta property="og:url" content="http://localhost:4000/projects/gist-blur-attention/">
+<meta property="og:url" content="/projects/gist-blur-attention/">
 
 
   <meta property="og:description" content="Research on aligning visual representations with human engagement signals. This project explores how temporal averaging of video frames can create representations more aligned with human perception and engagement compared to standard Vision-Language Models.">
 
 
 
-  <meta property="og:image" content="http://localhost:4000/assets/images/projects/gist-blur-attention.jpg">
+  <meta property="og:image" content="/assets/images/projects/gist-blur-attention.jpg">
 
 
 
@@ -42,7 +42,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/projects/gist-blur-attention/">
+<link rel="canonical" href="/projects/gist-blur-attention/">
 
 
 
@@ -53,7 +53,7 @@
     
       "@type": "Person",
       "name": "Freya Tan",
-      "url": "http://localhost:4000/"
+      "url": "/"
     
   }
 </script>
@@ -84,6 +84,9 @@
 <link rel="stylesheet" href="/assets/css/main.css">
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+<!-- Smart Image Support -->
+<script src="/assets/js/smart-image.js"></script>
 
 
 
@@ -736,11 +739,11 @@
       <div style="max-width: 1024px; margin: 0 auto; width: 100%;">
         
           <header>
-            <h1 id="page-title" class="page__title p-name" itemprop="headline" style="color: #0033A0;">
-              <a href="http://localhost:4000/projects/gist-blur-attention/" class="u-url" itemprop="url" style="color: #0033A0;">Gist, Blur, and Attention
+            <h1 id="page-title" class="page__title p-name" itemprop="headline" style="color: #0033A0; margin-bottom: 1.2em;">
+              <a href="/projects/gist-blur-attention/" class="u-url" itemprop="url" style="color: #0033A0;">Gist, Blur, and Attention
 </a>
             </h1>
-            <p id="page-subtitle" class="page__subtitle" itemprop="alternativeHeadline">Analyzing Temporally Averaged Visual Representations for Alignment with Human Engagement Signals
+            <p id="page-subtitle" class="page__subtitle" itemprop="alternativeHeadline" style="font-size: 1.0em; font-weight: 300; font-style: italic; margin-top: -1em; margin-bottom: 2.8em; color: #505050; letter-spacing: 0.3px; border-bottom: 1px solid #e8e8e8; padding-bottom: 1.6em;">Analyzing Temporally Averaged Visual Representations for Alignment with Human Engagement Signals
 </p>
             
 
@@ -1383,14 +1386,6 @@ H: $\exists W^*$ such that $\text{Corr}(F_{\text{ResNet-50}}^{\text{avg}(W^*)}, 
 <ul>
   <li><strong>VLM Analysis of Averaged Images:</strong> Apply VLMs directly to the averaged images to extract semantic features, using the same Llava-OV model and prompts as the baseline, but with the static average image $I_{\text{avg}(W)}$ as input. This would yield keywords $K_{\text{VLM}}^{\text{avg}(W)}$ that could be embedded using Sentence-BERT<sup>[10]</sup> to produce semantic representations $F_{\text{VLM}}^{\text{avg}(W)}$ (384 dims). This controlled comparison would provide further insights into how temporal averaging affects semantic understanding.</li>
   <li><strong>Human Validation:</strong> Conduct user studies to directly assess the perceptual relevance of features captured by different temporal averaging approaches.</li>
-</ul>
-
-<figure>
-  <img src="/assets/images/projects/gist-blur-attention/Human Validation.png" alt="Human Validation Approach" />
-  <figcaption><b>Figure 17:</b> Proposed human validation approach for future work. The diagram illustrates how users would watch a video clip and then select which keyword list (from direct video analysis or average image analysis) better reflects their memory and impression of the content, providing ground truth validation for our alignment hypotheses.</figcaption>
-</figure>
-
-<ul>
   <li><strong>Fine-tuning for Averaged Inputs:</strong> To address the domain mismatch limitation identified with the current Average Image pathway, fine-tune the ResNet-50 model (or similar CNNs) specifically on temporally averaged images. Similarly, if VLMs are applied to averaged images in future experiments, their visual encoders should also be adapted or fine-tuned for this distinct input type.</li>
   <li><strong>Integration with Modern Architectures:</strong> Explore combining temporal averaging with state-of-the-art video architectures like Video Transformers, potentially as a parallel pathway.</li>
   <li><strong>Content Adaptivity:</strong> Investigate whether the optimal W varies by content type, scene complexity, or camera motion.</li>
@@ -1482,11 +1477,11 @@ H: $\exists W^*$ such that $\text{Corr}(F_{\text{ResNet-50}}^{\text{avg}(W^*)}, 
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=Gist%2C+Blur%2C+and+Attention%20http%3A%2F%2Flocalhost%3A4000%2Fprojects%2Fgist-blur-attention%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Gist%2C+Blur%2C+and+Attention%20%2Fprojects%2Fgist-blur-attention%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fprojects%2Fgist-blur-attention%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=%2Fprojects%2Fgist-blur-attention%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fprojects%2Fgist-blur-attention%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=%2Fprojects%2Fgist-blur-attention%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 

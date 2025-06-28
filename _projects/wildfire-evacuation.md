@@ -72,8 +72,6 @@ The project evaluates multiple evacuation strategies:
 - Use of alternative evacuation routes
 - Specialized transportation for vulnerable populations
 
-{% include gallery caption="Wildfire evacuation simulation visualization" %}
-
 ## Applications
 
 This research has practical applications for:

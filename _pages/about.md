@@ -63,14 +63,17 @@ author_profile: true
   
 ## Bio
 
-I am a Master's student at MIT in EECS + DUSP. My research focuses on urban science and human mobility.
+I am a Master's student at MIT in DUSP. My research focuses on the intersection of urban science, human mobility, and computational methods. I use machine learning and data science approaches to tackle complex urban planning challenges.
 
-[PLACEHOLDER: Add more details about your research focus, approach, and key areas of interest.]
+Currently, I'm a researcher at the <a href="https://cityform.mit.edu/">City Form Lab</a> at MIT, where my work focuses on pedestrian activity modeling and social behavior detection. My projects include analyzing social activities through urban visual content, developing neighborhood archetypes for energy modeling, and assessing transportation equity.
+
+Prior to MIT, I was at UC Berkeley, where I developed a strong foundation in urban systems and human mobility research. I've worked on multiple interdisciplinary projects combining architecture, urban planning, and computational analysis.
+
+I'm passionate about integrating urban planning with spatial analytics and mobility research, aiming to create more sustainable, equitable, and livable urban environments through data-driven approaches and human-centered design.
 
 ## Education
 
 <div class="education-item">
-  <div class="degree">Master in Electrical Engineering and Computer Science (EECS)</div>
   <div class="degree">Master in City Planning</div>
   <div class="university">Massachusetts Institute of Technology (MIT)</div>
 </div>
@@ -88,10 +91,10 @@ I am a Master's student at MIT in EECS + DUSP. My research focuses on urban scie
 
 ## Research Interests
 
-* [PLACEHOLDER: Research Interest 1]
-* [PLACEHOLDER: Research Interest 2]
-* [PLACEHOLDER: Research Interest 3]
-* [PLACEHOLDER: Research Interest 4]
+* Human Mobility
+* Spatial AI & Computer Vision
+* Urban Intelligence with Large Language Models (LLMs)
+* Urban Computing
 
 ## Selected Awards
 

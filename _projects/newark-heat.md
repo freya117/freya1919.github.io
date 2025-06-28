@@ -111,5 +111,3 @@ The "whole-of-community" governance model and strengthened partnerships are inte
 Successful pilot projects will be leveraged to attract additional funding from public and private sources for scaling initiatives. Data collected and lessons learned will inform future updates to City plans and policies, such as the Heat Preparedness Plan, energy strategies, zoning regulations, and green infrastructure standards.
 
 The project aims to serve as a model for scalable, community-driven climate resilience initiatives for other cities.
-
-{% include gallery caption="Newark Heat Resilience Planning" %} 

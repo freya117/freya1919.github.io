@@ -84,8 +84,6 @@ This advancement supports tailored simulation of community-level energy strategi
 - Freya Tan - Department of Architecture, University of California, Berkeley / Department of Urban Studies and Planning, Massachusetts Institute of Technology
 - Luisa Caldas - Department of Architecture, University of California, Berkeley
 
-{% include gallery caption="Neighborhood archetype visualization" %}
-
 ## Results
 
 Initial results show that the archetype-based approach:

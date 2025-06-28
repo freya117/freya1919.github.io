@@ -596,12 +596,6 @@ These findings contribute to the ongoing discussion in CV about how to design vi
 ### 5.6. Future Work
 -   **VLM Analysis of Averaged Images:** Apply VLMs directly to the averaged images to extract semantic features, using the same Llava-OV model and prompts as the baseline, but with the static average image $I_{\text{avg}(W)}$ as input. This would yield keywords $K_{\text{VLM}}^{\text{avg}(W)}$ that could be embedded using Sentence-BERT<sup>[10]</sup> to produce semantic representations $F_{\text{VLM}}^{\text{avg}(W)}$ (384 dims). This controlled comparison would provide further insights into how temporal averaging affects semantic understanding.
 -   **Human Validation:** Conduct user studies to directly assess the perceptual relevance of features captured by different temporal averaging approaches.
-
-<figure>
-  <img src="/assets/images/projects/gist-blur-attention/Human Validation.png" alt="Human Validation Approach">
-  <figcaption><b>Figure 17:</b> Proposed human validation approach for future work. The diagram illustrates how users would watch a video clip and then select which keyword list (from direct video analysis or average image analysis) better reflects their memory and impression of the content, providing ground truth validation for our alignment hypotheses.</figcaption>
-</figure>
-
 -   **Fine-tuning for Averaged Inputs:** To address the domain mismatch limitation identified with the current Average Image pathway, fine-tune the ResNet-50 model (or similar CNNs) specifically on temporally averaged images. Similarly, if VLMs are applied to averaged images in future experiments, their visual encoders should also be adapted or fine-tuned for this distinct input type.
 -   **Integration with Modern Architectures:** Explore combining temporal averaging with state-of-the-art video architectures like Video Transformers, potentially as a parallel pathway.
 -   **Content Adaptivity:** Investigate whether the optimal W varies by content type, scene complexity, or camera motion.

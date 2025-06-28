@@ -98,8 +98,6 @@ Our analysis draws on an extensive collection of NYC Streetview Images from mult
 
 This diverse dataset allows us to analyze social interactions across different urban typologies, cultural contexts, and times of day, providing a comprehensive view of how social life manifests in public spaces.
 
-{% include gallery caption="Sample images from our urban social interaction dataset" %}
-
 ## Expected Outcomes
 
 The project aims to deliver several significant outcomes:

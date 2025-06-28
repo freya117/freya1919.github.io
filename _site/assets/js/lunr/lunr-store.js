@@ -17,36 +17,6 @@ var store = [{
         "url": "/news/2025-05-10-venice-biennale/",
         "teaser": null
       },{
-        "title": "Bridging The Charging Gap",
-        "excerpt":"This post has many categories.  ","categories": ["aciform"],
-        "tags": ["categories"],
-        "url": "/aciform/case/",
-        "teaser": null
-      },{
-        "title": "Boston Walker",
-        "excerpt":"Research keyworks and todo   Andres Sevtsuk   ","categories": ["aciform"],
-        "tags": ["categories","edge case"],
-        "url": "/aciform/note/",
-        "teaser": null
-      },{
-        "title": "Sidewalk Ballet",
-        "excerpt":"Keywords  computer vision   Methodology   ","categories": ["operation","reading list","spatial analysis"],
-        "tags": ["categories","edge case"],
-        "url": "/operation/reading%20list/spatial%20analysis/note/",
-        "teaser": null
-      },{
-        "title": "Spatial Data Fusion",
-        "excerpt":"#   ##   ","categories": ["aciform"],
-        "tags": ["categories"],
-        "url": "/aciform/bp/",
-        "teaser": null
-      },{
-        "title": "Sample Blog Post Template",
-        "excerpt":"[PLACEHOLDER: Add Post Title] [PLACEHOLDER: Add a brief introduction to your blog post. Explain what the post is about and why it matters.] Background [PLACEHOLDER: Provide context for your topic. This could include: Research history Current trends Why this topic matters Your interest in the subject] Key Points [PLACEHOLDER: Main...","categories": [],
-        "tags": ["research","urban science","mobility"],
-        "url": "/posts/2024/06/sample-post/",
-        "teaser": null
-      },{
         "title": "Design for Children of Migrant",
         "excerpt":"Project Vision This design initiative focuses on transforming public spaces in urban villages to better serve the needs of migrant children, creating inclusive and educational environments. The project addresses the unique challenges faced by children of migrant workers in rapidly urbanizing areas, where public spaces often fail to provide safe,...","categories": [],
         "tags": ["urban-design","public-space","social-impact","community"],
@@ -120,20 +90,20 @@ var store = [{
         "teaser": "/assets/images/projects/gist-blur-attention.jpg"
       },{
         "title": "SideWalk Ballet",
-        "excerpt":"Project Overview This project originated from my thesis, which involved the collection of millions of photos from 26 cities. The objective was to utilize deep learning to analyze urban social activities through visual content analysis. Methodology The research utilized a combination of: Computer vision techniques for feature detection Machine learning...","categories": [],
-        "tags": ["urban-analytics","computer-vision","social-equity","urban-planning"],
+        "excerpt":"Project Overview This project originated from my thesis, which involved the collection and analysis of millions of geo-tagged photos from 26 cities worldwide. The objective is to utilize deep learning and large language models to detect, classify, and analyze urban social activities through visual content analysis. By understanding the “sidewalk...","categories": [],
+        "tags": ["urban-analytics","computer-vision","social-equity","urban-planning","ongoing-project"],
         "url": "/projects/sidewalk-ballet/",
         "teaser": "/assets/images/projects/sidewalk-ballet.jpg"
       },{
         "title": "Maine DOT Pedestrian Volume Estimation",
         "excerpt":"Project Overview While the state of Maine has well-established models for vehicular traffic volumes (AADT), an analogous model for pedestrian volumes has been lacking. This gap makes it difficult for planners and engineers to make informed decisions about pedestrian infrastructure and safety investments. This project addresses this critical need by...","categories": [],
-        "tags": ["transportation","walkability","urban-analytics","pedestrian-modeling"],
+        "tags": ["transportation","walkability","urban-analytics","pedestrian-modeling","ongoing-project"],
         "url": "/projects/maine-pedestrian-model/",
         "teaser": "/assets/images/projects/maine-pedestrian.jpg"
       },{
         "title": "Advancing Extreme Heat Resilience in Newark",
-        "excerpt":"Project Overview Newark faces increasingly dangerous extreme heat events, disproportionately impacting historically underserved communities with limited access to green space, cooling infrastructure, and health resources. As a Freedom Summer Fellow, I worked with the City of Newark’s Office of Sustainability (OoS) to advance urban heat resilience initiatives across the city....","categories": [],
-        "tags": ["urban-planning","climate-resilience","social-equity","urban-analytics"],
-        "url": "/projects/newark-heat-resilience/",
-        "teaser": "/assets/images/projects/newark-heat.jpg"
+        "excerpt":"Project Overview This project focuses on advancing climate resilience and mitigating extreme heat and air quality impacts in Newark, NJ. It involves implementing targeted, place-based interventions in ten disadvantaged neighborhoods across Newark’s five wards, identified based on need related to urban heat island effects, pollution, and social vulnerability. Key components...","categories": [],
+        "tags": ["urban-planning","climate-resilience","social-equity","urban-analytics","ongoing-project"],
+        "url": "/projects/newark-heat/",
+        "teaser": "/assets/images/projects/newark-heat.png"
       }]

@@ -53,8 +53,6 @@ Our proposal includes a range of programs and spatial carriers designed to integ
 - **Educational Trails**: Connecting schools to natural areas for experiential learning
 - **Community Gardens**: Creating spaces where residents can grow food while learning about sustainable farming methods
 
-{% include gallery caption="Reimagining Salinas Valley through education and ecological design" %}
-
 ## Implementation Strategy
 
 The project is designed to be implemented in strategic phases that build upon each other:
