@@ -39,34 +39,36 @@ toc: false
 
 ## Education
 
-**[YOUR CURRENT DEGREE]**  
-*[University Name]*  
-*[Start Year] - [Expected Graduation Year]*  
-- [PLACEHOLDER: Add details about your program]
-- [PLACEHOLDER: Add research focus]
-- [PLACEHOLDER: Add advisor's name if relevant]
+**Master of Science in Electrical Engineering and Computer Science (EECS)**  
+*Massachusetts Institute of Technology*  
+*2024 - 2026 (Expected)*  
+- Focus on machine learning applications in urban systems and human mobility
+- Research in computational methods for urban planning and transportation analysis
+- Member of the City Form Lab, working on pedestrian activity modeling and social behavior detection
 
-**[YOUR PREVIOUS DEGREE]**  
-*[University Name]*  
-*[Start Year] - [Graduation Year]*  
-- [PLACEHOLDER: Add details about your program]
-- [PLACEHOLDER: Add thesis title or major achievements]
+**Master in City Planning**  
+*Massachusetts Institute of Technology, Department of Urban Studies and Planning*  
+*2024 - 2026 (Expected)*  
+- Specialization in urban science, spatial analytics, and transportation planning
+- Interdisciplinary program combining urban planning with computational analysis
+- Research focus on sustainable and equitable urban development through data-driven approaches
 
 ## Research Experience
 
-**[RESEARCH POSITION]**  
-*[Institution/Lab Name]*  
-*[Start Date] - [End Date]*
-- [PLACEHOLDER: Describe research project]
-- [PLACEHOLDER: Add key accomplishments]
-- [PLACEHOLDER: List technologies/methods used]
+**Graduate Research Assistant**  
+*City Form Lab, Massachusetts Institute of Technology*  
+*2024 - Present*
+- Developing machine learning models for pedestrian activity estimation and social behavior detection
+- Analyzing urban visual content using computer vision and deep learning techniques
+- Working on neighborhood archetypes for energy modeling and transportation equity assessment
+- Collaborating on interdisciplinary projects combining urban planning with computational analysis
 
-**[PREVIOUS RESEARCH POSITION]**  
-*[Institution/Lab Name]*  
-*[Start Date] - [End Date]*
-- [PLACEHOLDER: Describe research project]
-- [PLACEHOLDER: Add key accomplishments]
-- [PLACEHOLDER: List technologies/methods used]
+**Research Assistant**  
+*University of California, Berkeley*  
+*2022 - 2024*
+- Conducted research on urban systems and human mobility patterns
+- Developed foundational skills in spatial analytics and urban data analysis
+- Contributed to projects on sustainable urban development and transportation planning
 
 ## Publications
 
@@ -79,15 +81,18 @@ toc: false
 ## Skills
 
 **Technical Skills**
-- [PLACEHOLDER: Add programming languages]
-- [PLACEHOLDER: Add software proficiencies]
-- [PLACEHOLDER: Add data analysis tools]
-- [PLACEHOLDER: Add GIS/mapping software]
+- Programming: Python, R, JavaScript, SQL
+- Machine Learning: TensorFlow, PyTorch, Scikit-learn, Computer Vision
+- Data Analysis: Pandas, NumPy, Matplotlib, Seaborn
+- GIS/Mapping: ArcGIS, QGIS, PostGIS, Leaflet
+- Web Development: Jekyll, HTML/CSS, GitHub Pages
 
 **Research Methods**
-- [PLACEHOLDER: Add quantitative methods]
-- [PLACEHOLDER: Add qualitative methods]
-- [PLACEHOLDER: Add modeling techniques]
+- Quantitative analysis and statistical modeling
+- Spatial analysis and network analysis
+- Machine learning and deep learning applications
+- Urban data collection and processing
+- Interdisciplinary research collaboration
 
 ## Honors and Awards
 
