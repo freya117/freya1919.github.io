@@ -43,23 +43,26 @@ author_profile: false
   
   /* Mobile screen styles */
   @media screen and (max-width: 768px) {
-    /* Stack content vertically */
+    /* Stack content vertically with image first */
     .content-wrapper {
       display: flex;
       flex-direction: column;
       align-items: center;
     }
 
-    /* Center images and make responsive */
+    /* Image above text on mobile - smaller size */
     .content-wrapper img {
-      max-width: 100%;
+      max-width: 60%;
       height: auto;
+      order: -1;
+      margin-bottom: 1.5em;
     }
 
     /* Adjust text block width for screens */
     .text-content {
       width: 90%;
       padding: 10px;
+      order: 1;
     }
   }
 
@@ -291,7 +294,7 @@ author_profile: false
     <!-- Left text content -->
     <div class="text-content bio-content">
       <p>
-        <strong>Hi, I'm Freya</strong>, a graduate student at EECS and <a href="http://dusp.mit.edu">DUSP</a> at MIT. My research focuses on the intersection of urban science, human mobility, and computational methods. I use machine learning and data science approaches to tackle complex urban planning challenges.
+        <strong>Hi, I'm Freya</strong>, a graduate student at <a href="https://www.eecs.mit.edu/">EECS</a> and <a href="http://dusp.mit.edu">DUSP</a> at MIT. My research focuses on the intersection of urban science, human mobility, and computational methods. I use machine learning and data science approaches to tackle complex urban planning challenges.
       </p>
       
       <p>
