@@ -43,11 +43,24 @@ author_profile: false
   
   /* Mobile screen styles */
   @media screen and (max-width: 768px) {
+    /* Reorganize bio section for mobile */
+    .bio-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Hide the regular bio heading on mobile */
+    .bio-section > .bio-heading {
+      display: none;
+    }
+
     /* Stack content vertically with image first */
     .content-wrapper {
       display: flex;
       flex-direction: column;
       align-items: center;
+      width: 100%;
     }
 
     /* Image above everything on mobile - smaller size and centered */
@@ -61,12 +74,18 @@ author_profile: false
       margin-right: auto;
     }
 
-    /* Move the title below the image */
-    .bio-heading {
+    /* Create mobile title that appears after image */
+    .content-wrapper::before {
+      content: "Freya Tan";
       order: -1;
+      font-size: 2em;
+      font-weight: bold;
+      color: #0033A0;
       text-align: center;
       margin-bottom: 1.5em;
       margin-top: 0;
+      display: block;
+      width: 100%;
     }
 
     /* Adjust text block width for screens */

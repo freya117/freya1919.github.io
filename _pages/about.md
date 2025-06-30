@@ -140,8 +140,8 @@ I'm passionate about integrating urban planning with spatial analytics and mobil
   * Conducted geospatial and sensor-based feature engineering, integrating diverse urban form and network data to enhance model accuracy and interpretability
   * Built automated data processing pipelines in Python and GIS to transform raw spatial datasets into structured, high-resolution model inputs for urban mobility analysis
 
-* **Teaching Assistant**, MIT (Jan 2025 - Current)
-  * Course: Modeling Pedestrian Activity in Cities | Supervisor: Andres Sevtsuk
+* **Teaching Assistant**, MIT (Jan 2025 - Current)  
+  *Course: Modeling Pedestrian Activity in Cities | Supervisor: Andres Sevtsuk*
   * Supported student teams in spatial analysis, pedestrian modeling, and proposal development to enhance walkability and public realm design in Kendall Square, in collaboration with the Cambridge Redevelopment Authority and community partners.
   * Guided hands-on training in GIS, network-based pedestrian analysis, and spatial modeling using Python, enabling students to assess pedestrian accessibility, simulate urban design impacts, and develop data-driven urban planning proposals.
 
