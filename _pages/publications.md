@@ -49,7 +49,7 @@ header:
   /* Ensure no extra spacing between header and content */
   .page__content {
     margin-top: 0 !important;
-    padding-top: 0.5em !important;
+    padding-top: 0 !important;
   }
   
   /* Ensure proper 2-column layout with sidebar */
@@ -57,11 +57,14 @@ header:
     .page {
       display: flex !important;
       width: 100% !important;
+      align-items: flex-start !important;
     }
     
     .page__content {
       width: calc(100% - 300px) !important;
       margin-left: 300px !important;
+      margin-top: 0 !important;
+      padding-top: 0 !important;
       order: 2 !important;
       padding-left: 1em !important;
     }
@@ -71,6 +74,8 @@ header:
       width: 280px !important;
       margin-left: 0 !important;
       margin-right: 20px !important;
+      margin-top: 0 !important;
+      padding-top: 0 !important;
       order: 1 !important;
       position: relative !important;
     }
