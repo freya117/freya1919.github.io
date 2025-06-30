@@ -104,12 +104,14 @@ $link-color-visited: darken($link-color, 5%);
   width: 100% !important;
 }
 
-// Match sidebar pages to homepage width with left sidebar
+// Match sidebar pages to homepage width with left sidebar - FIXED ALIGNMENT
 .layout--single:not(.wide) {
   .page__inner-wrap {
     max-width: 1024px !important;
     margin-left: auto !important;
     margin-right: auto !important;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
   }
   
   .page {
@@ -118,6 +120,9 @@ $link-color-visited: darken($link-color, 5%);
       width: 100%;
       padding-left: 0;
       padding-right: 0;
+      margin-top: 0 !important;
+      padding-top: 0 !important;
+      align-items: flex-start !important;
     }
   }
   
@@ -126,6 +131,8 @@ $link-color-visited: darken($link-color, 5%);
       width: calc(100% - 300px);
       margin-left: 300px;
       order: 2;
+      margin-top: 0 !important;
+      padding-top: 0 !important;
     }
   }
   
@@ -139,6 +146,8 @@ $link-color-visited: darken($link-color, 5%);
       transition: opacity 0.2s ease-in-out;
       z-index: 10;
       order: 1;
+      margin-top: 0 !important;
+      padding-top: 0 !important;
     }
   }
 }
@@ -261,18 +270,19 @@ h1.page__title,
   display: inline-block !important;
   background: transparent !important;
   text-decoration: none !important;
+  margin: 0 !important;
 }
 
 // Make headers much more compact and align content left
 .page__hero {
-  padding: 0.8em 0 !important;
+  padding: 0.8em 0 0 0 !important;
   min-height: auto !important;
   text-align: left !important;
   margin-bottom: 0 !important;
 }
 
 .page__hero-overlay {
-  padding: 0.8em 0 !important;
+  padding: 0.8em 0 0 0 !important;
   min-height: auto !important;
   text-align: left !important;
   margin-bottom: 0 !important;
@@ -285,6 +295,27 @@ h1.page__title,
   margin-right: auto !important;
   padding-left: 1em !important;
   padding-right: 1em !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+// Align header title with sidebar for sidebar pages
+.layout--single:not(.wide) {
+  @include breakpoint($large) {
+    .page__hero-caption {
+      padding-left: 1em !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+    
+    .page__hero .page__title,
+    .page__hero-overlay .page__title {
+      margin-left: 0 !important;
+      padding-left: 0 !important;
+    }
+  }
 }
 
 // Ensure consistent page width only for sidebar pages
@@ -292,6 +323,8 @@ h1.page__title,
   max-width: 1024px !important;
   margin-left: auto !important;
   margin-right: auto !important;
+  padding-top: 0 !important;
+  margin-top: 0 !important;
   
   @include breakpoint($large) {
     padding-left: 1em;
@@ -306,3 +339,69 @@ h1.page__title,
   margin-right: auto !important;
 }
 
+// GLOBAL FIXES for sidebar and content alignment
+.layout--single {
+  // Remove all top spacing from page structure elements
+  .page__header {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  
+  .page {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  
+  .page__inner-wrap {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  
+  #main {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+  }
+  
+  .page__content {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  
+  // Ensure sidebar starts at the same top position as content
+  .sidebar {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  
+  // Make sure both sidebar and content are at the same vertical level
+  @include breakpoint($large) {
+    .page {
+      align-items: flex-start !important;
+    }
+    
+    .sidebar,
+    .page__content {
+      vertical-align: top !important;
+    }
+  }
+}
+
+// Remove any default top margins/padding from author profile in sidebar
+.author__avatar {
+  margin-top: 0 !important;
+}
+
+.author__content {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.author__bio {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.author__urls-wrapper {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}

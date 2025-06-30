@@ -12,7 +12,8 @@ header:
   /* Make all text smaller on the contact page */
   .page__content {
     font-size: 0.75em;
-    padding-top: 0;
+    padding-top: 0 !important;
+    margin-top: 0 !important;
   }
   
   /* Make headings slightly smaller too */
@@ -34,9 +35,18 @@ header:
     margin-bottom: 0.4em;
   }
   
-  /* Hide the regular page title but keep header title */
+  /* Hide the regular page title and remove all space */
   .page__content .page__title {
-    display: none;
+    display: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 0 !important;
+  }
+  
+  /* Remove any extra spacing from page header area */
+  .page__header {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
   }
   
   /* Ensure header title is styled elegantly and aligned left */
@@ -49,11 +59,12 @@ header:
     font-weight: bold !important;
     border-bottom: 3px solid #0033A0 !important;
     padding-bottom: 0.3em !important;
+    margin: 0 !important;
   }
   
-  /* Make header much more compact */
+  /* Make header much more compact and remove all extra spacing */
   .page__hero {
-    padding: 0.8em 0 !important;
+    padding: 0.8em 0 0 0 !important;
     min-height: auto !important;
     text-align: left !important;
     margin-bottom: 0 !important;
@@ -63,20 +74,60 @@ header:
     text-align: left !important;
     padding: 0 !important;
     margin: 0 !important;
+    max-width: 1024px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 1em !important;
+    padding-right: 1em !important;
   }
   
-  /* Ensure no extra spacing between header and content */
+  /* Align header title with sidebar on larger screens */
+  @media (min-width: 80em) {
+    .page__hero-caption {
+      padding-left: 1em !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+    
+    .page__hero .page__title,
+    .page__hero-overlay .page__title {
+      margin-left: 0 !important;
+      padding-left: 0 !important;
+    }
+  }
+  
+  /* Remove all spacing between header and content */
   .page__content {
     margin-top: 0 !important;
     padding-top: 0 !important;
   }
   
-  /* Ensure proper 2-column layout with sidebar */
+  /* Remove any potential spacing from the main content wrapper */
+  #main {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+  }
+  
+  /* Remove spacing from the page wrapper */
+  .page {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  
+  /* Remove spacing from inner wrap */
+  .page__inner-wrap {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  
+  /* Ensure proper 2-column layout with sidebar aligned at top */
   @media (min-width: 80em) {
     .page {
       display: flex !important;
       width: 100% !important;
       align-items: flex-start !important;
+      margin-top: 0 !important;
+      padding-top: 0 !important;
     }
     
     .page__content {
@@ -210,4 +261,4 @@ You can fill out this form and I'll get back to you as soon as possible:
   button:hover {
     background-color: #002680;
   }
-</style> 
+</style>
