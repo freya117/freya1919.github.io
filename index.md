@@ -52,47 +52,51 @@ author_profile: false
 
     /* Hide the regular bio heading on mobile */
     .bio-section > .bio-heading {
-      display: none;
+      display: none !important;
     }
 
     /* Stack content vertically with image first */
     .content-wrapper {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      width: 100% !important;
     }
 
     /* Image above everything on mobile - smaller size and centered */
-    .content-wrapper img {
-      max-width: 48%;
-      height: auto;
-      order: -2;
-      margin-bottom: 1em;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
+    .content-wrapper > div:last-child {
+      order: -2 !important;
+      flex: none !important;
+      margin-bottom: 1em !important;
+    }
+
+    .content-wrapper > div:last-child img {
+      max-width: 48% !important;
+      height: auto !important;
+      display: block !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
     }
 
     /* Create mobile title that appears after image */
     .content-wrapper::before {
       content: "Freya Tan";
-      order: -1;
-      font-size: 2em;
-      font-weight: bold;
-      color: #0033A0;
-      text-align: center;
-      margin-bottom: 1.5em;
-      margin-top: 0;
-      display: block;
-      width: 100%;
+      order: -1 !important;
+      font-size: 2em !important;
+      font-weight: bold !important;
+      color: #0033A0 !important;
+      text-align: center !important;
+      margin-bottom: 1.5em !important;
+      margin-top: 0 !important;
+      display: block !important;
+      width: 100% !important;
     }
 
     /* Adjust text block width for screens */
     .text-content {
-      width: 90%;
-      padding: 10px;
-      order: 1;
+      width: 90% !important;
+      padding: 10px !important;
+      order: 1 !important;
     }
   }
 
@@ -324,19 +328,19 @@ author_profile: false
     <!-- Left text content -->
     <div class="text-content bio-content">
       <p>
-        <strong>Hi, I'm Freya</strong>, a graduate student at <a href="https://www.eecs.mit.edu/">EECS</a> and <a href="http://dusp.mit.edu">DUSP</a> at MIT. My research focuses on the intersection of urban science, human mobility, and computational methods. I use machine learning and data science approaches to tackle complex urban planning challenges.
+        <strong>Hi, I'm Freya</strong>, a dual-degree graduate student in Electrical Engineering & Computer Science (EECS) and City Planning (DUSP) at MIT. My work sits at the intersection of artificial intelligence, machine learning, and urban systems, with a focus on applying computational methods to real-world challenges in infrastructure, mobility, and environmental resilience.
       </p>
       
       <p>
-        Currently, I'm a researcher at the <a href="https://cityform.mit.edu/">City Form Lab</a> at MIT, where my work focuses on pedestrian activity modeling and social behavior detection. My projects include analyzing social activities through urban visual content, developing neighborhood archetypes for energy modeling, and assessing transportation equity.
+        At the <a href="https://cityform.mit.edu/">City Form Lab</a>, I lead spatial modeling projects that apply graph-based network analysis and geospatial indexing techniques to estimate pedestrian activity across Maine. I also contribute to computer vision research using vision-language models (e.g., LLaVA, Qwen2-VL) to detect and analyze social behavior from large-scale street view imagery datasets. My technical work includes building scalable data pipelines and applying spatial indexing and trajectory modeling to extract insights from multi-source urban data.
       </p>
       
       <p>
-        Prior to MIT, I was at UC Berkeley, where I developed a strong foundation in urban systems and human mobility research. I've worked on multiple interdisciplinary projects combining architecture, urban planning, and computational analysis.
+        Previously, I worked as a Machine Learning Engineer Intern at Symmons Evolution, where I designed predictive ML systems and LLM-powered diagnostic tools for real-time building energy management. My work focused on developing generative AI solutions that integrated structured sensor data, enhancing LLM reliability through prompt engineering, and implementing advanced tokenization techniques using PELT segmentation, transformer encoders, and LSTM autoencoders for anomaly detection.
       </p>
       
       <p>
-        I'm passionate about integrating urban planning with spatial analytics and mobility research, aiming to create more sustainable, equitable, and livable urban environments through data-driven approaches and human-centered design.
+        With a strong background in computer vision, spatial analytics, and systems modeling, I'm passionate about advancing AI-driven approaches that bridge machine learning and LLMs with real-world challenges to design more intelligent, resilient, and inclusive systems.
       </p>
     </div>
     

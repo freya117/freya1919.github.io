@@ -173,7 +173,7 @@ author_profile: true
   <div class="publication-content">
     <h4>
       <a href="/projects/gist-blur-attention/" target="_blank">
-        SIDEWALK MOMENTS: Exploring the Impact of Built Environment on Attraction via Continuous Visual Experiences
+        Sidewalk Moments: Exploring the Impact of Built Environment on Attraction via Continuous Visual Experiences
       </a>
     </h4>
     <div class="publication-authors">
