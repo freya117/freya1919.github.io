@@ -1,5 +1,4 @@
 ---
-title: "Research & Projects"
 permalink: /research/
 author_profile: true
 layout: wide
@@ -18,9 +17,12 @@ layout: wide
     width: 100% !important;
   }
   
-  /* Hide the page title */
-  .page__title {
-    display: none;
+  /* Hide the page title completely */
+  .page__title,
+  h1.page__title,
+  .page__hero .page__title,
+  .archive__subtitle {
+    display: none !important;
   }
   
   /* Add top spacing to replace the removed title */
