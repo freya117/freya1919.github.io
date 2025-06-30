@@ -4,8 +4,8 @@ permalink: /contact/
 layout: single
 author_profile: true
 header:
-  overlay_color: "#0033A0"
-  overlay_filter: "0.2"
+  overlay_color: "#ffffff"
+  overlay_filter: "0.1"
 ---
 
 <style>
@@ -39,12 +39,16 @@ header:
     display: none;
   }
   
-  /* Ensure header title is visible */
+  /* Ensure header title is styled elegantly */
   .page__hero .page__title,
   .page__hero-overlay .page__title {
-    display: block !important;
-    color: white !important;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.5) !important;
+    display: inline-block !important;
+    color: #0033A0 !important;
+    text-shadow: none !important;
+    font-size: 1.6em !important;
+    font-weight: bold !important;
+    border-bottom: 3px solid #0033A0 !important;
+    padding-bottom: 0.3em !important;
   }
 
   /* Style for contact links */

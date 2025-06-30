@@ -137,9 +137,11 @@ author_profile: false
   .research-highlights {
     margin-top: 3em;
     margin-bottom: 3em;
-    padding: 2em 0;
+    padding: 2em 1em;
     background-color: #f8f9fa;
     border-radius: 10px;
+    max-width: 100%;
+    box-sizing: border-box;
   }
   
   .research-highlights-heading {
@@ -163,7 +165,8 @@ author_profile: false
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5em;
-    padding: 0 1em;
+    padding: 0 2em;
+    max-width: 100%;
   }
   
   .research-card {
@@ -173,6 +176,11 @@ author_profile: false
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     transition: transform 0.2s, box-shadow 0.2s;
     text-align: center;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-sizing: border-box;
   }
   
   .research-card:hover {
@@ -181,22 +189,27 @@ author_profile: false
   }
   
   .research-icon {
-    font-size: 2.5em;
+    font-size: 2.2em;
     color: #0033A0;
     margin-bottom: 0.5em;
+    flex-shrink: 0;
   }
   
   .research-card h3 {
-    font-size: 1.1em;
+    font-size: 1.05em;
     font-weight: bold;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.8em;
+    margin-top: 0.5em;
     color: #333;
+    line-height: 1.3;
   }
   
   .research-card p {
-    font-size: 0.9em;
-    line-height: 1.5;
+    font-size: 0.85em;
+    line-height: 1.4;
     color: #666;
+    margin: 0;
+    flex-grow: 1;
   }
   
   @media screen and (max-width: 768px) {
