@@ -1,7 +1,11 @@
 ---
-title: "Contact"
 permalink: /contact/
+title: "Contact"
+layout: single
 author_profile: true
+header:
+  overlay_color: "#0033A0"
+  overlay_filter: "0.3"
 ---
 
 <style>
