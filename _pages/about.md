@@ -53,12 +53,12 @@ header:
     padding-bottom: 0.3em !important;
   }
   
-  /* Make header much more compact */
+  /* Eliminate all header spacing completely */
   .page__hero {
-    padding: 0.8em 0 !important;
+    padding: 0.3em 0 !important;
     min-height: auto !important;
     text-align: left !important;
-    margin-bottom: 0 !important;
+    margin: 0 !important;
   }
   
   .page__hero-caption {
@@ -67,10 +67,16 @@ header:
     margin: 0 !important;
   }
   
-  /* Ensure no extra spacing between header and content */
+  /* Remove all spacing and bring content right up to header */
   .page__content {
+    margin: 0 !important;
+    padding-top: 0 !important;
+  }
+  
+  /* Eliminate any wrapper spacing */
+  .page__inner-wrap {
+    padding-top: 0 !important;
     margin-top: 0 !important;
-    padding-top: 0.5em !important;
   }
 
   /* Style for education section */
