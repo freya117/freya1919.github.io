@@ -81,12 +81,6 @@ author_profile: true
 
 Hi, I'm Freya, a dual-degree graduate student in Electrical Engineering & Computer Science (EECS) and City Planning (DUSP) at MIT. My work sits at the intersection of artificial intelligence, machine learning, and urban systems, with a focus on applying computational methods to real-world challenges in infrastructure, mobility, and environmental resilience.
 
-At the <a href="https://cityform.mit.edu/">City Form Lab</a>, I lead spatial modeling projects that apply graph-based network analysis and geospatial indexing techniques to estimate pedestrian activity across Maine. I also contribute to computer vision research using vision-language models (e.g., LLaVA, Qwen2-VL) to detect and analyze social behavior from large-scale street view imagery datasets. My technical work includes building scalable data pipelines and applying spatial indexing and trajectory modeling to extract insights from multi-source urban data.
-
-Previously, I worked as a Machine Learning Engineer Intern at Symmons Evolution, where I designed predictive ML systems and LLM-powered diagnostic tools for real-time building energy management. My work focused on developing generative AI solutions that integrated structured sensor data, enhancing LLM reliability through prompt engineering, and implementing advanced tokenization techniques using PELT segmentation, transformer encoders, and LSTM autoencoders for anomaly detection.
-
-With a strong background in computer vision, spatial analytics, and systems modeling, I'm passionate about advancing AI-driven approaches that bridge machine learning and LLMs with real-world challenges to design more intelligent, resilient, and inclusive systems.
-
 ## Education
 
 <div class="education-item">
