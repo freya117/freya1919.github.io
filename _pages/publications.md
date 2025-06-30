@@ -1,10 +1,10 @@
 ---
-permalink: /publications/
 title: "Publications"
+permalink: /publications/
 layout: single
 author_profile: true
 header:
-  overlay_color: "#0033A0"
+  overlay_color: "#4d7fbf"
   overlay_filter: "0.3"
 ---
 

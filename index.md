@@ -134,6 +134,79 @@ author_profile: false
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   }
   
+  .research-highlights {
+    margin-top: 3em;
+    margin-bottom: 3em;
+    padding: 2em 0;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+  }
+  
+  .research-highlights h2 {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom: 1.5em;
+    text-align: center;
+    color: #0033A0;
+  }
+  
+  .research-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5em;
+    padding: 0 1em;
+  }
+  
+  .research-card {
+    background: white;
+    padding: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-align: center;
+  }
+  
+  .research-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+  }
+  
+  .research-icon {
+    font-size: 2.5em;
+    color: #0033A0;
+    margin-bottom: 0.5em;
+  }
+  
+  .research-card h3 {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    color: #333;
+  }
+  
+  .research-card p {
+    font-size: 0.9em;
+    line-height: 1.5;
+    color: #666;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .research-grid {
+      grid-template-columns: 1fr;
+      gap: 1em;
+    }
+    
+    .research-highlights {
+      margin-top: 2em;
+      margin-bottom: 2em;
+      padding: 1.5em 0;
+    }
+    
+    .research-card {
+      padding: 1.2em;
+    }
+  }
+  
   .research-section {
     margin-top: 3em;
   }
@@ -362,6 +435,43 @@ author_profile: false
     </div>
   </div>
 </div>
+
+<!-- Research Highlights Section -->
+<section class="research-highlights">
+  <div class="content-wrapper">
+    <h2>Research Highlights</h2>
+    <div class="research-grid">
+      <div class="research-card">
+        <div class="research-icon">
+          <i class="fas fa-walking"></i>
+        </div>
+        <h3>Human Mobility</h3>
+        <p>Analyzing human movement patterns and pedestrian behavior using spatial modeling, graph-based network analysis, and large-scale trajectory data to understand urban mobility dynamics.</p>
+      </div>
+      <div class="research-card">
+        <div class="research-icon">
+          <i class="fas fa-eye"></i>
+        </div>
+        <h3>Spatial AI & Computer Vision</h3>
+        <p>Applying computer vision and multimodal AI models to urban imagery for detecting social interactions, analyzing built environments, and extracting spatial insights from visual data.</p>
+      </div>
+      <div class="research-card">
+        <div class="research-icon">
+          <i class="fas fa-brain"></i>
+        </div>
+        <h3>Urban Intelligence with Large Language Models (LLMs)</h3>
+        <p>Developing LLM-powered systems for urban analytics, integrating structured sensor data with generative AI to create intelligent diagnostic and predictive urban systems.</p>
+      </div>
+      <div class="research-card">
+        <div class="research-icon">
+          <i class="fas fa-city"></i>
+        </div>
+        <h3>Urban Computing</h3>
+        <p>Building computational frameworks for smart cities, focusing on energy management, climate resilience, and infrastructure optimization using machine learning and data-driven approaches.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- Research and Projects Section -->
 <div class="research-section">

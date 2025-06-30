@@ -1,10 +1,10 @@
 ---
-permalink: /about/
 title: "About Me"
+permalink: /about/
 layout: single
 author_profile: true
 header:
-  overlay_color: "#0033A0"
+  overlay_color: "#4d7fbf"
   overlay_filter: "0.3"
 ---
 
@@ -79,108 +79,11 @@ header:
     margin-bottom: 0.3em;
     font-style: italic;
     }
-  
-  /* Research Highlights Section */
-  .research-highlights {
-    margin: 2em 0;
-    }
-  
-  .research-highlights h2 {
-    font-size: 1.3em;
-    margin-bottom: 1em;
-    color: #2c3e50;
-    }
-  
-  .research-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.2em;
-    margin-top: 1em;
-    }
-  
-  .research-card {
-    background: #f8f9fa;
-    border: 1px solid #e9ecef;
-    border-radius: 8px;
-    padding: 1.2em;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-  
-  .research-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 51, 160, 0.1);
-    }
-  
-  .research-icon {
-    color: #0033A0;
-    font-size: 2em;
-    margin-bottom: 0.5em;
-    }
-  
-  .research-card h3 {
-    font-size: 1em;
-    color: #0033A0;
-    margin: 0.5em 0 0.3em 0;
-    font-weight: 600;
-    }
-  
-  .research-card p {
-    font-size: 0.85em;
-    color: #555;
-    line-height: 1.4;
-    margin: 0;
-    }
-  
-  @media (max-width: 768px) {
-    .research-grid {
-      grid-template-columns: 1fr;
-      gap: 1em;
-      }
-    
-    .research-card {
-      padding: 1em;
-      }
-    }
-</style>
+  </style>
   
 ## Bio
 
 Hi, I'm Freya, a dual-degree graduate student in <a href="https://www.eecs.mit.edu/">Electrical Engineering & Computer Science (EECS)</a> and <a href="https://dusp.mit.edu/">City Planning (DUSP)</a> at MIT. My work sits at the intersection of artificial intelligence, machine learning, and urban systems, with a focus on applying computational methods to real-world challenges in infrastructure, mobility, and environmental resilience.
-
-<!-- Research Highlights -->
-<section class="research-highlights">
-  <h2>Research Highlights</h2>
-  <div class="research-grid">
-    <div class="research-card">
-      <div class="research-icon">
-        <i class="fas fa-route"></i>
-      </div>
-      <h3>Human Mobility</h3>
-      <p>Analyzing large-scale mobility patterns and pedestrian behavior using advanced computational models, with applications in urban planning and transportation infrastructure optimization.</p>
-    </div>
-    <div class="research-card">
-      <div class="research-icon">
-        <i class="fas fa-eye"></i>
-      </div>
-      <h3>Spatial AI & Computer Vision</h3>
-      <p>Developing computer vision systems for urban environment analysis, integrating multimodal models to extract insights from street-view imagery and spatial data.</p>
-    </div>
-    <div class="research-card">
-      <div class="research-icon">
-        <i class="fas fa-brain"></i>
-      </div>
-      <h3>Urban Intelligence with LLMs</h3>
-      <p>Leveraging large language models and vision-language models to understand urban dynamics, social interactions, and built environment impacts on human behavior.</p>
-    </div>
-    <div class="research-card">
-      <div class="research-icon">
-        <i class="fas fa-city"></i>
-      </div>
-      <h3>Urban Computing</h3>
-      <p>Applying computational methods to urban challenges including energy efficiency, climate resilience, and infrastructure optimization through data-driven approaches.</p>
-    </div>
-  </div>
-</section>
 
 ## Education
 
@@ -200,6 +103,13 @@ Hi, I'm Freya, a dual-degree graduate student in <a href="https://www.eecs.mit.e
   * Software Engineering: Meta Full-Stack Engineer Certificate
   * Data Science: UC Berkeley Graduate Certificate in Applied Data Science / Geographic Information Science and Tech
   * Design: Google UI/UX Design Specialization Certificate
+
+## Research Interests
+
+* Human Mobility
+* Spatial AI & Computer Vision
+* Urban Intelligence with Large Language Models (LLMs)
+* Urban Computing
 
 ## Selected Awards
 
