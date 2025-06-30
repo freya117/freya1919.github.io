@@ -190,3 +190,15 @@ a {
     color: $primary-color;
   }
 }
+
+// Header overlay styling - make page titles white and visible
+.page__hero-overlay .page__title {
+  color: white !important;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+// Alternative selector for header titles
+.page__hero .page__title {
+  color: white !important;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}

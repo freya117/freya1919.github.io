@@ -142,6 +142,15 @@ author_profile: false
     border-radius: 10px;
   }
   
+  .research-highlights-heading {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom: 0.8em;
+    padding-bottom: 0.3em;
+    border-bottom: 2px solid #f2f3f3;
+    color: #0033A0;
+  }
+  
   .research-highlights h2 {
     font-size: 1.4em;
     font-weight: bold;
@@ -437,9 +446,10 @@ author_profile: false
 </div>
 
 <!-- Research Highlights Section -->
+<div class="research-highlights-heading">Research Highlights</div>
+
 <section class="research-highlights">
   <div class="content-wrapper">
-    <h2>Research Highlights</h2>
     <div class="research-grid">
       <div class="research-card">
         <div class="research-icon">
