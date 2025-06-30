@@ -12,7 +12,7 @@ header:
   /* Make all content smaller */
   .page__content {
     font-size: 0.7em;
-    padding-top: 1em; /* Add top spacing to replace the removed title */
+    padding-top: 0;
   }
   
   /* Hide the regular page title but keep header title */

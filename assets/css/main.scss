@@ -235,7 +235,9 @@ a {
 
 // Header overlay styling - elegant design with main color and underline
 .page__hero-overlay .page__title,
-.page__hero .page__title {
+.page__hero .page__title,
+.layout--single .page__hero .page__title,
+.layout--single .page__hero-overlay .page__title {
   color: $primary-color !important;
   text-shadow: none !important;
   font-size: 1.4em !important;

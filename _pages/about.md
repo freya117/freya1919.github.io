@@ -12,7 +12,7 @@ header:
   /* Make all text smaller on the about page */
   .page__content {
     font-size: 0.75em;
-    padding-top: 1em;
+    padding-top: 0;
     }
   
   /* Make headings slightly smaller too */
