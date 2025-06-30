@@ -15,10 +15,10 @@ $link-color-visited: darken($link-color, 5%);
 @import "minimal-mistakes"; // main partials
 
 // Custom styles
-// Make navigation menu text smaller
+// Navigation menu text size - slightly larger
 .greedy-nav {
   a {
-    font-size: 0.85em;
+    font-size: 0.95em;
   }
   
   .visible-links {
@@ -28,10 +28,17 @@ $link-color-visited: darken($link-color, 5%);
   }
 }
 
-// Make mobile navigation smaller too
+// Make mobile navigation consistent
 .hidden-links {
   a {
-    font-size: 0.85em;
+    font-size: 0.95em;
+  }
+}
+
+// Header title text size - slightly larger
+.masthead {
+  .site-title {
+    font-size: 1.1em;
   }
 }
 

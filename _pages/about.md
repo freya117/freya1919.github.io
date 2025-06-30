@@ -79,7 +79,7 @@ author_profile: true
   
 ## Bio
 
-Hi, I'm Freya, a dual-degree graduate student in Electrical Engineering & Computer Science (EECS) and City Planning (DUSP) at MIT. My work sits at the intersection of artificial intelligence, machine learning, and urban systems, with a focus on applying computational methods to real-world challenges in infrastructure, mobility, and environmental resilience.
+Hi, I'm Freya, a dual-degree graduate student in <a href="https://www.eecs.mit.edu/">Electrical Engineering & Computer Science (EECS)</a> and <a href="https://dusp.mit.edu/">City Planning (DUSP)</a> at MIT. My work sits at the intersection of artificial intelligence, machine learning, and urban systems, with a focus on applying computational methods to real-world challenges in infrastructure, mobility, and environmental resilience.
 
 ## Education
 

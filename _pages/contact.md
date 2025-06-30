@@ -60,18 +60,12 @@ author_profile: true
 
 ## Get in Touch
 
-I'm always interested in research collaborations, speaking opportunities, or discussions about urban science and human mobility. Feel free to reach out through any of the following methods:
+I'm always interested in research collaborations, speaking opportunities, or discussions. Feel free to reach out through any of the following methods:
 
 ### Email
 
 - [freya117@mit.edu](mailto:freya117@mit.edu)  
 - [freyatan117@gmail.com](mailto:freyatan117@gmail.com)
-
-### Social Media
-
-- **LinkedIn**: [https://www.linkedin.com/in/freya-tan-888145258/](https://www.linkedin.com/in/freya-tan-888145258/)
-- **GitHub**: [https://github.com/freya117](https://github.com/freya117)
-- **ResearchGate**: [https://www.researchgate.net/profile/Freya-Tan](https://www.researchgate.net/profile/Freya-Tan)
 
 ### Professional Address
 

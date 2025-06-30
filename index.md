@@ -65,9 +65,9 @@ author_profile: false
 
     /* Image above everything on mobile - smaller size and centered */
     .content-wrapper > div:last-child {
-      order: -2 !important;
+      order: -3 !important;
       flex: none !important;
-      margin-bottom: 1em !important;
+      margin-bottom: 2em !important;
     }
 
     .content-wrapper > div:last-child img {
@@ -81,13 +81,25 @@ author_profile: false
     /* Create mobile title that appears after image */
     .content-wrapper::before {
       content: "Freya Tan";
-      order: -1 !important;
+      order: -2 !important;
       font-size: 2em !important;
       font-weight: bold !important;
       color: #0033A0 !important;
       text-align: center !important;
-      margin-bottom: 1.5em !important;
+      margin-bottom: 0.5em !important;
       margin-top: 0 !important;
+      display: block !important;
+      width: 100% !important;
+    }
+
+    /* Create mobile email that appears after title */
+    .content-wrapper::after {
+      content: "freya117@mit.edu";
+      order: -1 !important;
+      font-size: 0.9em !important;
+      color: #666 !important;
+      text-align: center !important;
+      margin-bottom: 1.5em !important;
       display: block !important;
       width: 100% !important;
     }
@@ -328,7 +340,7 @@ author_profile: false
     <!-- Left text content -->
     <div class="text-content bio-content">
       <p>
-        <strong>Hi, I'm Freya</strong>, a dual-degree graduate student in Electrical Engineering & Computer Science (EECS) and City Planning (DUSP) at MIT. My work sits at the intersection of artificial intelligence, machine learning, and urban systems, with a focus on applying computational methods to real-world challenges in infrastructure, mobility, and environmental resilience.
+        <strong>Hi, I'm Freya</strong>, a dual-degree graduate student in <a href="https://www.eecs.mit.edu/">Electrical Engineering & Computer Science (EECS)</a> and <a href="https://dusp.mit.edu/">City Planning (DUSP)</a> at MIT. My work sits at the intersection of artificial intelligence, machine learning, and urban systems, with a focus on applying computational methods to real-world challenges in infrastructure, mobility, and environmental resilience.
       </p>
       
       <p>
