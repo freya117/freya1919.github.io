@@ -81,13 +81,24 @@ $link-color-visited: darken($link-color, 5%);
   color: #fff !important;
 }
 
-// Content width constraints
-.page__content-wrapper, 
-.bio-section,
-.research-section,
-.feature__wrapper,
-.footer-section {
+// Content width constraints - only for non-wide layouts
+.layout--single:not(.wide) .page__content-wrapper,
+.layout--single:not(.wide) .bio-section,
+.layout--single:not(.wide) .research-section,
+.layout--single:not(.wide) .feature__wrapper,
+.layout--single:not(.wide) .footer-section {
   max-width: 1024px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 100% !important;
+}
+
+// Keep wide layouts unrestricted for homepage
+.wide .bio-section,
+.wide .research-section,
+.wide .feature__wrapper,
+.wide .footer-section {
+  max-width: 1200px !important;
   margin-left: auto !important;
   margin-right: auto !important;
   width: 100% !important;
@@ -234,10 +245,11 @@ a {
 }
 
 // Header overlay styling - elegant design with main color and underline
-.page__hero-overlay .page__title,
 .page__hero .page__title,
+.page__hero-overlay .page__title,
 .layout--single .page__hero .page__title,
-.layout--single .page__hero-overlay .page__title {
+.layout--single .page__hero-overlay .page__title,
+header .page__title {
   color: $primary-color !important;
   text-shadow: none !important;
   font-size: 1.4em !important;
@@ -245,17 +257,18 @@ a {
   border-bottom: 3px solid $primary-color !important;
   padding-bottom: 0.3em !important;
   display: inline-block !important;
+  background: transparent !important;
 }
 
 // Make headers shorter and align content left
 .page__hero {
-  padding: 2em 0 !important;
+  padding: 1.5em 0 !important;
   min-height: auto !important;
   text-align: left !important;
 }
 
 .page__hero-overlay {
-  padding: 2em 0 !important;
+  padding: 1.5em 0 !important;
   min-height: auto !important;
   text-align: left !important;
 }
@@ -269,8 +282,8 @@ a {
   padding-right: 1em !important;
 }
 
-// Ensure consistent page width across all layouts
-#main {
+// Ensure consistent page width only for sidebar pages
+.layout--single:not(.wide) #main {
   max-width: 1024px !important;
   margin-left: auto !important;
   margin-right: auto !important;
@@ -279,5 +292,12 @@ a {
     padding-left: 1em;
     padding-right: 1em;
   }
+}
+
+// Keep homepage unrestricted
+.wide #main {
+  max-width: 100% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 

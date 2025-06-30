@@ -53,13 +53,19 @@ header:
   
   /* Make header shorter and align content to left */
   .page__hero {
-    padding: 2em 0 !important;
+    padding: 1.5em 0 !important;
     min-height: auto !important;
     text-align: left !important;
   }
   
   .page__hero-caption {
     text-align: left !important;
+  }
+  
+  /* Ensure no extra spacing between header and content */
+  .page__content {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
   }
 
   /* Style for contact links */
