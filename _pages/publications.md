@@ -25,9 +25,9 @@ author_profile: true
   }
   
   .publication-image {
-    flex: 0 0 120px;
-    width: 120px;
-    height: 90px;
+    flex: 0 0 140px;
+    width: 140px;
+    height: 105px;
     
     a {
       display: block;
@@ -137,7 +137,7 @@ author_profile: true
       .publication-image {
         flex: none;
         width: 100%;
-        height: 150px;
+        height: 175px;
         
         a {
           &:hover {
@@ -166,6 +166,30 @@ author_profile: true
 
 <div class="publication-item">
   <div class="publication-image">
+    <a href="/projects/sidewalk-ballet/" target="_blank">
+      <img src="/assets/images/publications/sidewalk-ballet.jpg" alt="Seeing HAI publication">
+    </a>
+  </div>
+  <div class="publication-content">
+    <h4>
+      <a href="/projects/sidewalk-ballet/" target="_blank">
+        Seeing "HAI": Human Activities and Interactions Detection from Streetviews through LLMs
+      </a>
+    </h4>
+    <div class="publication-authors">
+      Liu Liu, Marco Cipriano, <strong>Freya Tan</strong>, Aleksandra Kudaeva, Andres Sevtsuk
+    </div>
+    <div class="publication-venue">
+      2025 ACSP 65th Annual Conference
+    </div>
+    <div class="publication-links">
+      <a href="/projects/sidewalk-ballet/" target="_blank">[Project Page]</a>
+    </div>
+  </div>
+</div>
+
+<div class="publication-item">
+  <div class="publication-image">
     <a href="/projects/gist-blur-attention/" target="_blank">
       <img src="/assets/images/publications/sidewalk-moments-placeholder.jpg" alt="SIDEWALK MOMENTS publication">
     </a>
@@ -173,7 +197,7 @@ author_profile: true
   <div class="publication-content">
     <h4>
       <a href="/projects/gist-blur-attention/" target="_blank">
-        SIDEWALK MOMENTS: Exploring the Impact of Built Environment on Attraction via Continuous Visual Experiences
+        Sidewalk Moments: Exploring the Impact of Built Environment on Attraction via Continuous Visual Experiences
       </a>
     </h4>
     <div class="publication-authors">
