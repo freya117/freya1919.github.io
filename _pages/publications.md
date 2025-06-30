@@ -180,7 +180,7 @@ author_profile: true
       Liu Liu, <strong>Freya Tan</strong>, Fábio Duarte, and Carlo Ratti
     </div>
     <div class="publication-venue">
-      LANDSCAPE AND URBAN PLANNING (In preparation)
+      (In preparation)
     </div>
     <div class="publication-links">
       <a href="/projects/gist-blur-attention/" target="_blank">[Project Page]</a>
