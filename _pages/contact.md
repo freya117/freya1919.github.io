@@ -34,9 +34,17 @@ header:
     margin-bottom: 0.4em;
   }
   
-  /* Hide the page title */
-  .page__title {
+  /* Hide the regular page title but keep header title */
+  .page__content .page__title {
     display: none;
+  }
+  
+  /* Ensure header title is visible */
+  .page__hero .page__title,
+  .page__hero-overlay .page__title {
+    display: block !important;
+    color: white !important;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5) !important;
   }
 
   /* Style for contact links */

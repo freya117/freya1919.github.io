@@ -161,7 +161,7 @@ author_profile: false
   
   .research-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.5em;
     padding: 0 1em;
   }
@@ -213,6 +213,12 @@ author_profile: false
     
     .research-card {
       padding: 1.2em;
+    }
+  }
+  
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .research-grid {
+      grid-template-columns: repeat(2, 1fr);
     }
   }
   
