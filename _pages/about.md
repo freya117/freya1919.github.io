@@ -44,14 +44,21 @@ author_profile: true
   
   .degree {
     font-weight: bold;
-    margin-bottom: 0.3em;
+    margin-bottom: 0.2em;
     font-size: 0.95em;
+    color: #2c3e50;
+    }
+  
+  .degree:not(:first-child) {
+    margin-top: 0.1em;
     }
   
   .university {
     font-style: italic;
     margin-bottom: 0.5em;
+    margin-top: 0.4em;
     font-size: 0.9em;
+    color: #666;
   }
   
   .courses {
@@ -63,7 +70,7 @@ author_profile: true
   
 ## Bio
 
-I am a Master's student at MIT in DUSP. My research focuses on the intersection of urban science, human mobility, and computational methods. I use machine learning and data science approaches to tackle complex urban planning challenges.
+I am a Master's student at MIT in EECS and DUSP. My research focuses on the intersection of urban science, human mobility, and computational methods. I use machine learning and data science approaches to tackle complex urban planning challenges.
 
 Currently, I'm a researcher at the <a href="https://cityform.mit.edu/">City Form Lab</a> at MIT, where my work focuses on pedestrian activity modeling and social behavior detection. My projects include analyzing social activities through urban visual content, developing neighborhood archetypes for energy modeling, and assessing transportation equity.
 
@@ -74,6 +81,7 @@ I'm passionate about integrating urban planning with spatial analytics and mobil
 ## Education
 
 <div class="education-item">
+  <div class="degree">Master of Science in Electrical Engineering and Computer Science (EECS)</div>
   <div class="degree">Master in City Planning</div>
   <div class="university">Massachusetts Institute of Technology (MIT)</div>
 </div>
@@ -109,6 +117,20 @@ I'm passionate about integrating urban planning with spatial analytics and mobil
   * Developed a GenAI-driven diagnostic system integrating multi-sensor data, predictive ML outputs, and equipment metadata for automated issue detection and troubleshooting
   * Optimized LLM-driven analytical workflows, enhanced LLM accuracy through prompt engineering, integrating structured domain-specific data
   * Developed efficient tokenization strategies for LLMs using PELT for segmentation, Transformer-based encoding for compression, and LSTM-AE for anomaly preservation
+
+* **Data Science Fellow**, City of Newark - Freedom Summer Fellowship (Jun 2025 - Present)
+  * City of Newark – Office of Sustainability & Emerald Cities Collaborative
+  * Selected as a 2025 Freedom Summer Fellow to support the City of Newark's efforts in addressing extreme heat resilience in historically underserved neighborhoods
+  * Collaborating with the Office of Sustainability and Emerald Cities Collaborative to co-design and evaluate climate adaptation programs with a focus on environmental justice and equitable infrastructure
+  * Conduct landscape analysis of existing urban heat mitigation strategies and identify opportunities for program expansion
+  * Develop site recommendations for resilient transit shelters (RESTS) and cooling infrastructure using environmental and transit data
+  * Co-design a monitoring and evaluation framework with key performance indicators to assess long-term program impact
+  * Draft strategic guidance for scaling Newark's Cool Roof Program and structuring a citywide Heat Resilience Coalition
+
+* **Spatial Modeling Assistant**, City Form Lab at MIT - Maine Department of Transportation (May 2025 - Present)
+  * Contributed to the development and calibration of spatial pedestrian flow models, focusing on estimating street-level foot traffic across 140 Maine municipalities
+  * Conducted geospatial and sensor-based feature engineering, integrating diverse urban form and network data to enhance model accuracy and interpretability
+  * Built automated data processing pipelines in Python and GIS to transform raw spatial datasets into structured, high-resolution model inputs for urban mobility analysis
 
 * **Teaching Assistant**, MIT (Jan 2025 - Current)
   * Course: Modeling Pedestrian Activity in Cities | Supervisor: Andres Sevtsuk
