@@ -293,7 +293,7 @@ h1.page__title,
   max-width: 1024px !important;
   margin-left: auto !important;
   margin-right: auto !important;
-  padding-left: 1em !important;
+  padding-left: 0 !important;
   padding-right: 1em !important;
   padding-top: 0 !important;
   padding-bottom: 0 !important;
@@ -301,13 +301,14 @@ h1.page__title,
   margin-bottom: 0 !important;
 }
 
-// Align header title with sidebar for sidebar pages
+// Align header title with sidebar and masthead for sidebar pages
 .layout--single:not(.wide) {
   @include breakpoint($large) {
     .page__hero-caption {
-      padding-left: 1em !important;
+      padding-left: 0 !important;
       margin-left: auto !important;
       margin-right: auto !important;
+      max-width: 1024px !important;
     }
     
     .page__hero .page__title,

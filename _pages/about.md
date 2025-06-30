@@ -65,6 +65,9 @@ header:
     text-align: left !important;
     padding: 0 !important;
     margin: 0 !important;
+    max-width: 1024px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
   
   /* Ensure no extra spacing between header and content */

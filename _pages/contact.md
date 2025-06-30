@@ -77,8 +77,6 @@ header:
     max-width: 1024px !important;
     margin-left: auto !important;
     margin-right: auto !important;
-    padding-left: 1em !important;
-    padding-right: 1em !important;
   }
   
   /* Align header title with sidebar on larger screens */
