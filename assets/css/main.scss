@@ -244,32 +244,35 @@ a {
   }
 }
 
-// Header overlay styling - elegant design with main color and underline
+// Header overlay styling - forceful override for title styling
 .page__hero .page__title,
 .page__hero-overlay .page__title,
 .layout--single .page__hero .page__title,
 .layout--single .page__hero-overlay .page__title,
-header .page__title {
-  color: $primary-color !important;
+header .page__title,
+h1.page__title,
+.page__hero-caption .page__title {
+  color: #0033A0 !important;
   text-shadow: none !important;
   font-size: 1.4em !important;
   font-weight: bold !important;
-  border-bottom: 3px solid $primary-color !important;
+  border-bottom: 3px solid #0033A0 !important;
   padding-bottom: 0.3em !important;
   display: inline-block !important;
   background: transparent !important;
+  text-decoration: none !important;
 }
 
-// Make headers shorter and align content left
+// Make headers much more compact and align content left
 .page__hero {
-  padding: 1em 0 !important;
+  padding: 0.8em 0 !important;
   min-height: auto !important;
   text-align: left !important;
   margin-bottom: 0 !important;
 }
 
 .page__hero-overlay {
-  padding: 1em 0 !important;
+  padding: 0.8em 0 !important;
   min-height: auto !important;
   text-align: left !important;
   margin-bottom: 0 !important;
@@ -282,18 +285,6 @@ header .page__title {
   margin-right: auto !important;
   padding-left: 1em !important;
   padding-right: 1em !important;
-  margin-bottom: 0 !important;
-}
-
-// Force remove any spacing between header and content
-.layout--single .page__content {
-  margin-top: 0 !important;
-  padding-top: 0 !important;
-}
-
-.layout--single .page__inner-wrap {
-  margin-top: 0 !important;
-  padding-top: 0 !important;
 }
 
 // Ensure consistent page width only for sidebar pages
