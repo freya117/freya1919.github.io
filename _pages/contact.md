@@ -72,11 +72,7 @@ header:
   
   .page__hero-caption {
     text-align: left !important;
-    padding: 0 !important;
     margin: 0 !important;
-    max-width: 1024px !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
   }
   
   /* Align header title with sidebar on larger screens */
@@ -94,11 +90,7 @@ header:
     }
   }
   
-  /* Remove all spacing between header and content */
-  .page__content {
-    margin-top: 0 !important;
-    padding-top: 0 !important;
-  }
+
   
   /* Remove any potential spacing from the main content wrapper */
   #main {
@@ -131,10 +123,7 @@ header:
     .page__content {
       width: calc(100% - 300px) !important;
       margin-left: 300px !important;
-      margin-top: 0 !important;
-      padding-top: 0 !important;
       order: 2 !important;
-      padding-left: 1em !important;
     }
     
     .sidebar {
@@ -142,8 +131,6 @@ header:
       width: 280px !important;
       margin-left: 0 !important;
       margin-right: 20px !important;
-      margin-top: 0 !important;
-      padding-top: 0 !important;
       order: 1 !important;
       position: relative !important;
     }
