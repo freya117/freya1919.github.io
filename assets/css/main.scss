@@ -93,13 +93,12 @@ $link-color-visited: darken($link-color, 5%);
   width: 100% !important;
 }
 
-// Match sidebar pages to homepage width with left sidebar aligned to content boundary
+// Match sidebar pages to homepage width with left sidebar
 .layout--single:not(.wide) {
   .page__inner-wrap {
     max-width: 1024px !important;
     margin-left: auto !important;
     margin-right: auto !important;
-    position: relative;
   }
   
   .page {
@@ -121,10 +120,9 @@ $link-color-visited: darken($link-color, 5%);
   
   .sidebar {
     @include breakpoint($large) {
-      position: absolute;
-      left: 0;
-      top: 0;
+      float: left;
       width: 280px;
+      margin-left: 0;
       margin-right: 20px;
       opacity: 1;
       transition: opacity 0.2s ease-in-out;
@@ -240,29 +238,44 @@ a {
 .page__hero .page__title {
   color: $primary-color !important;
   text-shadow: none !important;
-  font-size: 1.6em !important;
+  font-size: 1.4em !important;
   font-weight: bold !important;
   border-bottom: 3px solid $primary-color !important;
   padding-bottom: 0.3em !important;
   display: inline-block !important;
 }
 
-// Make headers shorter and align with content width
+// Make headers shorter and align content left
 .page__hero {
   padding: 2em 0 !important;
   min-height: auto !important;
+  text-align: left !important;
 }
 
 .page__hero-overlay {
   padding: 2em 0 !important;
   min-height: auto !important;
+  text-align: left !important;
 }
 
 .page__hero-caption {
+  text-align: left !important;
   max-width: 1024px !important;
   margin-left: auto !important;
   margin-right: auto !important;
   padding-left: 1em !important;
   padding-right: 1em !important;
+}
+
+// Ensure consistent page width across all layouts
+#main {
+  max-width: 1024px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  
+  @include breakpoint($large) {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
 }
 

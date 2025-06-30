@@ -39,16 +39,27 @@ header:
     display: none;
   }
   
-  /* Ensure header title is styled elegantly */
+  /* Ensure header title is styled elegantly and aligned left */
   .page__hero .page__title,
   .page__hero-overlay .page__title {
     display: inline-block !important;
     color: #0033A0 !important;
     text-shadow: none !important;
-    font-size: 1.6em !important;
+    font-size: 1.4em !important;
     font-weight: bold !important;
     border-bottom: 3px solid #0033A0 !important;
     padding-bottom: 0.3em !important;
+  }
+  
+  /* Make header shorter and align content to left */
+  .page__hero {
+    padding: 2em 0 !important;
+    min-height: auto !important;
+    text-align: left !important;
+  }
+  
+  .page__hero-caption {
+    text-align: left !important;
   }
 
   /* Style for contact links */
