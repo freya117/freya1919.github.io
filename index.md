@@ -50,12 +50,23 @@ author_profile: false
       align-items: center;
     }
 
-    /* Image above text on mobile - smaller size */
+    /* Image above everything on mobile - smaller size and centered */
     .content-wrapper img {
-      max-width: 60%;
+      max-width: 48%;
       height: auto;
+      order: -2;
+      margin-bottom: 1em;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Move the title below the image */
+    .bio-heading {
       order: -1;
+      text-align: center;
       margin-bottom: 1.5em;
+      margin-top: 0;
     }
 
     /* Adjust text block width for screens */

@@ -66,6 +66,15 @@ author_profile: true
     margin-top: 0.5em;
     font-size: 0.85em;
     }
+  
+  /* Style for work experience subtitles */
+  .page__content ul li em {
+    color: #666;
+    font-size: 0.9em;
+    display: block;
+    margin-bottom: 0.3em;
+    font-style: italic;
+    }
   </style>
   
 ## Bio
@@ -111,16 +120,15 @@ I'm passionate about integrating urban planning with spatial analytics and mobil
 
 ## Work Experience
 
-* **Machine Learning Engineer Intern**, Symmons Evolution (Sep 2024 - Present)
-  * Building Energy Management Solutions - ML and GenerativeAI Group
+* **Machine Learning Engineer Intern**, Symmons Evolution (Sep 2024 - Present)  
+  *Building Energy Management Solutions - ML and GenerativeAI Group*
   * Developing real-time anomaly detection and predictive ML models for multi-sensor building energy management time-series data, enhancing system reliability
   * Developed a GenAI-driven diagnostic system integrating multi-sensor data, predictive ML outputs, and equipment metadata for automated issue detection and troubleshooting
   * Optimized LLM-driven analytical workflows, enhanced LLM accuracy through prompt engineering, integrating structured domain-specific data
   * Developed efficient tokenization strategies for LLMs using PELT for segmentation, Transformer-based encoding for compression, and LSTM-AE for anomaly preservation
 
-* **Data Science Fellow**, City of Newark - Freedom Summer Fellowship (Jun 2025 - Present)
-  * City of Newark – Office of Sustainability & Emerald Cities Collaborative
-  * Selected as a 2025 Freedom Summer Fellow to support the City of Newark's efforts in addressing extreme heat resilience in historically underserved neighborhoods
+* **Data Science Fellow**, City of Newark - Freedom Summer Fellowship (Jun 2025 - Present)  
+  *City of Newark – Office of Sustainability & Emerald Cities Collaborative*
   * Collaborating with the Office of Sustainability and Emerald Cities Collaborative to co-design and evaluate climate adaptation programs with a focus on environmental justice and equitable infrastructure
   * Conduct landscape analysis of existing urban heat mitigation strategies and identify opportunities for program expansion
   * Develop site recommendations for resilient transit shelters (RESTS) and cooling infrastructure using environmental and transit data
@@ -128,7 +136,7 @@ I'm passionate about integrating urban planning with spatial analytics and mobil
   * Draft strategic guidance for scaling Newark's Cool Roof Program and structuring a citywide Heat Resilience Coalition
 
 * **Spatial Modeling Assistant**, City Form Lab at MIT - Maine Department of Transportation (May 2025 - Present)
-  * Contributed to the development and calibration of spatial pedestrian flow models, focusing on estimating street-level foot traffic across 140 Maine municipalities
+  * Development and calibration of spatial pedestrian flow models, focusing on estimating street-level foot traffic across 140 Maine municipalities
   * Conducted geospatial and sensor-based feature engineering, integrating diverse urban form and network data to enhance model accuracy and interpretability
   * Built automated data processing pipelines in Python and GIS to transform raw spatial datasets into structured, high-resolution model inputs for urban mobility analysis
 
