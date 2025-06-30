@@ -53,12 +53,12 @@ header:
     padding-bottom: 0.3em !important;
   }
   
-  /* Eliminate all header spacing completely */
+  /* Make header much more compact */
   .page__hero {
-    padding: 0.3em 0 !important;
+    padding: 0.8em 0 !important;
     min-height: auto !important;
     text-align: left !important;
-    margin: 0 !important;
+    margin-bottom: 0 !important;
   }
   
   .page__hero-caption {
@@ -67,16 +67,34 @@ header:
     margin: 0 !important;
   }
   
-  /* Remove all spacing and bring content right up to header */
+  /* Ensure no extra spacing between header and content */
   .page__content {
-    margin: 0 !important;
-    padding-top: 0 !important;
+    margin-top: 0 !important;
+    padding-top: 0.5em !important;
   }
   
-  /* Eliminate any wrapper spacing */
-  .page__inner-wrap {
-    padding-top: 0 !important;
-    margin-top: 0 !important;
+  /* Ensure proper 2-column layout with sidebar */
+  @media (min-width: 80em) {
+    .page {
+      display: flex !important;
+      width: 100% !important;
+    }
+    
+    .page__content {
+      width: calc(100% - 300px) !important;
+      margin-left: 300px !important;
+      order: 2 !important;
+      padding-left: 1em !important;
+    }
+    
+    .sidebar {
+      float: left !important;
+      width: 280px !important;
+      margin-left: 0 !important;
+      margin-right: 20px !important;
+      order: 1 !important;
+      position: relative !important;
+    }
   }
 
   /* Style for education section */
