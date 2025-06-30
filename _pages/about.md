@@ -55,17 +55,37 @@ header:
   
   /* Make header shorter and align content to left */
   .page__hero {
-    padding: 1.5em 0 !important;
+    padding: 1em 0 !important;
     min-height: auto !important;
     text-align: left !important;
+    margin-bottom: 0 !important;
   }
   
   .page__hero-caption {
     text-align: left !important;
+    margin-bottom: 0 !important;
+  }
+  
+  /* Force header title styling */
+  .page__hero .page__title,
+  .page__hero-overlay .page__title {
+    color: #0033A0 !important;
+    border-bottom: 3px solid #0033A0 !important;
+    font-size: 1.4em !important;
+    font-weight: bold !important;
+    display: inline-block !important;
+    padding-bottom: 0.3em !important;
+    text-shadow: none !important;
+    background: transparent !important;
   }
   
   /* Ensure no extra spacing between header and content */
   .page__content {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  
+  .page__inner-wrap {
     margin-top: 0 !important;
     padding-top: 0 !important;
   }

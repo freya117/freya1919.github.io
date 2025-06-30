@@ -262,15 +262,17 @@ header .page__title {
 
 // Make headers shorter and align content left
 .page__hero {
-  padding: 1.5em 0 !important;
+  padding: 1em 0 !important;
   min-height: auto !important;
   text-align: left !important;
+  margin-bottom: 0 !important;
 }
 
 .page__hero-overlay {
-  padding: 1.5em 0 !important;
+  padding: 1em 0 !important;
   min-height: auto !important;
   text-align: left !important;
+  margin-bottom: 0 !important;
 }
 
 .page__hero-caption {
@@ -280,6 +282,18 @@ header .page__title {
   margin-right: auto !important;
   padding-left: 1em !important;
   padding-right: 1em !important;
+  margin-bottom: 0 !important;
+}
+
+// Force remove any spacing between header and content
+.layout--single .page__content {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.layout--single .page__inner-wrap {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
 }
 
 // Ensure consistent page width only for sidebar pages
