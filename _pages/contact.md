@@ -5,7 +5,6 @@ layout: single
 author_profile: true
 header:
   overlay_color: "#ffffff"
-  overlay_filter: "0.1"
 ---
 
 <style>
@@ -57,7 +56,7 @@ header:
     display: inline-block !important;
     color: #0033A0 !important;
     text-shadow: none !important;
-    font-size: 1.2em !important;
+    font-size: 1.1em !important;
     font-weight: bold !important;
     border-bottom: 3px solid #0033A0 !important;
     padding-bottom: 0.3em !important;
@@ -67,6 +66,11 @@ header:
   /* Make header much more compact and remove all extra spacing */
   .page__hero-caption {
     text-align: left !important;
+  }
+
+  /* Align hero title with main content on sidebar pages */
+  .page__hero-wrapper {
+    padding-left: 320px; /* 300px sidebar + 20px padding */
   }
 
   /* Style for contact links */
@@ -151,7 +155,7 @@ United States
 <style>
   .form-container {
     max-width: 700px;
-    margin: 2.5em 0;
+    margin: 2.5em 0 1em 0;
     background: #f8f9fa;
     padding: 2.5em;
     border-radius: 12px;

@@ -5,7 +5,6 @@ layout: single
 author_profile: true
 header:
   overlay_color: "#ffffff"
-  overlay_filter: "0.1"
 ---
 
 <style>
@@ -26,7 +25,7 @@ header:
     display: inline-block !important;
     color: #0033A0 !important;
     text-shadow: none !important;
-    font-size: 1.2em !important;
+    font-size: 1.1em !important;
     font-weight: bold !important;
     border-bottom: 3px solid #0033A0 !important;
     padding-bottom: 0.3em !important;
@@ -37,7 +36,10 @@ header:
     text-align: left !important;
   }
   
-
+  /* Align hero title with main content on sidebar pages */
+  .page__hero-wrapper {
+    padding-left: 320px; /* 300px sidebar + 20px padding */
+  }
   
   .publication-item {
     display: flex;
@@ -45,6 +47,10 @@ header:
     padding-bottom: 0.7em;
     border-bottom: 1px solid #f2f3f3;
     gap: 1em;
+  }
+  
+  .publication-item:last-child {
+    margin-bottom: 0.5em;
   }
   
   .publication-image {

@@ -360,7 +360,7 @@ author_profile: false
   /* News section styling */
   .news-section {
     margin-top: 3em;
-    margin-bottom: 1em;
+    margin-bottom: 0;
   }
   
   .news-heading {

@@ -3,47 +3,73 @@ layout: default
 ---
 
 <style>
-  /* Custom pagination styling for project pages */
+  /* New, elegant design for project page headers */
+  .project-header {
+    margin-bottom: 2.5em;
+    padding-bottom: 1.5em;
+    border-bottom: 1px solid #e8e8e8;
+  }
+
+  .project-header .page__title {
+    font-size: 2.2em; /* Larger, more impactful title */
+    color: #2a2a2a;
+    font-weight: 600;
+    margin-bottom: 0.25em; /* Tighter spacing to subtitle/meta */
+  }
+
+  .project-header .page__subtitle {
+    font-size: 1.2em;
+    font-weight: 300;
+    font-style: italic;
+    color: #7a7a7a;
+    margin-top: 0;
+    margin-bottom: 1em;
+  }
+
+  .project-header .page__meta {
+    margin-top: 1em;
+    font-size: 0.85em;
+    color: #888;
+  }
+
+  /* Custom pagination styling for project pages - tab-like design */
   .pagination {
-    margin: 2em 0 1em 0 !important;
+    margin: 1.5em 0 0.5em 0 !important;
     padding: 0 !important;
     text-align: center;
     border-top: 1px solid #f2f3f3;
-    padding-top: 1.5em !important;
+    padding-top: 1em !important;
   }
   
   .pagination--pager {
     display: inline-block;
-    padding: 0.75em 1.5em !important;
-    margin: 0 0.5em !important;
-    background-color: #0033A0 !important;
-    color: white !important;
+    padding: 0.4em 0.8em !important;
+    margin: 0 0.8em !important;
+    background: none !important;
+    color: #0033A0 !important;
     text-decoration: none !important;
-    border-radius: 8px !important;
+    border: none !important;
     font-weight: 500 !important;
-    font-size: 0.9em !important;
-    transition: all 0.3s ease !important;
-    border: 2px solid #0033A0 !important;
+    font-size: 0.85em !important;
+    transition: all 0.2s ease !important;
+    border-bottom: 2px solid transparent !important;
+    position: relative !important;
   }
   
   .pagination--pager:hover {
-    background-color: #002680 !important;
-    border-color: #002680 !important;
-    transform: translateY(-2px) !important;
-    box-shadow: 0 4px 8px rgba(0, 51, 160, 0.3) !important;
+    color: #002680 !important;
+    border-bottom-color: #0033A0 !important;
+    text-decoration: none !important;
   }
   
   .pagination--pager.disabled {
-    background-color: #e9ecef !important;
-    color: #6c757d !important;
-    border-color: #e9ecef !important;
+    color: #adb5bd !important;
     cursor: not-allowed !important;
     pointer-events: none !important;
   }
   
   .pagination--pager.disabled:hover {
-    transform: none !important;
-    box-shadow: none !important;
+    border-bottom-color: transparent !important;
   }
 </style>
 
@@ -77,11 +103,9 @@ layout: default
     <div class="page__inner-wrap" style="max-width: 100%; margin: 0 auto; padding-left: 1em; padding-right: 1em; box-sizing: border-box;">
       <div style="max-width: 1024px; margin: 0 auto; width: 100%;">
         {% unless page.header.overlay_color or page.header.overlay_image %}
-          <header>
-            {% if page.title %}<h1 id="page-title" class="page__title p-name" itemprop="headline" style="color: #0033A0; margin-bottom: 1.8em; border-bottom: 3px solid #0033A0; padding-bottom: 0.4em; display: inline-block;">
-              <a href="{{ page.url | absolute_url }}" class="u-url" itemprop="url" style="color: #0033A0; text-decoration: none;">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</a>
-            </h1>{% endif %}
-            {% if page.subtitle %}<p id="page-subtitle" class="page__subtitle" itemprop="alternativeHeadline" style="font-size: 1.0em; font-weight: 300; font-style: italic; margin-top: 1.5em; margin-bottom: 2.8em; color: #505050; letter-spacing: 0.3px; border-bottom: 1px solid #e8e8e8; padding-bottom: 1.6em;">{{ page.subtitle | markdownify | remove: "<p>" | remove: "</p>" }}</p>{% endif %}
+          <header class="project-header">
+            {% if page.title %}<h1 id="page-title" class="page__title p-name" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
+            {% if page.subtitle %}<p id="page-subtitle" class="page__subtitle" itemprop="alternativeHeadline">{{ page.subtitle | markdownify | remove: "<p>" | remove: "</p>" }}</p>{% endif %}
             {% include page__meta.html %}
           </header>
         {% endunless %}
