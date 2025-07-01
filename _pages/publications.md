@@ -144,7 +144,8 @@ header:
   
   .publication-year {
     font-weight: bold;
-    font-size: 1em;
+    font-size: 1.2em;
+    color: #0033A0;
     margin-top: 1.3em;
     margin-bottom: 0.7em;
     padding-bottom: 0.3em;

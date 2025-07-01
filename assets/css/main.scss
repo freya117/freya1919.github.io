@@ -170,6 +170,8 @@ $link-color-visited: darken($link-color, 5%);
 // Fix page hero alignment and spacing across all pages
 .page__hero--overlay {
   padding: 0.8em 0 !important;
+  background-color: #ffffff !important;
+  border-bottom: none !important;
 }
 
 .page__hero-wrapper {
@@ -181,6 +183,8 @@ $link-color-visited: darken($link-color, 5%);
 .page__hero {
   margin-bottom: 0 !important;
   padding: 0.8em 0 !important;
+  background-color: #ffffff !important;
+  border-bottom: none !important;
 }
 
 .page__hero-caption {
@@ -264,6 +268,11 @@ a {
   color: #0033A0 !important;
 }
 /*-- End Custom Footer --*/
+
+// Sidebar author name styling
+.sidebar .author__name {
+  color: #0033A0 !important;
+}
 
 // Add specific styling for links in the home page highlights section
 .page__content .highlights a {

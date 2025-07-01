@@ -16,15 +16,17 @@ header:
     margin-top: 0 !important;
   }
   
-  /* Make headings slightly smaller too */
+  /* Make headings slightly smaller too and blue */
   .page__content h2 {
     font-size: 1.25em;
+    color: #0033A0;
     margin-top: 1.5em;
     margin-bottom: 0.5em;
   }
   
   .page__content h3 {
     font-size: 1.05em;
+    color: #0033A0;
     margin-top: 1.2em;
     margin-bottom: 0.5em;
   }
