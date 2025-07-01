@@ -155,7 +155,7 @@ $link-color-visited: darken($link-color, 5%);
   }
 }
 
-// Fix page hero alignment and spacing across all pages
+// Fix page hero alignment across all pages
 .page__hero-caption {
   padding-left: 0 !important;
   padding-right: 0 !important;
@@ -163,15 +163,6 @@ $link-color-visited: darken($link-color, 5%);
   margin-left: auto !important;
   margin-right: auto !important;
   padding: 0 1em !important;
-}
-
-// Remove excessive spacing from page hero and inner wrap
-.page__hero {
-  margin-bottom: 0 !important;
-}
-
-.page__inner-wrap {
-  margin-top: 0 !important;
 }
 
 // Main content container alignment fix

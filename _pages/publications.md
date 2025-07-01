@@ -45,30 +45,9 @@ header:
     margin: 0 !important;
   }
   
-
-  
-  /* Ensure proper 2-column layout with sidebar */
-  @media (min-width: 80em) {
-    .page {
-      display: flex !important;
-      width: 100% !important;
-      align-items: flex-start !important;
-    }
-    
-    .page__content {
-      width: calc(100% - 300px) !important;
-      margin-left: 300px !important;
-      order: 2 !important;
-    }
-    
-    .sidebar {
-      float: left !important;
-      width: 280px !important;
-      margin-left: 0 !important;
-      margin-right: 20px !important;
-      order: 1 !important;
-      position: relative !important;
-    }
+  /* No extra spacing between header and content */
+  .page__content {
+    padding-top: 0 !important;
   }
   
   .publication-item {
@@ -112,8 +91,8 @@ header:
     
     h4 {
       font-size: 0.9em;
-      font-weight: bold;
-      margin-bottom: 0.3em;
+    font-weight: bold;
+    margin-bottom: 0.3em;
       margin-top: 0;
       
       a {
@@ -231,13 +210,13 @@ header:
         Sidewalk Moments: Exploring the Impact of Built Environment on Attraction via Continuous Visual Experiences
       </a>
     </h4>
-    <div class="publication-authors">
+  <div class="publication-authors">
       Liu Liu, <strong>Freya Tan</strong>, Fábio Duarte, and Carlo Ratti
-    </div>
-    <div class="publication-venue">
+  </div>
+  <div class="publication-venue">
       (In preparation)
-    </div>
-    <div class="publication-links">
+  </div>
+  <div class="publication-links">
       <a href="/projects/gist-blur-attention/" target="_blank">[Project Page]</a>
     </div>
   </div>
@@ -255,15 +234,15 @@ header:
         Automated Neighborhood Archetype: Integrating Morphology and Topology for Urban Building Energy Modeling
       </a>
     </h4>
-    <div class="publication-authors">
+  <div class="publication-authors">
       Xinwei Zhuang, <strong>Freya Tan</strong>, Luisa Caldas
-    </div>
-    <div class="publication-venue">
+  </div>
+  <div class="publication-venue">
       (In preparation)
-    </div>
-    <div class="publication-links">
+  </div>
+  <div class="publication-links">
       <a href="/projects/neighborhood-archetypes/" target="_blank">[Project Page]</a>
-    </div>
+  </div>
   </div>
 </div>
 
@@ -279,13 +258,13 @@ header:
         Seeing "HAI": Human Activities and Interactions Detection from Streetviews through LLMs
       </a>
     </h4>
-    <div class="publication-authors">
+  <div class="publication-authors">
       Liu Liu, Marco Cipriano, <strong>Freya Tan</strong>, Aleksandra Kudaeva, Andres Sevtsuk
-    </div>
-    <div class="publication-venue">
+  </div>
+  <div class="publication-venue">
       2025 ACSP 65th Annual Conference
-    </div>
-    <div class="publication-links">
+  </div>
+  <div class="publication-links">
       <a href="/projects/sidewalk-ballet/" target="_blank">[Project Page]</a>
     </div>
   </div>
@@ -305,13 +284,13 @@ header:
         Chapter 4: Reimagining Education, Rewinding Valley: A New Knowledge-Production Vision for Salinas Valley
       </a>
     </h4>
-    <div class="publication-authors">
+  <div class="publication-authors">
       <strong>Tan, F.</strong>, Yu, M., Gogri, Y.
-    </div>
-    <div class="publication-venue">
+  </div>
+  <div class="publication-venue">
       In Ettore Santi (Auth.), Margaret Crawford (ed.), Designing the Rural. Urban Design in Rural California, UC Berkeley
-    </div>
-    <div class="publication-links">
+  </div>
+  <div class="publication-links">
       <a href="/projects/reimagining-salinas-valley/" target="_blank">[Project Page]</a>
     </div>
   </div>

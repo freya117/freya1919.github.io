@@ -66,32 +66,12 @@ header:
     margin: 0 !important;
   }
   
-
-  
-  /* Ensure proper 2-column layout with sidebar */
-  @media (min-width: 80em) {
-    .page {
-      display: flex !important;
-      width: 100% !important;
-      align-items: flex-start !important;
-    }
-    
-    .page__content {
-      width: calc(100% - 300px) !important;
-      margin-left: 300px !important;
-      order: 2 !important;
-    }
-    
-    .sidebar {
-      float: left !important;
-      width: 280px !important;
-      margin-left: 0 !important;
-      margin-right: 20px !important;
-      order: 1 !important;
-      position: relative !important;
-    }
+  /* Ensure no extra spacing between header and content */
+  .page__content {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
   }
-
+  
   /* Style for education section */
   .education-item {
     margin-bottom: 1.8em;
@@ -169,7 +149,7 @@ Hi, I'm Freya, a dual-degree graduate student in <a href="https://www.eecs.mit.e
 
 ## Work Experience
 
-* **Machine Learning Engineer Intern**, Symmons Evolution (Sep 2024 - Present)  
+* **Machine Learning Engineer Intern**, Symmons Evolution (Sep 2024 - Present)
   *Building Energy Management Solutions - ML and GenerativeAI Group*
   * Developing real-time anomaly detection and predictive ML models for multi-sensor building energy management time-series data, enhancing system reliability
   * Developed a GenAI-driven diagnostic system integrating multi-sensor data, predictive ML outputs, and equipment metadata for automated issue detection and troubleshooting
