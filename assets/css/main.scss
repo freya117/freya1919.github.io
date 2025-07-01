@@ -157,12 +157,21 @@ $link-color-visited: darken($link-color, 5%);
 
 // Fix page hero alignment across all pages
 .page__hero-caption {
+  position: relative !important;
+  bottom: auto !important;
+  right: auto !important;
   padding-left: 0 !important;
   padding-right: 0 !important;
   max-width: 1024px !important;
   margin-left: auto !important;
   margin-right: auto !important;
   padding: 0 1em !important;
+  background: transparent !important;
+  color: inherit !important;
+  text-align: left !important;
+  opacity: 1 !important;
+  z-index: auto !important;
+  border-radius: 0 !important;
 }
 
 // Main content container alignment fix
@@ -174,10 +183,19 @@ $link-color-visited: darken($link-color, 5%);
   padding-right: 1em !important;
 }
 
-// Fix the blank space issue by removing default top margin
+// Fix the blank space issue by removing default top margin and page hero bottom margin
 .page__inner-wrap {
   margin-top: 0 !important;
   padding-top: 0 !important;
+}
+
+// Override default page hero margin that causes blank space
+.page__hero {
+  margin-bottom: 0 !important;
+}
+
+.page__hero-overlay {
+  margin-bottom: 0 !important;
 }
 
 .greedy-nav {
