@@ -3,18 +3,11 @@ title: "Publications"
 permalink: /publications/
 layout: single
 author_profile: true
-# header:
-#   overlay_color: "#ffffff"
+header:
+  overlay_color: "#ffffff"
 ---
 
 <style>
-  /* HIDE THE ENTIRE HEADER/HERO SECTION */
-  .page__hero,
-  .page__hero--overlay,
-  .page__hero-wrapper {
-    display: none !important;
-  }
-  
   /* Make all content smaller */
   .page__content {
     font-size: 0.7em;
@@ -26,7 +19,7 @@ author_profile: true
     display: none;
   }
   
-  /* COMMENTED OUT - Header styling no longer needed since header is hidden
+  /* Ensure header title is styled elegantly and aligned left */
   .page__hero .page__title,
   .page__hero-overlay .page__title {
     display: inline-block !important;
@@ -38,14 +31,15 @@ author_profile: true
     padding-bottom: 0.3em !important;
   }
   
+  /* Make header much more compact */
   .page__hero-caption {
     text-align: left !important;
   }
   
+  /* Align hero title with main content on sidebar pages */
   .page__hero-wrapper {
-    padding-left: 320px;
+    padding-left: 320px; /* 300px sidebar + 20px padding */
   }
-  */
   
   .publication-item {
     display: flex;

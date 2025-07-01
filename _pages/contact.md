@@ -3,18 +3,11 @@ title: "Contact"
 permalink: /contact/
 layout: single
 author_profile: true
-# header:
-#   overlay_color: "#ffffff"
+header:
+  overlay_color: "#ffffff"
 ---
 
 <style>
-  /* HIDE THE ENTIRE HEADER/HERO SECTION */
-  .page__hero,
-  .page__hero--overlay,
-  .page__hero-wrapper {
-    display: none !important;
-  }
-  
   /* Make all text smaller on the contact page */
   .page__content {
     font-size: 0.75em;
@@ -57,6 +50,29 @@ author_profile: true
     padding-bottom: 0 !important;
   }
   
+  /* Ensure header title is styled elegantly and aligned left */
+  .page__hero .page__title,
+  .page__hero-overlay .page__title {
+    display: inline-block !important;
+    color: #0033A0 !important;
+    text-shadow: none !important;
+    font-size: 1.1em !important;
+    font-weight: bold !important;
+    border-bottom: 3px solid #0033A0 !important;
+    padding-bottom: 0.3em !important;
+    margin: 0 !important;
+  }
+  
+  /* Make header much more compact and remove all extra spacing */
+  .page__hero-caption {
+    text-align: left !important;
+  }
+
+  /* Align hero title with main content on sidebar pages */
+  .page__hero-wrapper {
+    padding-left: 320px; /* 300px sidebar + 20px padding */
+  }
+
   /* Style for contact links */
   .contact-info {
     margin-bottom: 1.5em;
