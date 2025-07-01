@@ -26,7 +26,7 @@ header:
     display: inline-block !important;
     color: #0033A0 !important;
     text-shadow: none !important;
-    font-size: 1.4em !important;
+    font-size: 1.2em !important;
     font-weight: bold !important;
     border-bottom: 3px solid #0033A0 !important;
     padding-bottom: 0.3em !important;

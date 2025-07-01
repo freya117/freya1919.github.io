@@ -78,8 +78,8 @@ author_profile: false
       margin-right: auto !important;
     }
 
-    /* Create mobile title that appears after image */
-    .content-wrapper::before {
+    /* Create mobile title that appears after image - only in bio section */
+    .bio-section .content-wrapper::before {
       content: "Freya Tan";
       order: -2 !important;
       font-size: 2em !important;
@@ -92,8 +92,8 @@ author_profile: false
       width: 100% !important;
     }
 
-    /* Create mobile email that appears after title */
-    .content-wrapper::after {
+    /* Create mobile email that appears after title - only in bio section */
+    .bio-section .content-wrapper::after {
       content: "freya117@mit.edu";
       order: -1 !important;
       font-size: 0.9em !important;
@@ -254,12 +254,25 @@ author_profile: false
     margin-bottom: 2em;
   }
   
-  /* Project grid layout - inherit styles from research page */
+  /* Project grid layout - force 3 columns in one row */
   .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     margin-bottom: 40px;
+  }
+  
+  /* Responsive grid for smaller screens */
+  @media screen and (max-width: 768px) {
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .projects-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
   
   .project-box {
@@ -347,7 +360,7 @@ author_profile: false
   /* News section styling */
   .news-section {
     margin-top: 3em;
-    margin-bottom: 3em;
+    margin-bottom: 1em;
   }
   
   .news-heading {
@@ -366,7 +379,7 @@ author_profile: false
   }
   
   .news-list {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   
   .news-item {
@@ -377,7 +390,8 @@ author_profile: false
   
   .news-item:last-child {
     border-bottom: none;
-    margin-bottom: 0.8em;
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
   
   .news-date {

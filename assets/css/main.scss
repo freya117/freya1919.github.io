@@ -205,8 +205,18 @@ $link-color-visited: darken($link-color, 5%);
   padding-right: 1em !important;
 }
 
+// Masthead and navigation styling
+.masthead {
+  background-color: #ffffff !important;
+  border-bottom: none !important;
+}
+
 .greedy-nav {
   background: transparent;
+}
+
+.site-title {
+  color: #0033A0 !important;
 }
 
 // Custom CSS overrides
