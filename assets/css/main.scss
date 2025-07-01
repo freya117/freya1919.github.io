@@ -169,7 +169,15 @@ $link-color-visited: darken($link-color, 5%);
 
 // Fix page hero alignment and spacing across all pages
 .page__hero--overlay {
-  padding: 0.8em 1em !important;
+  padding: 0.8em 0 !important;
+}
+
+.page__hero--overlay .page__title {
+  max-width: 1024px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 1em !important;
+  padding-right: 1em !important;
 }
 
 .page__hero {
