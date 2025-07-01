@@ -54,24 +54,10 @@ header:
   }
   
   /* Make header much more compact */
-  .page__hero {
-    padding: 0.8em 0 !important;
-    min-height: auto !important;
-    text-align: left !important;
-    margin-bottom: 0 !important;
-  }
-  
   .page__hero-caption {
     text-align: left !important;
-    margin: 0 !important;
   }
-  
-  /* Ensure no extra spacing between header and content */
-  .page__content {
-    margin-top: 0 !important;
-    padding-top: 0 !important;
-  }
-  
+
   /* Style for education section */
   .education-item {
     margin-bottom: 1.8em;

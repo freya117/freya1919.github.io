@@ -105,57 +105,74 @@ $link-color-visited: darken($link-color, 5%);
   width: 100% !important;
 }
 
-// Match sidebar pages to homepage width with left sidebar - FIXED ALIGNMENT
-.layout--single:not(.wide) {
-  .page__inner-wrap {
-    max-width: 1024px !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
+// Fix the main container to use flexbox for proper sidebar and content alignment
+#main {
+  @include breakpoint($large) {
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: 20px !important;
+  }
+}
+
+// Fix sidebar positioning and remove excessive spacing
+.sidebar {
+  @include breakpoint($large) {
+    float: none !important;
+    width: 280px !important;
     margin-top: 0 !important;
-    padding-top: 0 !important;
-    padding-left: 1em !important;
-    padding-right: 1em !important;
+    margin-bottom: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    opacity: 1 !important;
+    flex-shrink: 0 !important;
   }
   
-  .page {
-    @include breakpoint($large) {
-      display: flex;
-      width: 100%;
-      padding-left: 0;
-      padding-right: 0;
+  > * {
+    margin-top: 0 !important;
+    margin-bottom: 1em !important;
+    
+    &:first-child {
       margin-top: 0 !important;
-      padding-top: 0 !important;
-      align-items: flex-start !important;
-    }
-  }
-  
-  .page__content {
-    @include breakpoint($large) {
-      width: calc(100% - 300px);
-      margin-left: 300px;
-      order: 2;
-      margin-top: 0 !important;
-      padding-top: 0 !important;
-    }
-  }
-  
-  .sidebar {
-    @include breakpoint($large) {
-      float: left;
-      width: 280px;
-      margin-left: 0;
-      margin-right: 20px;
-      opacity: 1;
-      transition: opacity 0.2s ease-in-out;
-      z-index: 10;
-      order: 1;
-      margin-top: 0 !important;
-      padding-top: 0 !important;
     }
   }
 }
 
-// Fix page hero alignment across all pages
+// Fix article/page positioning and remove excessive spacing
+.page {
+  @include breakpoint($large) {
+    float: none !important;
+    width: auto !important;
+    padding-right: 0 !important;
+    flex: 1 !important;
+    margin-top: 0 !important;
+  }
+  
+  .page__inner-wrap {
+    margin-top: 0 !important;
+    float: none !important;
+    width: 100% !important;
+  }
+}
+
+// Match sidebar pages to homepage width with left sidebar - FIXED ALIGNMENT
+.layout--single:not(.wide) {
+  .page__inner-wrap {
+    max-width: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+// Fix page hero alignment and spacing across all pages
+.page__hero {
+  margin-bottom: 0 !important;
+  padding: 0.8em 0 !important;
+}
+
 .page__hero-caption {
   padding-left: 0 !important;
   padding-right: 0 !important;
