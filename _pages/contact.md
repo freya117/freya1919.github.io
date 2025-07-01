@@ -62,52 +62,16 @@ header:
     margin: 0 !important;
   }
   
-  /* Make header much more compact and remove all extra spacing */
+  /* Make header much more compact */
   .page__hero {
-    padding: 0.8em 0 0 0 !important;
+    padding: 0.8em 0 !important;
     min-height: auto !important;
     text-align: left !important;
-    margin-bottom: 0 !important;
   }
   
   .page__hero-caption {
     text-align: left !important;
     margin: 0 !important;
-  }
-  
-  /* Align header title with sidebar on larger screens */
-  @media (min-width: 80em) {
-    .page__hero-caption {
-      padding-left: 1em !important;
-      margin-left: auto !important;
-      margin-right: auto !important;
-    }
-    
-    .page__hero .page__title,
-    .page__hero-overlay .page__title {
-      margin-left: 0 !important;
-      padding-left: 0 !important;
-    }
-  }
-  
-
-  
-  /* Remove any potential spacing from the main content wrapper */
-  #main {
-    padding-top: 0 !important;
-    margin-top: 0 !important;
-  }
-  
-  /* Remove spacing from the page wrapper */
-  .page {
-    margin-top: 0 !important;
-    padding-top: 0 !important;
-  }
-  
-  /* Remove spacing from inner wrap */
-  .page__inner-wrap {
-    margin-top: 0 !important;
-    padding-top: 0 !important;
   }
   
   /* Ensure proper 2-column layout with sidebar aligned at top */
@@ -116,8 +80,6 @@ header:
       display: flex !important;
       width: 100% !important;
       align-items: flex-start !important;
-      margin-top: 0 !important;
-      padding-top: 0 !important;
     }
     
     .page__content {

@@ -37,15 +37,12 @@ header:
     padding: 0.8em 0 !important;
     min-height: auto !important;
     text-align: left !important;
-    margin-bottom: 0 !important;
   }
   
   .page__hero-caption {
     text-align: left !important;
     margin: 0 !important;
   }
-  
-
   
   /* Ensure proper 2-column layout with sidebar */
   @media (min-width: 80em) {
