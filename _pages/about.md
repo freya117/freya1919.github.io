@@ -3,11 +3,18 @@ title: "About Me"
 permalink: /about/
 layout: single
 author_profile: true
-header:
-  overlay_color: "#ffffff"
+# header:
+#   overlay_color: "#ffffff"
 ---
 
 <style>
+  /* HIDE THE ENTIRE HEADER/HERO SECTION */
+  .page__hero,
+  .page__hero--overlay,
+  .page__hero-wrapper {
+    display: none !important;
+  }
+  
   /* Make all text smaller on the about page */
   .page__content {
     font-size: 0.75em;
@@ -42,28 +49,6 @@ header:
     display: none;
   }
   
-  /* Ensure header title is styled elegantly and aligned left */
-  .page__hero .page__title,
-  .page__hero-overlay .page__title {
-    display: inline-block !important;
-    color: #0033A0 !important;
-    text-shadow: none !important;
-    font-size: 1.1em !important;
-    font-weight: bold !important;
-    border-bottom: 3px solid #0033A0 !important;
-    padding-bottom: 0.3em !important;
-  }
-  
-  /* Make header much more compact */
-  .page__hero-caption {
-    text-align: left !important;
-  }
-
-  /* Align hero title with main content on sidebar pages */
-  .page__hero-wrapper {
-    padding-left: 320px; /* 300px sidebar + 20px padding */
-  }
-
   /* Style for education section */
   .education-item {
     margin-bottom: 1.8em;
@@ -102,7 +87,7 @@ header:
     margin-bottom: 0.3em;
     font-style: italic;
     }
-  </style>
+</style>
   
 ## Bio
 
